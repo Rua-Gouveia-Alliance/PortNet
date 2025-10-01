@@ -26,5 +26,5 @@ changes_removed = changes_filtered["Removed"]["Ticker"]
 survivors = current[~current.isin(set(changes_added))][~current.isin(set(changes_removed))].drop_duplicates().sort_values().to_list()
 survivors = [s.replace(".", "-") for s in survivors]
 
-pd.DataFrame({"Symbol": survivors}).to_csv("sp500_survivors.csv", index=False)
-print("\nSaved CSV: sp500_survivors.csv")
+pd.DataFrame({"Symbol": survivors}).to_csv("../data/sp500_survivors.csv", index=False)
+print("\nSaved CSV: ../data/sp500_survivors.csv")
