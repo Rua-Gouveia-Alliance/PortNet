@@ -3,6 +3,7 @@ import networkx as nx
 import itertools
 
 # TODO: Discutir com o stor usar só MSTs em vez da rede completa
+# TODO: Inverter weights da tree para o Louvain????
 
 def get_mst(tickers, distances):
     """ Given a distance matrix, computes the corresponding MST """
