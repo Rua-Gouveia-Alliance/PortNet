@@ -69,20 +69,13 @@ def get_cooccurence_matrix(tickers, monthly_communities):
         for t2 in tickers:
             cooccurence[t1][t2] = 0
 
-    # Calculating absolute frequency times 2
+    # Calculating frequencies
+    count = len(monthly_communities)
     for comms in monthly_communities:
         for community in comms:
             for t1 in community:
                 for t2 in community:
-                    cooccurence[t1][t2] += 1
-
-    # TODO: Acho que podemos evitar este loop de baixo se fizermos
-    # cooccurence[t1][t2] += (1/(2*len(monthly_communities))) no loop de cima
-    # Calculating frequencies
-    count = len(monthly_communities)
-    for t1 in tickers:
-        for t2 in tickers:
-            cooccurence[t1][t2] = (cooccurence[t1][t2] / 2) / count
+                    cooccurence[t1][t2] += 1 / count
 
     return pd.DataFrame.from_dict(cooccurence)
 
