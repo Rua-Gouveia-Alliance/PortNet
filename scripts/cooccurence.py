@@ -62,12 +62,12 @@ def get_monthly_girvan_newman(msts, sizes):
         comms.append(communities.get_girvan_newman(mst, size))
     return comms
 
-def get_cooccurence_matrix(tickers, monthly_communities):
-    cooccurence = {}
+def get_cooccurrence_matrix(tickers, monthly_communities):
+    cooccurrence = {}
     for t1 in tickers:
-        cooccurence[t1] = {}
+        cooccurrence[t1] = {}
         for t2 in tickers:
-            cooccurence[t1][t2] = 0
+            cooccurrence[t1][t2] = 0
 
     # Calculating frequencies
     count = len(monthly_communities)
@@ -75,9 +75,9 @@ def get_cooccurence_matrix(tickers, monthly_communities):
         for community in comms:
             for t1 in community:
                 for t2 in community:
-                    cooccurence[t1][t2] += 1 / count
+                    cooccurrence[t1][t2] += 1 / count
 
-    return pd.DataFrame.from_dict(cooccurence)
+    return pd.DataFrame.from_dict(cooccurrence)
 
 if __name__ == "__main__":
     tickers = (pd.read_csv("../data/datasets/sp500_survivors.csv"))["Symbol"].to_list()
@@ -86,12 +86,30 @@ if __name__ == "__main__":
     splits = split_data_into_intervals(data, intervals)
     monthly_log_returns = get_monthly_log_returns(tickers, splits)
 
-    print("Calculating monthly pcc distances")
+    # PCC
     monthly_pcc_distances = get_monthly_pcc_distances(tickers, monthly_log_returns)
-    print("Calculating monthly pcc msts")
     monthly_pcc_msts = get_monthly_msts(tickers, monthly_pcc_distances)
-    print("Calculating monthly pcc louvain")
+
+    # Louvain Co-Occurrence
     monthly_pcc_louvain = get_monthly_louvain(monthly_pcc_msts)
-    print("Calculating pcc cooccurence")
-    pcc_cooccurence = get_cooccurence_matrix(tickers, monthly_pcc_louvain)
-    print(pcc_cooccurence)
+    pcc_louvain_cooccurrence = get_cooccurrence_matrix(tickers, monthly_pcc_louvain)
+    pcc_louvain_cooccurrence.to_excel("../data/auxiliary/sp500_pcc_louvain_cooccurrence.xlsx")
+
+    # Girvan-Newman Co-Occurrence
+    monthly_pcc_girvan_newman = get_monthly_girvan_newman(monthly_pcc_msts, [len(c) for c in monthly_pcc_louvain])
+    pcc_girvan_newman_cooccurrence = get_cooccurrence_matrix(tickers, monthly_pcc_girvan_newman)
+    pcc_girvan_newman_cooccurrence.to_excel("../data/auxiliary/sp500_pcc_girvan_newman_cooccurrence.xlsx")
+
+    # SCC
+    monthly_scc_distances = get_monthly_scc_distances(tickers, monthly_log_returns)
+    monthly_scc_msts = get_monthly_msts(tickers, monthly_scc_distances)
+
+    # Louvain Co-Occurrence
+    monthly_scc_louvain = get_monthly_louvain(monthly_scc_msts)
+    scc_louvain_cooccurrence = get_cooccurrence_matrix(tickers, monthly_scc_louvain)
+    scc_louvain_cooccurrence.to_excel("../data/auxiliary/sp500_scc_louvain_cooccurrence.xlsx")
+
+    # Girvan-Newman Co-Occurrence
+    monthly_scc_girvan_newman = get_monthly_girvan_newman(monthly_scc_msts, [len(c) for c in monthly_scc_louvain])
+    scc_girvan_newman_cooccurrence = get_cooccurrence_matrix(tickers, monthly_scc_girvan_newman)
+    scc_girvan_newman_cooccurrence.to_excel("../data/auxiliary/sp500_scc_girvan_newman_cooccurrence.xlsx")
