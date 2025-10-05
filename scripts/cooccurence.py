@@ -93,7 +93,7 @@ def get_cooccurrence_matrix(tickers, monthly_communities):
 
 if __name__ == "__main__":
     tickers = (pd.read_csv("../data/datasets/sp500_survivors.csv"))["Symbol"].to_list()
-    data = pd.read_excel("../data/datasets/sp500_prices.xlsx", header=[0, 1], index_col=0)
+    data = pd.read_excel("../data/datasets/sp500_prices_train.xlsx", header=[0, 1], index_col=0)
     intervals = get_monthly_intervals(data)
     splits = split_data_into_intervals(data, intervals)
     monthly_log_returns = get_monthly_log_returns(tickers, splits)

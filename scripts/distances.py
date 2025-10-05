@@ -57,7 +57,7 @@ def get_scc_distances(tickers, returns):
 
 if __name__ == "__main__":
     tickers = (pd.read_csv("../data/datasets/sp500_survivors.csv"))["Symbol"].to_list()
-    data = pd.read_excel("../data/datasets/sp500_prices.xlsx", header=[0, 1], index_col=0)
+    data = pd.read_excel("../data/datasets/sp500_prices_train.xlsx", header=[0, 1], index_col=0)
     log_returns = get_normalized_daily_log_returns(tickers, data)
 
     pcc_distances = get_pcc_distances(tickers, log_returns)

@@ -20,17 +20,17 @@
       </node>
       <node id="ABBV" label="ABBV">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="ABT" label="ABT">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="ACN" label="ACN">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="ADBE" label="ADBE">
@@ -40,12 +40,12 @@
       </node>
       <node id="ADI" label="ADI">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="ADM" label="ADM">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="ADP" label="ADP">
@@ -60,12 +60,12 @@
       </node>
       <node id="AEE" label="AEE">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="AEP" label="AEP">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="AES" label="AES">
@@ -75,37 +75,37 @@
       </node>
       <node id="AFL" label="AFL">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="AIG" label="AIG">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="AIZ" label="AIZ">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="AJG" label="AJG">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="AKAM" label="AKAM">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="ALB" label="ALB">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="ALGN" label="ALGN">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="ALL" label="ALL">
@@ -115,22 +115,22 @@
       </node>
       <node id="ALLE" label="ALLE">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="AMAT" label="AMAT">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="AMCR" label="AMCR">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="AMD" label="AMD">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="AME" label="AME">
@@ -140,12 +140,12 @@
       </node>
       <node id="AMGN" label="AMGN">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="AMP" label="AMP">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="AMT" label="AMT">
@@ -155,32 +155,32 @@
       </node>
       <node id="AMZN" label="AMZN">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="ANET" label="ANET">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="AON" label="AON">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="AOS" label="AOS">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="APA" label="APA">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="APD" label="APD">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="APH" label="APH">
@@ -195,32 +195,32 @@
       </node>
       <node id="ARE" label="ARE">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="ATO" label="ATO">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="AVB" label="AVB">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="AVGO" label="AVGO">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="AVY" label="AVY">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="AWK" label="AWK">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="AXP" label="AXP">
@@ -245,22 +245,22 @@
       </node>
       <node id="BALL" label="BALL">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="BAX" label="BAX">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="BBY" label="BBY">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="BDX" label="BDX">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="BEN" label="BEN">
@@ -270,17 +270,17 @@
       </node>
       <node id="BF-B" label="BF-B">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="BIIB" label="BIIB">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="BK" label="BK">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="BKNG" label="BKNG">
@@ -290,42 +290,42 @@
       </node>
       <node id="BKR" label="BKR">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="BLK" label="BLK">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="BMY" label="BMY">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="BR" label="BR">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="BRK-B" label="BRK-B">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="BRO" label="BRO">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="BSX" label="BSX">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="BXP" label="BXP">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="C" label="C">
@@ -335,12 +335,12 @@
       </node>
       <node id="CAG" label="CAG">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="CAH" label="CAH">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="CARR" label="CARR">
@@ -360,12 +360,12 @@
       </node>
       <node id="CBOE" label="CBOE">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="CBRE" label="CBRE">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="CCI" label="CCI">
@@ -375,7 +375,7 @@
       </node>
       <node id="CCL" label="CCL">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="17" />
         </attvalues>
       </node>
       <node id="CDNS" label="CDNS">
@@ -385,7 +385,7 @@
       </node>
       <node id="CDW" label="CDW">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="CEG" label="CEG">
@@ -395,7 +395,7 @@
       </node>
       <node id="CF" label="CF">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="CFG" label="CFG">
@@ -405,72 +405,72 @@
       </node>
       <node id="CHD" label="CHD">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="CHRW" label="CHRW">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="CHTR" label="CHTR">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="CI" label="CI">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="CINF" label="CINF">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="CL" label="CL">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="CLX" label="CLX">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="CMCSA" label="CMCSA">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="CME" label="CME">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="CMG" label="CMG">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="CMI" label="CMI">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="CMS" label="CMS">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="CNC" label="CNC">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="CNP" label="CNP">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="COF" label="COF">
@@ -480,42 +480,42 @@
       </node>
       <node id="COO" label="COO">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="COP" label="COP">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="COR" label="COR">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="COST" label="COST">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="CPAY" label="CPAY">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="CPB" label="CPB">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="CPRT" label="CPRT">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="CPT" label="CPT">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="CRL" label="CRL">
@@ -530,12 +530,12 @@
       </node>
       <node id="CSCO" label="CSCO">
         <attvalues>
-          <attvalue for="0" value="15" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="CSGP" label="CSGP">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="CSX" label="CSX">
@@ -545,32 +545,32 @@
       </node>
       <node id="CTAS" label="CTAS">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="CTRA" label="CTRA">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="CTSH" label="CTSH">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="CTVA" label="CTVA">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="CVS" label="CVS">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="CVX" label="CVX">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="D" label="D">
@@ -580,7 +580,7 @@
       </node>
       <node id="DAL" label="DAL">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="17" />
         </attvalues>
       </node>
       <node id="DAY" label="DAY">
@@ -590,7 +590,7 @@
       </node>
       <node id="DD" label="DD">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="DE" label="DE">
@@ -600,7 +600,7 @@
       </node>
       <node id="DG" label="DG">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="DGX" label="DGX">
@@ -610,7 +610,7 @@
       </node>
       <node id="DHI" label="DHI">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="DHR" label="DHR">
@@ -620,37 +620,37 @@
       </node>
       <node id="DIS" label="DIS">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="DLR" label="DLR">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="DLTR" label="DLTR">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="DOC" label="DOC">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="DOV" label="DOV">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="DOW" label="DOW">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="DPZ" label="DPZ">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="DRI" label="DRI">
@@ -665,72 +665,72 @@
       </node>
       <node id="DUK" label="DUK">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="DVA" label="DVA">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="DVN" label="DVN">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="DXCM" label="DXCM">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="EA" label="EA">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="EBAY" label="EBAY">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="ECL" label="ECL">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="ED" label="ED">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="EFX" label="EFX">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="EG" label="EG">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="EIX" label="EIX">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="EL" label="EL">
         <attvalues>
-          <attvalue for="0" value="15" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="ELV" label="ELV">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="EMN" label="EMN">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="EMR" label="EMR">
@@ -740,22 +740,22 @@
       </node>
       <node id="EOG" label="EOG">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="EPAM" label="EPAM">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="EQIX" label="EQIX">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="EQR" label="EQR">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="ES" label="ES">
@@ -765,7 +765,7 @@
       </node>
       <node id="ESS" label="ESS">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="ETN" label="ETN">
@@ -775,27 +775,27 @@
       </node>
       <node id="ETR" label="ETR">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="EVRG" label="EVRG">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="EW" label="EW">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="EXC" label="EXC">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="EXPD" label="EXPD">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="EXPE" label="EXPE">
@@ -810,12 +810,12 @@
       </node>
       <node id="F" label="F">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="FANG" label="FANG">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="FAST" label="FAST">
@@ -825,17 +825,17 @@
       </node>
       <node id="FCX" label="FCX">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="FDS" label="FDS">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="FDX" label="FDX">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="18" />
         </attvalues>
       </node>
       <node id="FE" label="FE">
@@ -845,17 +845,17 @@
       </node>
       <node id="FFIV" label="FFIV">
         <attvalues>
-          <attvalue for="0" value="15" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="FI" label="FI">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="FIS" label="FIS">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="FITB" label="FITB">
@@ -865,17 +865,17 @@
       </node>
       <node id="FOX" label="FOX">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="FOXA" label="FOXA">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="FRT" label="FRT">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="19" />
         </attvalues>
       </node>
       <node id="FTNT" label="FTNT">
@@ -885,37 +885,37 @@
       </node>
       <node id="FTV" label="FTV">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="GD" label="GD">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="GE" label="GE">
         <attvalues>
-          <attvalue for="0" value="13" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="GEN" label="GEN">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="GILD" label="GILD">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="GIS" label="GIS">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="GL" label="GL">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="GLW" label="GLW">
@@ -925,22 +925,22 @@
       </node>
       <node id="GM" label="GM">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="GNRC" label="GNRC">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="GOOG" label="GOOG">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="GOOGL" label="GOOGL">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="GPC" label="GPC">
@@ -950,17 +950,17 @@
       </node>
       <node id="GPN" label="GPN">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="GRMN" label="GRMN">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="GS" label="GS">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="GWW" label="GWW">
@@ -970,12 +970,12 @@
       </node>
       <node id="HAL" label="HAL">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="HAS" label="HAS">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="HBAN" label="HBAN">
@@ -985,12 +985,12 @@
       </node>
       <node id="HCA" label="HCA">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="HD" label="HD">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="HIG" label="HIG">
@@ -1000,7 +1000,7 @@
       </node>
       <node id="HII" label="HII">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="HLT" label="HLT">
@@ -1010,7 +1010,7 @@
       </node>
       <node id="HOLX" label="HOLX">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="HON" label="HON">
@@ -1020,22 +1020,22 @@
       </node>
       <node id="HPE" label="HPE">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="HPQ" label="HPQ">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="HRL" label="HRL">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="HSIC" label="HSIC">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="HST" label="HST">
@@ -1045,12 +1045,12 @@
       </node>
       <node id="HSY" label="HSY">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="HUM" label="HUM">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="HWM" label="HWM">
@@ -1060,37 +1060,37 @@
       </node>
       <node id="IBM" label="IBM">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="ICE" label="ICE">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="IDXX" label="IDXX">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="IEX" label="IEX">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="IFF" label="IFF">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="INCY" label="INCY">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="INTC" label="INTC">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="INTU" label="INTU">
@@ -1100,17 +1100,17 @@
       </node>
       <node id="INVH" label="INVH">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="IP" label="IP">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="IPG" label="IPG">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="IQV" label="IQV">
@@ -1125,17 +1125,17 @@
       </node>
       <node id="IRM" label="IRM">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="ISRG" label="ISRG">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="IT" label="IT">
         <attvalues>
-          <attvalue for="0" value="13" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="ITW" label="ITW">
@@ -1150,12 +1150,12 @@
       </node>
       <node id="J" label="J">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="JBHT" label="JBHT">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="JCI" label="JCI">
@@ -1165,12 +1165,12 @@
       </node>
       <node id="JKHY" label="JKHY">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="JNJ" label="JNJ">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="JPM" label="JPM">
@@ -1180,12 +1180,12 @@
       </node>
       <node id="K" label="K">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="KDP" label="KDP">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="KEY" label="KEY">
@@ -1195,62 +1195,62 @@
       </node>
       <node id="KEYS" label="KEYS">
         <attvalues>
-          <attvalue for="0" value="15" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="KHC" label="KHC">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="KIM" label="KIM">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="19" />
         </attvalues>
       </node>
       <node id="KLAC" label="KLAC">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="KMB" label="KMB">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="KMI" label="KMI">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="KMX" label="KMX">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="KO" label="KO">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="KR" label="KR">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="L" label="L">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="LDOS" label="LDOS">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="LEN" label="LEN">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="LH" label="LH">
@@ -1260,47 +1260,47 @@
       </node>
       <node id="LHX" label="LHX">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="LIN" label="LIN">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="LKQ" label="LKQ">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="LLY" label="LLY">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="LMT" label="LMT">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="LNT" label="LNT">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="LOW" label="LOW">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="LRCX" label="LRCX">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="LUV" label="LUV">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="17" />
         </attvalues>
       </node>
       <node id="LVS" label="LVS">
@@ -1310,27 +1310,27 @@
       </node>
       <node id="LW" label="LW">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="LYB" label="LYB">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="LYV" label="LYV">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="MA" label="MA">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="MAA" label="MAA">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="MAR" label="MAR">
@@ -1340,47 +1340,47 @@
       </node>
       <node id="MAS" label="MAS">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="MCD" label="MCD">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="MCHP" label="MCHP">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="MCK" label="MCK">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="MCO" label="MCO">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="MDLZ" label="MDLZ">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="MDT" label="MDT">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="MET" label="MET">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="META" label="META">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="MGM" label="MGM">
@@ -1390,87 +1390,87 @@
       </node>
       <node id="MHK" label="MHK">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="MKC" label="MKC">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="MLM" label="MLM">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="MMC" label="MMC">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="MMM" label="MMM">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="MNST" label="MNST">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="MO" label="MO">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="MOH" label="MOH">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="MOS" label="MOS">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="MPC" label="MPC">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="MPWR" label="MPWR">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="MRK" label="MRK">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="MRNA" label="MRNA">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="MS" label="MS">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="MSCI" label="MSCI">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="MSFT" label="MSFT">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="MSI" label="MSI">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="MTB" label="MTB">
@@ -1480,7 +1480,7 @@
       </node>
       <node id="MTCH" label="MTCH">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="MTD" label="MTD">
@@ -1490,22 +1490,22 @@
       </node>
       <node id="MU" label="MU">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="NCLH" label="NCLH">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="17" />
         </attvalues>
       </node>
       <node id="NDAQ" label="NDAQ">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="NDSN" label="NDSN">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="NEE" label="NEE">
@@ -1515,27 +1515,27 @@
       </node>
       <node id="NEM" label="NEM">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="NFLX" label="NFLX">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="NI" label="NI">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="NKE" label="NKE">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="NOC" label="NOC">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="NOW" label="NOW">
@@ -1560,67 +1560,67 @@
       </node>
       <node id="NTRS" label="NTRS">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="NUE" label="NUE">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="NVDA" label="NVDA">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="NVR" label="NVR">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="NWS" label="NWS">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="NWSA" label="NWSA">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="NXPI" label="NXPI">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="O" label="O">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="19" />
         </attvalues>
       </node>
       <node id="ODFL" label="ODFL">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="OKE" label="OKE">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="OMC" label="OMC">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="ON" label="ON">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="ORCL" label="ORCL">
         <attvalues>
-          <attvalue for="0" value="15" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="ORLY" label="ORLY">
@@ -1630,12 +1630,12 @@
       </node>
       <node id="OTIS" label="OTIS">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="OXY" label="OXY">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="PAYC" label="PAYC">
@@ -1650,32 +1650,32 @@
       </node>
       <node id="PCAR" label="PCAR">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="PEG" label="PEG">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="PEP" label="PEP">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="PFE" label="PFE">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="PFG" label="PFG">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="PG" label="PG">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="PGR" label="PGR">
@@ -1690,22 +1690,22 @@
       </node>
       <node id="PHM" label="PHM">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="PKG" label="PKG">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="PLD" label="PLD">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="PM" label="PM">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="PNC" label="PNC">
@@ -1715,22 +1715,22 @@
       </node>
       <node id="PNR" label="PNR">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="PNW" label="PNW">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="POOL" label="POOL">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="PPG" label="PPG">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="12" />
         </attvalues>
       </node>
       <node id="PPL" label="PPL">
@@ -1740,7 +1740,7 @@
       </node>
       <node id="PRU" label="PRU">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="PSA" label="PSA">
@@ -1750,12 +1750,12 @@
       </node>
       <node id="PSKY" label="PSKY">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="PSX" label="PSX">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="PTC" label="PTC">
@@ -1770,7 +1770,7 @@
       </node>
       <node id="PYPL" label="PYPL">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="QCOM" label="QCOM">
@@ -1780,17 +1780,17 @@
       </node>
       <node id="RCL" label="RCL">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="17" />
         </attvalues>
       </node>
       <node id="REG" label="REG">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="19" />
         </attvalues>
       </node>
       <node id="REGN" label="REGN">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="RF" label="RF">
@@ -1800,17 +1800,17 @@
       </node>
       <node id="RJF" label="RJF">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="RL" label="RL">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="RMD" label="RMD">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="ROK" label="ROK">
@@ -1820,27 +1820,27 @@
       </node>
       <node id="ROL" label="ROL">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="ROP" label="ROP">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="ROST" label="ROST">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="RSG" label="RSG">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="RTX" label="RTX">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="RVTY" label="RVTY">
@@ -1855,12 +1855,12 @@
       </node>
       <node id="SBUX" label="SBUX">
         <attvalues>
-          <attvalue for="0" value="15" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="SCHW" label="SCHW">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="SHW" label="SHW">
@@ -1870,12 +1870,12 @@
       </node>
       <node id="SJM" label="SJM">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="SLB" label="SLB">
         <attvalues>
-          <attvalue for="0" value="10" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="SNA" label="SNA">
@@ -1890,7 +1890,7 @@
       </node>
       <node id="SO" label="SO">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="SPG" label="SPG">
@@ -1900,7 +1900,7 @@
       </node>
       <node id="SPGI" label="SPGI">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="SRE" label="SRE">
@@ -1910,37 +1910,37 @@
       </node>
       <node id="STE" label="STE">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="STT" label="STT">
         <attvalues>
-          <attvalue for="0" value="9" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="STX" label="STX">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="STZ" label="STZ">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="SW" label="SW">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="SWK" label="SWK">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="SWKS" label="SWKS">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="SYF" label="SYF">
@@ -1950,22 +1950,22 @@
       </node>
       <node id="SYK" label="SYK">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="SYY" label="SYY">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="T" label="T">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="TAP" label="TAP">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="TDG" label="TDG">
@@ -1975,7 +1975,7 @@
       </node>
       <node id="TDY" label="TDY">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="TECH" label="TECH">
@@ -1990,7 +1990,7 @@
       </node>
       <node id="TER" label="TER">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="TFC" label="TFC">
@@ -2000,12 +2000,12 @@
       </node>
       <node id="TGT" label="TGT">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="TJX" label="TJX">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="TMO" label="TMO">
@@ -2015,22 +2015,22 @@
       </node>
       <node id="TMUS" label="TMUS">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="TPR" label="TPR">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="TRMB" label="TRMB">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="TROW" label="TROW">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="TRV" label="TRV">
@@ -2040,17 +2040,17 @@
       </node>
       <node id="TSCO" label="TSCO">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="TSLA" label="TSLA">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="TSN" label="TSN">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="19" />
         </attvalues>
       </node>
       <node id="TT" label="TT">
@@ -2060,47 +2060,47 @@
       </node>
       <node id="TTWO" label="TTWO">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="TXN" label="TXN">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="5" />
         </attvalues>
       </node>
       <node id="TXT" label="TXT">
         <attvalues>
-          <attvalue for="0" value="18" />
+          <attvalue for="0" value="13" />
         </attvalues>
       </node>
       <node id="TYL" label="TYL">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="UAL" label="UAL">
         <attvalues>
-          <attvalue for="0" value="19" />
+          <attvalue for="0" value="17" />
         </attvalues>
       </node>
       <node id="UDR" label="UDR">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="UHS" label="UHS">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="ULTA" label="ULTA">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="UNH" label="UNH">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="UNP" label="UNP">
@@ -2110,7 +2110,7 @@
       </node>
       <node id="UPS" label="UPS">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="18" />
         </attvalues>
       </node>
       <node id="URI" label="URI">
@@ -2125,52 +2125,52 @@
       </node>
       <node id="V" label="V">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="VICI" label="VICI">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="19" />
         </attvalues>
       </node>
       <node id="VLO" label="VLO">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="VMC" label="VMC">
         <attvalues>
-          <attvalue for="0" value="12" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="VRSK" label="VRSK">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="VRSN" label="VRSN">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="21" />
         </attvalues>
       </node>
       <node id="VRTX" label="VRTX">
         <attvalues>
-          <attvalue for="0" value="13" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="VTR" label="VTR">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="VTRS" label="VTRS">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="VZ" label="VZ">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="WAB" label="WAB">
@@ -2185,22 +2185,22 @@
       </node>
       <node id="WBD" label="WBD">
         <attvalues>
-          <attvalue for="0" value="11" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="WDC" label="WDC">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="1" />
         </attvalues>
       </node>
       <node id="WEC" label="WEC">
         <attvalues>
-          <attvalue for="0" value="14" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="WELL" label="WELL">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="14" />
         </attvalues>
       </node>
       <node id="WFC" label="WFC">
@@ -2210,17 +2210,17 @@
       </node>
       <node id="WM" label="WM">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="WMB" label="WMB">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="WMT" label="WMT">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="15" />
         </attvalues>
       </node>
       <node id="WRB" label="WRB">
@@ -2230,17 +2230,17 @@
       </node>
       <node id="WST" label="WST">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="WTW" label="WTW">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="WY" label="WY">
         <attvalues>
-          <attvalue for="0" value="16" />
+          <attvalue for="0" value="11" />
         </attvalues>
       </node>
       <node id="WYNN" label="WYNN">
@@ -2250,495 +2250,495 @@
       </node>
       <node id="XEL" label="XEL">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="XOM" label="XOM">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="16" />
         </attvalues>
       </node>
       <node id="XYL" label="XYL">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="YUM" label="YUM">
         <attvalues>
-          <attvalue for="0" value="8" />
+          <attvalue for="0" value="20" />
         </attvalues>
       </node>
       <node id="ZBH" label="ZBH">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="ZBRA" label="ZBRA">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="ZTS" label="ZTS">
         <attvalues>
-          <attvalue for="0" value="20" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge source="A" target="WAT" id="0" weight="1.4000737267657044" />
-      <edge source="A" target="MTD" id="1" weight="1.3681381367676897" />
-      <edge source="A" target="TMO" id="2" weight="1.3034190815447753" />
-      <edge source="A" target="RVTY" id="3" weight="1.2221379296186128" />
-      <edge source="AAPL" target="SWKS" id="4" weight="1.0696136846194326" />
-      <edge source="AAPL" target="TSLA" id="5" weight="0.954950040855409" />
-      <edge source="ABBV" target="AMGN" id="6" weight="0.946661434705814" />
-      <edge source="ABT" target="MDT" id="7" weight="1.023678645246176" />
-      <edge source="ACN" target="CTSH" id="8" weight="1.1606403783498145" />
-      <edge source="ACN" target="EPAM" id="9" weight="1.0605977965040188" />
-      <edge source="ACN" target="IBM" id="10" weight="0.983731890917334" />
-      <edge source="ACN" target="AKAM" id="11" weight="0.9387011806958829" />
-      <edge source="ADBE" target="NOW" id="12" weight="1.0610515713590387" />
-      <edge source="ADI" target="MCHP" id="13" weight="1.4694474156621053" />
-      <edge source="ADI" target="NXPI" id="14" weight="1.4489087861973302" />
-      <edge source="ADI" target="TXN" id="15" weight="1.4160412209775677" />
-      <edge source="ADI" target="SWKS" id="16" weight="1.2157252607146178" />
-      <edge source="ADM" target="CVX" id="17" weight="0.8931983608689109" />
-      <edge source="ADP" target="PAYX" id="18" weight="1.3913290764502255" />
-      <edge source="ADP" target="MMC" id="19" weight="1.0845368119115455" />
-      <edge source="ADSK" target="NOW" id="20" weight="1.0883778126073778" />
-      <edge source="ADSK" target="PTC" id="21" weight="1.031723783386671" />
-      <edge source="AEE" target="LNT" id="22" weight="1.4971449854078085" />
-      <edge source="AEE" target="EXC" id="23" weight="1.3785434762245083" />
-      <edge source="AEP" target="DUK" id="24" weight="1.3986266866381198" />
-      <edge source="AES" target="NEE" id="25" weight="1.0469166868867892" />
-      <edge source="AFL" target="L" id="26" weight="1.208378533997353" />
-      <edge source="AFL" target="GL" id="27" weight="0.8829639994869181" />
-      <edge source="AIG" target="HIG" id="28" weight="1.2784205543101623" />
-      <edge source="AIG" target="PRU" id="29" weight="1.2359053046347865" />
-      <edge source="AIZ" target="L" id="30" weight="1.135689490892653" />
-      <edge source="AJG" target="MMC" id="31" weight="1.3406525097340098" />
-      <edge source="AJG" target="BRO" id="32" weight="1.2702657312859662" />
-      <edge source="ALB" target="DD" id="33" weight="0.9879033126101779" />
-      <edge source="ALGN" target="TROW" id="34" weight="0.9784117351673389" />
-      <edge source="ALL" target="HIG" id="35" weight="1.1765219709182486" />
-      <edge source="ALL" target="PGR" id="36" weight="1.1286018365691817" />
-      <edge source="ALLE" target="MAS" id="37" weight="1.2020355608108217" />
-      <edge source="AMAT" target="LRCX" id="38" weight="1.582476415084404" />
-      <edge source="AMAT" target="TER" id="39" weight="1.2472169200315313" />
-      <edge source="AMCR" target="AVY" id="40" weight="1.0437540002643009" />
-      <edge source="AMCR" target="BALL" id="41" weight="0.96938030531621" />
-      <edge source="AMD" target="NVDA" id="42" weight="1.186191290120521" />
-      <edge source="AMD" target="LRCX" id="43" weight="1.1850815194464084" />
-      <edge source="AME" target="PH" id="44" weight="1.2529410381170532" />
-      <edge source="AMGN" target="BIIB" id="45" weight="0.970596931132852" />
-      <edge source="AMGN" target="GILD" id="46" weight="0.9366058020539669" />
-      <edge source="AMP" target="RJF" id="47" weight="1.368319265471474" />
-      <edge source="AMP" target="PFG" id="48" weight="1.2925793419524798" />
-      <edge source="AMP" target="DOV" id="49" weight="1.207360581328695" />
-      <edge source="AMT" target="SBAC" id="50" weight="1.433581236669358" />
-      <edge source="AMT" target="CCI" id="51" weight="1.3996846754927352" />
-      <edge source="AMT" target="AWK" id="52" weight="1.129831379427728" />
-      <edge source="AMZN" target="MSFT" id="53" weight="1.164421111465521" />
-      <edge source="AMZN" target="GOOG" id="54" weight="1.1172523004220745" />
-      <edge source="AMZN" target="META" id="55" weight="1.1086464247055101" />
-      <edge source="ANET" target="AVGO" id="56" weight="1.1459073192506155" />
-      <edge source="AON" target="MMC" id="57" weight="1.2411537177409706" />
-      <edge source="AOS" target="MAS" id="58" weight="1.198553303691735" />
-      <edge source="APA" target="DVN" id="59" weight="1.417785922415022" />
-      <edge source="APD" target="LIN" id="60" weight="1.020454897143528" />
-      <edge source="APH" target="ETN" id="61" weight="1.2740996682773467" />
-      <edge source="APH" target="TEL" id="62" weight="1.195641909810667" />
-      <edge source="APH" target="FFIV" id="63" weight="1.055382403325476" />
-      <edge source="APTV" target="TEL" id="64" weight="1.1103576039891223" />
-      <edge source="APTV" target="EL" id="65" weight="0.96241003595791" />
-      <edge source="ARE" target="DOC" id="66" weight="1.326118401011347" />
-      <edge source="ARE" target="BXP" id="67" weight="1.3124866285511394" />
-      <edge source="ARE" target="PLD" id="68" weight="1.2341576308855886" />
-      <edge source="ATO" target="WEC" id="69" weight="1.354080960753147" />
-      <edge source="AVB" target="EQR" id="70" weight="1.651889423417473" />
-      <edge source="AVB" target="FRT" id="71" weight="1.2554609221937958" />
-      <edge source="AVGO" target="KLAC" id="72" weight="1.1953145180175613" />
-      <edge source="AVY" target="PPG" id="73" weight="1.1384894122580596" />
-      <edge source="AWK" target="ED" id="74" weight="1.280356461044612" />
-      <edge source="AWK" target="JNJ" id="75" weight="0.959570306332659" />
-      <edge source="AXP" target="COF" id="76" weight="1.2833174993696275" />
-      <edge source="AZO" target="ORLY" id="77" weight="1.290908737239791" />
-      <edge source="AZO" target="GPC" id="78" weight="0.9824327153795449" />
-      <edge source="BA" target="HWM" id="79" weight="0.956979663865626" />
-      <edge source="BAC" target="WFC" id="80" weight="1.404477880484139" />
-      <edge source="BAC" target="C" id="81" weight="1.384106645410361" />
-      <edge source="BAC" target="HBAN" id="82" weight="1.3639205307636346" />
-      <edge source="BAC" target="JPM" id="83" weight="1.324552973985365" />
-      <edge source="BAX" target="MDT" id="84" weight="0.9698818276580261" />
-      <edge source="BBY" target="SWK" id="85" weight="1.0879441210934684" />
-      <edge source="BBY" target="TGT" id="86" weight="1.0008304759061009" />
-      <edge source="BDX" target="STE" id="87" weight="0.98275900227459" />
-      <edge source="BEN" target="TROW" id="88" weight="1.2798729363487167" />
-      <edge source="BF-B" target="STZ" id="89" weight="1.0372061173812959" />
-      <edge source="BIIB" target="TMO" id="90" weight="0.9559898855259921" />
-      <edge source="BIIB" target="REGN" id="91" weight="0.924840163466665" />
-      <edge source="BK" target="STT" id="92" weight="1.3896731401531839" />
-      <edge source="BK" target="NTRS" id="93" weight="1.2439370319378305" />
-      <edge source="BK" target="PRU" id="94" weight="1.23718032964775" />
-      <edge source="BKNG" target="HLT" id="95" weight="1.095408391730197" />
-      <edge source="BKR" target="HAL" id="96" weight="1.3068075100804957" />
-      <edge source="BLK" target="TROW" id="97" weight="1.2914741121427356" />
-      <edge source="BLK" target="MCO" id="98" weight="1.2495178714980129" />
-      <edge source="BLK" target="GS" id="99" weight="1.2019767693745707" />
-      <edge source="BMY" target="PFE" id="100" weight="0.972296999717726" />
-      <edge source="BR" target="MCO" id="101" weight="1.0855474210854767" />
-      <edge source="BR" target="VRSN" id="102" weight="0.978110774457972" />
-      <edge source="BRK-B" target="L" id="103" weight="1.2768517397574888" />
-      <edge source="BRK-B" target="MMC" id="104" weight="1.1228971186317915" />
-      <edge source="BSX" target="SYK" id="105" weight="1.157117952354654" />
-      <edge source="BXP" target="KIM" id="106" weight="1.2464365554864076" />
-      <edge source="C" target="GS" id="107" weight="1.3184274021914648" />
-      <edge source="C" target="SYF" id="108" weight="1.2659783148779726" />
-      <edge source="CAG" target="GIS" id="109" weight="1.279617442872057" />
-      <edge source="CAH" target="COR" id="110" weight="1.1438425070215104" />
-      <edge source="CAH" target="MMC" id="111" weight="0.9109290279075859" />
-      <edge source="CARR" target="TT" id="112" weight="1.1745368357197545" />
-      <edge source="CAT" target="URI" id="113" weight="1.2271176951033915" />
-      <edge source="CAT" target="DE" id="114" weight="1.1174205779508801" />
-      <edge source="CB" target="HIG" id="115" weight="1.3135886560861851" />
-      <edge source="CBOE" target="CME" id="116" weight="0.9410106305693271" />
-      <edge source="CBRE" target="SPG" id="117" weight="1.1549500861880597" />
-      <edge source="CBRE" target="CSGP" id="118" weight="1.017041340218484" />
-      <edge source="CCI" target="O" id="119" weight="1.1167514473360796" />
-      <edge source="CCL" target="NCLH" id="120" weight="1.41436601713866" />
-      <edge source="CCL" target="RCL" id="121" weight="1.377717655049421" />
-      <edge source="CCL" target="DAL" id="122" weight="1.098213963103583" />
-      <edge source="CDNS" target="SNPS" id="123" weight="1.3181009192163584" />
-      <edge source="CDNS" target="KLAC" id="124" weight="1.1364661655244748" />
-      <edge source="CDW" target="SWKS" id="125" weight="1.0889861245196792" />
-      <edge source="CEG" target="NRG" id="126" weight="1.0869985970859286" />
-      <edge source="CEG" target="ETN" id="127" weight="1.0711904344970042" />
-      <edge source="CF" target="MOS" id="128" weight="1.1688186969576546" />
-      <edge source="CFG" target="FITB" id="129" weight="1.4873069602420306" />
-      <edge source="CHD" target="PG" id="130" weight="1.165597954578128" />
-      <edge source="CHRW" target="EXPD" id="131" weight="1.082084828914327" />
-      <edge source="CHTR" target="CMCSA" id="132" weight="1.1604747374437205" />
-      <edge source="CI" target="ELV" id="133" weight="1.0098227632709873" />
-      <edge source="CI" target="COR" id="134" weight="0.880387219557641" />
-      <edge source="CINF" target="L" id="135" weight="1.2876211275300238" />
-      <edge source="CL" target="PG" id="136" weight="1.2286180076996531" />
-      <edge source="CL" target="KO" id="137" weight="1.1312163959403914" />
-      <edge source="CLX" target="PG" id="138" weight="1.0307857949975152" />
-      <edge source="CMCSA" target="ITW" id="139" weight="0.9784880245334711" />
-      <edge source="CME" target="ICE" id="140" weight="0.919333671871883" />
-      <edge source="CMG" target="MSFT" id="141" weight="0.9284049858808989" />
-      <edge source="CMI" target="PCAR" id="142" weight="1.1972338342599074" />
-      <edge source="CMI" target="DOV" id="143" weight="1.1804860606544976" />
-      <edge source="CMS" target="WEC" id="144" weight="1.5110030569177293" />
-      <edge source="CMS" target="DTE" id="145" weight="1.4975890436554669" />
-      <edge source="CMS" target="LNT" id="146" weight="1.4867780418284888" />
-      <edge source="CMS" target="VZ" id="147" weight="0.934485028530279" />
-      <edge source="CNC" target="MOH" id="148" weight="1.2769183105752413" />
-      <edge source="CNP" target="LNT" id="149" weight="1.2988743629044603" />
-      <edge source="COF" target="SYF" id="150" weight="1.4604364308471047" />
-      <edge source="COO" target="MCO" id="151" weight="0.9970998241996201" />
-      <edge source="COP" target="EOG" id="152" weight="1.462336628046279" />
-      <edge source="COP" target="FANG" id="153" weight="1.4316940531363618" />
-      <edge source="COP" target="XOM" id="154" weight="1.3795916611794716" />
-      <edge source="COP" target="PSX" id="155" weight="1.2039572618077767" />
-      <edge source="COR" target="MCK" id="156" weight="1.2097689914639598" />
-      <edge source="COST" target="WMT" id="157" weight="1.0642557935532762" />
-      <edge source="COST" target="MCO" id="158" weight="0.9713342701393459" />
-      <edge source="CPAY" target="DOV" id="159" weight="1.146744773601141" />
-      <edge source="CPAY" target="GPN" id="160" weight="1.0868299503017562" />
-      <edge source="CPAY" target="CTSH" id="161" weight="1.0716120121087993" />
-      <edge source="CPB" target="GIS" id="162" weight="1.277185040818939" />
-      <edge source="CPB" target="KHC" id="163" weight="1.1777525682223524" />
-      <edge source="CPRT" target="MCO" id="164" weight="1.019203054065215" />
-      <edge source="CPT" target="MAA" id="165" weight="1.5837059100728956" />
-      <edge source="CPT" target="UDR" id="166" weight="1.535940629178643" />
-      <edge source="CRL" target="IQV" id="167" weight="1.238963531793768" />
-      <edge source="CRM" target="NOW" id="168" weight="1.1921031907136592" />
-      <edge source="CSCO" target="FFIV" id="169" weight="1.0701256474246472" />
-      <edge source="CSX" target="NSC" id="170" weight="1.3258032046963732" />
-      <edge source="CSX" target="ITW" id="171" weight="1.1052834616589218" />
-      <edge source="CTAS" target="ROP" id="172" weight="1.0792241938455436" />
-      <edge source="CTAS" target="MSI" id="173" weight="0.9986144808332229" />
-      <edge source="CTAS" target="ROL" id="174" weight="0.950519045258073" />
-      <edge source="CTRA" target="DVN" id="175" weight="1.2153444313048536" />
-      <edge source="CTVA" target="MOS" id="176" weight="0.996578942560068" />
-      <edge source="CTVA" target="DOV" id="177" weight="0.976683072947115" />
-      <edge source="CVS" target="ELV" id="178" weight="0.9416467842840761" />
-      <edge source="CVX" target="XOM" id="179" weight="1.4224721534111073" />
-      <edge source="D" target="DTE" id="180" weight="1.271035228550637" />
-      <edge source="DAL" target="UAL" id="181" weight="1.488861489278956" />
-      <edge source="DAL" target="LUV" id="182" weight="1.1208137147093522" />
-      <edge source="DAY" target="PAYC" id="183" weight="1.0519154827939479" />
-      <edge source="DAY" target="INTU" id="184" weight="1.0256119767315912" />
-      <edge source="DD" target="DOW" id="185" weight="1.1806781569469926" />
-      <edge source="DD" target="FCX" id="186" weight="1.0610968620497356" />
-      <edge source="DG" target="DLTR" id="187" weight="0.960592780898955" />
-      <edge source="DGX" target="LH" id="188" weight="1.1309352009654638" />
-      <edge source="DHI" target="LEN" id="189" weight="1.5910169533674554" />
-      <edge source="DHR" target="TMO" id="190" weight="1.3689466334972267" />
-      <edge source="DHR" target="WST" id="191" weight="0.8617012933462109" />
-      <edge source="DIS" target="NWSA" id="192" weight="1.013059138445885" />
-      <edge source="DLR" target="EQIX" id="193" weight="1.2646248473655217" />
-      <edge source="DLTR" target="TGT" id="194" weight="0.8780085685919381" />
-      <edge source="DOC" target="VTR" id="195" weight="1.1721342921047084" />
-      <edge source="DOV" target="PH" id="196" weight="1.3506730809533591" />
-      <edge source="DOV" target="PNR" id="197" weight="1.304447245847837" />
-      <edge source="DOV" target="ITW" id="198" weight="1.2923980191604305" />
-      <edge source="DOV" target="FTV" id="199" weight="1.2510893734975794" />
-      <edge source="DOV" target="IEX" id="200" weight="1.2261056341045882" />
-      <edge source="DOV" target="TRMB" id="201" weight="1.1492605083406968" />
-      <edge source="DOV" target="XYL" id="202" weight="1.1414159735930944" />
-      <edge source="DOV" target="J" id="203" weight="1.132804513522698" />
-      <edge source="DOV" target="TDY" id="204" weight="1.1257948082282994" />
-      <edge source="DOV" target="JBHT" id="205" weight="1.097402590548905" />
-      <edge source="DOV" target="NUE" id="206" weight="1.0911379633476064" />
-      <edge source="DOV" target="RL" id="207" weight="1.0366170594705468" />
-      <edge source="DOW" target="LYB" id="208" weight="1.5351948743082855" />
-      <edge source="DOW" target="LKQ" id="209" weight="1.0194069001005954" />
-      <edge source="DPZ" target="YUM" id="210" weight="0.917705099044724" />
-      <edge source="DRI" target="FDS" id="211" weight="0.9445287375356199" />
-      <edge source="DTE" target="PPL" id="212" weight="1.4099839610729643" />
-      <edge source="DTE" target="ES" id="213" weight="1.2868846795071325" />
-      <edge source="DUK" target="SO" id="214" weight="1.4308105047619626" />
-      <edge source="DUK" target="ED" id="215" weight="1.4124030277162842" />
-      <edge source="DVA" target="SYK" id="216" weight="0.866020461598666" />
-      <edge source="DVN" target="FANG" id="217" weight="1.4559222477979386" />
-      <edge source="DVN" target="OXY" id="218" weight="1.4288816472088062" />
-      <edge source="DXCM" target="ISRG" id="219" weight="0.834039483493723" />
-      <edge source="EA" target="TTWO" id="220" weight="0.869205474095597" />
-      <edge source="EBAY" target="SPGI" id="221" weight="0.9605813603571729" />
-      <edge source="ECL" target="PPG" id="222" weight="1.0786573863524302" />
-      <edge source="ED" target="WEC" id="223" weight="1.4295859768480663" />
-      <edge source="EFX" target="MCO" id="224" weight="1.150151232828391" />
-      <edge source="EG" target="L" id="225" weight="1.1360552751705253" />
-      <edge source="EIX" target="PPL" id="226" weight="1.1156404187258215" />
-      <edge source="EL" target="SBUX" id="227" weight="0.951984376996261" />
-      <edge source="ELV" target="MOH" id="228" weight="1.2126079363160356" />
-      <edge source="ELV" target="UNH" id="229" weight="1.0545275597385628" />
-      <edge source="EMN" target="LYB" id="230" weight="1.248667599659079" />
-      <edge source="EMN" target="PPG" id="231" weight="1.1578489446194844" />
-      <edge source="EMR" target="PH" id="232" weight="1.2285147430301415" />
-      <edge source="EQIX" target="IRM" id="233" weight="1.1110170314029872" />
-      <edge source="EQIX" target="PLD" id="234" weight="1.0917579810893303" />
-      <edge source="EQR" target="UDR" id="235" weight="1.5992822454764393" />
-      <edge source="EQR" target="ESS" id="236" weight="1.56638717344548" />
-      <edge source="EQR" target="INVH" id="237" weight="1.3350612342786308" />
-      <edge source="ETN" target="PWR" id="238" weight="1.2424528636643934" />
-      <edge source="ETN" target="PH" id="239" weight="1.2410931446211058" />
-      <edge source="ETN" target="TT" id="240" weight="1.2277798418042507" />
-      <edge source="ETN" target="ORCL" id="241" weight="1.0081718728875522" />
-      <edge source="ETR" target="LNT" id="242" weight="1.2609841861319224" />
-      <edge source="EVRG" target="LNT" id="243" weight="1.3929571820100606" />
-      <edge source="EW" target="SYK" id="244" weight="0.927094994724454" />
-      <edge source="EXPD" target="JBHT" id="245" weight="1.1116115419270196" />
-      <edge source="EXPE" target="MAR" id="246" weight="1.1170886810839535" />
-      <edge source="EXPE" target="TTWO" id="247" weight="0.876111411582627" />
-      <edge source="EXR" target="PSA" id="248" weight="1.4485548571618474" />
-      <edge source="F" target="GM" id="249" weight="1.248959740071112" />
-      <edge source="FANG" target="HAL" id="250" weight="1.3559759277843593" />
-      <edge source="FANG" target="OKE" id="251" weight="1.190862444559948" />
-      <edge source="FAST" target="GWW" id="252" weight="1.2680241257547586" />
-      <edge source="FCX" target="NEM" id="253" weight="0.95899179562721" />
-      <edge source="FDS" target="SPGI" id="254" weight="1.073884432847523" />
-      <edge source="FDX" target="UPS" id="255" weight="1.0856307409988535" />
-      <edge source="FE" target="PPL" id="256" weight="1.2963701581386173" />
-      <edge source="FI" target="MA" id="257" weight="0.95930179088149" />
-      <edge source="FIS" target="JKHY" id="258" weight="0.996619256930176" />
-      <edge source="FIS" target="GPN" id="259" weight="0.993132389690816" />
-      <edge source="FITB" target="HBAN" id="260" weight="1.5248487410142082" />
-      <edge source="FITB" target="RF" id="261" weight="1.49610623950788" />
-      <edge source="FITB" target="USB" id="262" weight="1.47119614075451" />
-      <edge source="FITB" target="PNC" id="263" weight="1.461488264068949" />
-      <edge source="FOX" target="FOXA" id="264" weight="1.845490994555644" />
-      <edge source="FOX" target="NWS" id="265" weight="1.0221904568696607" />
-      <edge source="FOX" target="WBD" id="266" weight="0.999698146919616" />
-      <edge source="FRT" target="REG" id="267" weight="1.5236565808036988" />
-      <edge source="FRT" target="KIM" id="268" weight="1.4962480479209121" />
-      <edge source="FRT" target="SPG" id="269" weight="1.3154118341092123" />
-      <edge source="FTNT" target="NOW" id="270" weight="0.9447094458970029" />
-      <edge source="GD" target="LHX" id="271" weight="1.11480682519734" />
-      <edge source="GD" target="TXT" id="272" weight="1.0529666042023318" />
-      <edge source="GD" target="HII" id="273" weight="1.0524824631392848" />
-      <edge source="GD" target="RTX" id="274" weight="1.0389647842256458" />
-      <edge source="GD" target="LDOS" id="275" weight="1.0217268329168647" />
-      <edge source="GE" target="HWM" id="276" weight="1.0758112508291975" />
-      <edge source="GEN" target="PRU" id="277" weight="0.931372007716939" />
-      <edge source="GILD" target="INCY" id="278" weight="0.88788912600046" />
-      <edge source="GIS" target="PEP" id="279" weight="1.1212311690301018" />
-      <edge source="GIS" target="SJM" id="280" weight="1.0876028693339412" />
-      <edge source="GIS" target="HSY" id="281" weight="1.0619333965305033" />
-      <edge source="GIS" target="HRL" id="282" weight="0.98607326719128" />
-      <edge source="GIS" target="K" id="283" weight="0.9152149997471879" />
-      <edge source="GLW" target="TEL" id="284" weight="1.1141932777137047" />
-      <edge source="GM" target="GS" id="285" weight="1.0357353083410823" />
-      <edge source="GNRC" target="PNR" id="286" weight="1.0300377058820571" />
-      <edge source="GOOG" target="GOOGL" id="287" weight="1.933205750670829" />
-      <edge source="GPC" target="ITW" id="288" weight="0.9857946572026921" />
-      <edge source="GRMN" target="IEX" id="289" weight="1.0377589259801017" />
-      <edge source="GS" target="MS" id="290" weight="1.3961444653001687" />
-      <edge source="GWW" target="ITW" id="291" weight="1.1408445134430645" />
-      <edge source="HAL" target="SLB" id="292" weight="1.4504207294401454" />
-      <edge source="HAS" target="SWK" id="293" weight="1.024258318578924" />
-      <edge source="HBAN" target="KEY" id="294" weight="1.4766066986426103" />
-      <edge source="HBAN" target="TFC" id="295" weight="1.4597466512003554" />
-      <edge source="HBAN" target="PRU" id="296" weight="1.2921057659201516" />
-      <edge source="HCA" target="UHS" id="297" weight="1.2675943742491262" />
-      <edge source="HCA" target="SYK" id="298" weight="0.929798949790497" />
-      <edge source="HD" target="LOW" id="299" weight="1.5047754882750293" />
-      <edge source="HD" target="TSCO" id="300" weight="1.0177405333364518" />
-      <edge source="HIG" target="L" id="301" weight="1.3716214201172707" />
-      <edge source="HIG" target="TRV" id="302" weight="1.3194333965508709" />
-      <edge source="HIG" target="WRB" id="303" weight="1.2070656915027773" />
-      <edge source="HLT" target="MAR" id="304" weight="1.503502087173415" />
-      <edge source="HLT" target="RCL" id="305" weight="1.1052923589076942" />
-      <edge source="HOLX" target="ZBH" id="306" weight="0.9293005631469959" />
-      <edge source="HON" target="ITW" id="307" weight="1.1177348597311259" />
-      <edge source="HPE" target="HPQ" id="308" weight="1.0804263625145119" />
-      <edge source="HPQ" target="NXPI" id="309" weight="1.0928316989470979" />
-      <edge source="HPQ" target="NTAP" id="310" weight="1.059086057575829" />
-      <edge source="HRL" target="TSN" id="311" weight="0.8992892299642781" />
-      <edge source="HSIC" target="ITW" id="312" weight="0.926375103890485" />
-      <edge source="HST" target="MAR" id="313" weight="1.2075469499870297" />
-      <edge source="HST" target="SPG" id="314" weight="1.1175237789021222" />
-      <edge source="HUM" target="UNH" id="315" weight="1.0319840906976032" />
-      <edge source="HWM" target="PH" id="316" weight="1.110497674742987" />
-      <edge source="HWM" target="TDG" id="317" weight="1.100018475511388" />
-      <edge source="ICE" target="MCO" id="318" weight="1.1133309445054644" />
-      <edge source="IDXX" target="ZTS" id="319" weight="1.0604817284555537" />
-      <edge source="IDXX" target="MCO" id="320" weight="1.0028184555818116" />
-      <edge source="IDXX" target="RMD" id="321" weight="0.890759636389153" />
-      <edge source="IFF" target="SWK" id="322" weight="0.959298278053182" />
-      <edge source="INTC" target="MCHP" id="323" weight="1.024046114031349" />
-      <edge source="INTU" target="NOW" id="324" weight="1.0876086336081947" />
-      <edge source="IP" target="PKG" id="325" weight="1.1995858535786632" />
-      <edge source="IP" target="SW" id="326" weight="0.8712901992690809" />
-      <edge source="IPG" target="OMC" id="327" weight="1.40272919418535" />
-      <edge source="IPG" target="SWK" id="328" weight="1.0569348779414875" />
-      <edge source="IQV" target="TMO" id="329" weight="1.2165013471876036" />
-      <edge source="IQV" target="LH" id="330" weight="1.0719608059116976" />
-      <edge source="IR" target="PH" id="331" weight="1.324858547858562" />
-      <edge source="ISRG" target="SYK" id="332" weight="1.1300077073494021" />
-      <edge source="ISRG" target="NFLX" id="333" weight="0.955485693783565" />
-      <edge source="IT" target="TDG" id="334" weight="1.0179175656736232" />
-      <edge source="IT" target="VRTX" id="335" weight="0.944946496523243" />
-      <edge source="ITW" target="NDSN" id="336" weight="1.2356493933877473" />
-      <edge source="ITW" target="PPG" id="337" weight="1.2194222996774908" />
-      <edge source="ITW" target="SNA" id="338" weight="1.1452085893641126" />
-      <edge source="ITW" target="TXT" id="339" weight="1.13776081224694" />
-      <edge source="ITW" target="OTIS" id="340" weight="1.0984290092456672" />
-      <edge source="ITW" target="PKG" id="341" weight="1.086681157606466" />
-      <edge source="IVZ" target="TROW" id="342" weight="1.2719686889908837" />
-      <edge source="JBHT" target="ODFL" id="343" weight="1.2223536331167788" />
-      <edge source="JCI" target="PH" id="344" weight="1.1862321398410165" />
-      <edge source="JNJ" target="PFE" id="345" weight="0.9533940007885571" />
-      <edge source="JNJ" target="MRK" id="346" weight="0.915742296110017" />
-      <edge source="KDP" target="PEP" id="347" weight="1.0679427269972925" />
-      <edge source="KEYS" target="TEL" id="348" weight="1.1283679858306916" />
-      <edge source="KIM" target="VTRS" id="349" weight="0.925017431911576" />
-      <edge source="KLAC" target="LRCX" id="350" weight="1.575912035490362" />
-      <edge source="KLAC" target="MPWR" id="351" weight="1.2799661382702539" />
-      <edge source="KMB" target="PG" id="352" weight="1.242171771903224" />
-      <edge source="KMI" target="WMB" id="353" weight="1.441684327816449" />
-      <edge source="KMI" target="OKE" id="354" weight="1.2797369324350638" />
-      <edge source="KMX" target="PNR" id="355" weight="1.0455267164969109" />
-      <edge source="KO" target="PEP" id="356" weight="1.1777679242976704" />
-      <edge source="KO" target="SO" id="357" weight="1.0680695389343577" />
-      <edge source="KO" target="MCD" id="358" weight="0.9882105073898899" />
-      <edge source="KO" target="PM" id="359" weight="0.978622989326897" />
-      <edge source="KR" target="SYY" id="360" weight="0.8268181329738049" />
-      <edge source="L" target="SYY" id="361" weight="0.9624499158301829" />
-      <edge source="LEN" target="PHM" id="362" weight="1.5770869590131564" />
-      <edge source="LHX" target="LMT" id="363" weight="1.1007261427954043" />
-      <edge source="LHX" target="NOC" id="364" weight="1.08135034506151" />
-      <edge source="LIN" target="PPG" id="365" weight="1.096135522723337" />
-      <edge source="LLY" target="MRK" id="366" weight="0.8426078535384991" />
-      <edge source="LNT" target="NI" id="367" weight="1.3706173744956536" />
-      <edge source="LNT" target="PNW" id="368" weight="1.3419298018627526" />
-      <edge source="LNT" target="XEL" id="369" weight="1.3397118906215963" />
-      <edge source="LNT" target="NEE" id="370" weight="1.1709592346988316" />
-      <edge source="LOW" target="MAS" id="371" weight="1.2966092397003952" />
-      <edge source="LRCX" target="MU" id="372" weight="1.2566298479093425" />
-      <edge source="LVS" target="WYNN" id="373" weight="1.326743050217044" />
-      <edge source="LW" target="SYY" id="374" weight="0.818099037060612" />
-      <edge source="LYB" target="SLB" id="375" weight="1.077083524416138" />
-      <edge source="LYV" target="MS" id="376" weight="0.99370102227748" />
-      <edge source="MA" target="V" id="377" weight="1.4766604932143026" />
-      <edge source="MA" target="MCO" id="378" weight="1.156661525169381" />
-      <edge source="MAR" target="MGM" id="379" weight="1.1045936771811253" />
-      <edge source="MAS" target="SWK" id="380" weight="1.3184139042626561" />
-      <edge source="MAS" target="PHM" id="381" weight="1.285117436836718" />
-      <edge source="MAS" target="PNR" id="382" weight="1.2817137817677358" />
-      <edge source="MAS" target="MHK" id="383" weight="1.2702400458734893" />
-      <edge source="MAS" target="POOL" id="384" weight="1.2518653302372824" />
-      <edge source="MAS" target="SHW" id="385" weight="1.195192075044914" />
-      <edge source="MAS" target="WY" id="386" weight="1.174312578127528" />
-      <edge source="MCD" target="YUM" id="387" weight="1.0712991555014657" />
-      <edge source="MCO" target="SPGI" id="388" weight="1.4826677966104487" />
-      <edge source="MCO" target="NDAQ" id="389" weight="1.1332288074000245" />
-      <edge source="MCO" target="ROP" id="390" weight="1.127533961278946" />
-      <edge source="MCO" target="SYK" id="391" weight="1.0443589393491002" />
-      <edge source="MCO" target="TJX" id="392" weight="0.999362511435467" />
-      <edge source="MDLZ" target="PEP" id="393" weight="1.158810214159338" />
-      <edge source="MDLZ" target="MKC" id="394" weight="1.0256220110807286" />
-      <edge source="MDT" target="SYK" id="395" weight="1.0239856726274101" />
-      <edge source="MET" target="PRU" id="396" weight="1.509160413743074" />
-      <edge source="MGM" target="WYNN" id="397" weight="1.1569630666926936" />
-      <edge source="MHK" target="MMM" id="398" weight="1.0504505644214994" />
-      <edge source="MLM" target="VMC" id="399" weight="1.583372064163488" />
-      <edge source="MLM" target="PNR" id="400" weight="1.1109721835613469" />
-      <edge source="MMC" target="WTW" id="401" weight="1.1065266902773512" />
-      <edge source="MMC" target="VRSK" id="402" weight="1.0570721983382128" />
-      <edge source="MMC" target="RSG" id="403" weight="1.031842399281111" />
-      <edge source="MNST" target="PEP" id="404" weight="0.982854054556823" />
-      <edge source="MO" target="PM" id="405" weight="1.0123437352558322" />
-      <edge source="MPC" target="VLO" id="406" weight="1.5175258105042164" />
-      <edge source="MPWR" target="NXPI" id="407" weight="1.2778587296265111" />
-      <edge source="MRNA" target="PFE" id="408" weight="0.91078125369075" />
-      <edge source="MSCI" target="SPGI" id="409" weight="1.1398949745831055" />
-      <edge source="MSFT" target="NVDA" id="410" weight="1.0848170845068652" />
-      <edge source="MSFT" target="NOW" id="411" weight="1.0835753655520017" />
-      <edge source="MTB" target="RF" id="412" weight="1.3940464832158534" />
-      <edge source="MTCH" target="TROW" id="413" weight="0.985074998611513" />
-      <edge source="MTD" target="SWK" id="414" weight="1.0984997952601043" />
-      <edge source="MU" target="WDC" id="415" weight="1.2262761093155978" />
-      <edge source="NI" target="PEG" id="416" weight="1.258815991767094" />
-      <edge source="NI" target="SRE" id="417" weight="1.1379973891365935" />
-      <edge source="NKE" target="SWK" id="418" weight="0.976614188071995" />
-      <edge source="NSC" target="UNP" id="419" weight="1.2333969120485482" />
-      <edge source="NVR" target="PHM" id="420" weight="1.4647017366097983" />
-      <edge source="NWS" target="NWSA" id="421" weight="1.7765619073083545" />
-      <edge source="NWSA" target="TROW" id="422" weight="1.0582252824620906" />
-      <edge source="NXPI" target="ON" id="423" weight="1.3803183866968665" />
-      <edge source="NXPI" target="QCOM" id="424" weight="1.2783489564791077" />
-      <edge source="NXPI" target="TEL" id="425" weight="1.1969638999217649" />
-      <edge source="O" target="VICI" id="426" weight="1.2413827773385022" />
-      <edge source="PEP" target="STZ" id="427" weight="0.958985415497926" />
-      <edge source="PFG" target="PRU" id="428" weight="1.4212889158608408" />
-      <edge source="PH" target="URI" id="429" weight="1.2648961317082885" />
-      <edge source="PH" target="WAB" id="430" weight="1.2248344429092164" />
-      <edge source="PH" target="ROK" id="431" weight="1.1890356362673171" />
-      <edge source="PLD" target="WY" id="432" weight="1.2173990364142622" />
-      <edge source="PSA" target="VICI" id="433" weight="1.1774176197948372" />
-      <edge source="PSKY" target="WBD" id="434" weight="1.0670458982011395" />
-      <edge source="PSX" target="VLO" id="435" weight="1.4151403839580392" />
-      <edge source="PYPL" target="TROW" id="436" weight="1.0443562193062017" />
-      <edge source="REG" target="VICI" id="437" weight="1.1955222540841688" />
-      <edge source="RJF" target="SCHW" id="438" weight="1.2021777142636294" />
-      <edge source="RL" target="TPR" id="439" weight="1.230211056110155" />
-      <edge source="RL" target="ULTA" id="440" weight="0.901110172024763" />
-      <edge source="ROST" target="TJX" id="441" weight="1.1823270706300089" />
-      <edge source="RSG" target="WM" id="442" weight="1.4153010098251184" />
-      <edge source="RVTY" target="TECH" id="443" weight="1.221925300500726" />
-      <edge source="SPGI" target="TYL" id="444" weight="1.0628300798629666" />
-      <edge source="STE" target="SYK" id="445" weight="1.0242595028165762" />
-      <edge source="STX" target="WDC" id="446" weight="1.2897609984869307" />
-      <edge source="STZ" target="TAP" id="447" weight="1.021689289059518" />
-      <edge source="SWK" target="UPS" id="448" weight="1.0484319754986058" />
-      <edge source="SYK" target="ZBH" id="449" weight="1.0433949031198004" />
-      <edge source="T" target="VZ" id="450" weight="1.2204993491323397" />
-      <edge source="TMUS" target="VZ" id="451" weight="0.944064331347547" />
-      <edge source="TRMB" target="ZBRA" id="452" weight="1.1174410395682468" />
-      <edge source="VTR" target="WELL" id="453" weight="1.3389702149173228" />
+      <edge source="A" target="WAT" id="0" weight="1.4570646993006875" />
+      <edge source="A" target="MTD" id="1" weight="1.3270993104682267" />
+      <edge source="A" target="TMO" id="2" weight="1.269368085180473" />
+      <edge source="AAPL" target="MSFT" id="3" weight="1.1060228092942976" />
+      <edge source="ABBV" target="JNJ" id="4" weight="0.942147469434955" />
+      <edge source="ABT" target="MDT" id="5" weight="1.0358635938243832" />
+      <edge source="ABT" target="RMD" id="6" weight="0.8766810414657129" />
+      <edge source="ABT" target="DXCM" id="7" weight="0.8081242300152649" />
+      <edge source="ACN" target="CTSH" id="8" weight="1.1058000628093971" />
+      <edge source="ACN" target="INTU" id="9" weight="1.0375398042166901" />
+      <edge source="ACN" target="EPAM" id="10" weight="1.0216827708698737" />
+      <edge source="ACN" target="IBM" id="11" weight="0.9867015412542679" />
+      <edge source="ADBE" target="NOW" id="12" weight="1.10911657077061" />
+      <edge source="ADI" target="MCHP" id="13" weight="1.4918166302653308" />
+      <edge source="ADM" target="GILD" id="14" weight="0.902650792252867" />
+      <edge source="ADP" target="PAYX" id="15" weight="1.371025535288869" />
+      <edge source="ADP" target="FTV" id="16" weight="1.0377084171331727" />
+      <edge source="ADSK" target="INTU" id="17" weight="1.1105684386081203" />
+      <edge source="ADSK" target="PTC" id="18" weight="1.0994535204836802" />
+      <edge source="ADSK" target="TROW" id="19" weight="1.0919818718518148" />
+      <edge source="ADSK" target="LYV" id="20" weight="0.986788944160828" />
+      <edge source="AEE" target="LNT" id="21" weight="1.5157742449220901" />
+      <edge source="AEE" target="EXC" id="22" weight="1.424482559185229" />
+      <edge source="AEP" target="LNT" id="23" weight="1.4590584322065414" />
+      <edge source="AES" target="NEE" id="24" weight="1.083615978546248" />
+      <edge source="AFL" target="MET" id="25" weight="1.178351590024827" />
+      <edge source="AFL" target="GL" id="26" weight="0.844660768605864" />
+      <edge source="AIG" target="HIG" id="27" weight="1.2745603591049792" />
+      <edge source="AIG" target="PRU" id="28" weight="1.2584248124678674" />
+      <edge source="AIZ" target="L" id="29" weight="1.0239526822183564" />
+      <edge source="AJG" target="MMC" id="30" weight="1.3993054730861862" />
+      <edge source="AJG" target="BRO" id="31" weight="1.2346882581147407" />
+      <edge source="AJG" target="MSI" id="32" weight="1.0585587676791177" />
+      <edge source="AJG" target="CAH" id="33" weight="0.9116687281640921" />
+      <edge source="AKAM" target="FFIV" id="34" weight="0.925161277132333" />
+      <edge source="ALB" target="MCHP" id="35" weight="0.992740459775461" />
+      <edge source="ALGN" target="IDXX" id="36" weight="1.006302605409862" />
+      <edge source="ALGN" target="WST" id="37" weight="0.96582036455794" />
+      <edge source="ALL" target="HIG" id="38" weight="1.0900895369096637" />
+      <edge source="ALL" target="PGR" id="39" weight="1.0626581998458664" />
+      <edge source="ALLE" target="MAS" id="40" weight="1.2304794076810033" />
+      <edge source="ALLE" target="TDY" id="41" weight="1.0943675752558166" />
+      <edge source="ALLE" target="CSGP" id="42" weight="1.0241238426133201" />
+      <edge source="ALLE" target="UHS" id="43" weight="0.961984527625078" />
+      <edge source="AMAT" target="LRCX" id="44" weight="1.6277508319661762" />
+      <edge source="AMAT" target="TER" id="45" weight="1.3566586111589012" />
+      <edge source="AMAT" target="SNPS" id="46" weight="1.2210603808355633" />
+      <edge source="AMAT" target="AMD" id="47" weight="1.206329271058319" />
+      <edge source="AMCR" target="EMN" id="48" weight="1.086239134455733" />
+      <edge source="AMCR" target="BALL" id="49" weight="0.98635005542913" />
+      <edge source="AME" target="PH" id="50" weight="1.226589913487043" />
+      <edge source="AME" target="HII" id="51" weight="0.97801371649194" />
+      <edge source="AMGN" target="BIIB" id="52" weight="0.898519572749197" />
+      <edge source="AMGN" target="REGN" id="53" weight="0.894883620618522" />
+      <edge source="AMP" target="RJF" id="54" weight="1.3592672460055188" />
+      <edge source="AMP" target="PFG" id="55" weight="1.281575652393419" />
+      <edge source="AMT" target="SBAC" id="56" weight="1.4310503727736563" />
+      <edge source="AMT" target="CCI" id="57" weight="1.4267501817785075" />
+      <edge source="AMT" target="EQIX" id="58" weight="1.1327398015607466" />
+      <edge source="AMT" target="AWK" id="59" weight="1.1136354750758939" />
+      <edge source="AMZN" target="MSFT" id="60" weight="1.1516664911491117" />
+      <edge source="AMZN" target="META" id="61" weight="1.0573128241648106" />
+      <edge source="ANET" target="AVGO" id="62" weight="1.1231358024352747" />
+      <edge source="AON" target="MMC" id="63" weight="1.2377204961800041" />
+      <edge source="AOS" target="MAS" id="64" weight="1.2088471010990394" />
+      <edge source="APA" target="DVN" id="65" weight="1.3805901046600217" />
+      <edge source="APD" target="LIN" id="66" weight="0.9657384166860321" />
+      <edge source="APH" target="TEL" id="67" weight="1.2438468683440211" />
+      <edge source="APH" target="KLAC" id="68" weight="1.229559434705418" />
+      <edge source="APH" target="ETN" id="69" weight="1.2210170275264334" />
+      <edge source="APH" target="PWR" id="70" weight="1.1733710695739479" />
+      <edge source="APH" target="GE" id="71" weight="1.0564871414386454" />
+      <edge source="APH" target="CEG" id="72" weight="0.976701200465655" />
+      <edge source="APTV" target="TEL" id="73" weight="1.1119615948871167" />
+      <edge source="ARE" target="BXP" id="74" weight="1.379489984432209" />
+      <edge source="ARE" target="DOC" id="75" weight="1.3674728633226552" />
+      <edge source="ARE" target="KIM" id="76" weight="1.2763517801432873" />
+      <edge source="ARE" target="PLD" id="77" weight="1.274533574513336" />
+      <edge source="ARE" target="UDR" id="78" weight="1.2532360546867263" />
+      <edge source="ATO" target="LNT" id="79" weight="1.3543123269347106" />
+      <edge source="AVB" target="EQR" id="80" weight="1.6337412918697045" />
+      <edge source="AVB" target="INVH" id="81" weight="1.342027125495803" />
+      <edge source="AVGO" target="KLAC" id="82" weight="1.2704394900001261" />
+      <edge source="AVGO" target="COST" id="83" weight="0.9659669499006149" />
+      <edge source="AVY" target="PPG" id="84" weight="1.110984736557997" />
+      <edge source="AWK" target="LNT" id="85" weight="1.277087156005416" />
+      <edge source="AWK" target="JNJ" id="86" weight="0.9380774300532191" />
+      <edge source="AWK" target="BIIB" id="87" weight="0.9087017559745829" />
+      <edge source="AXP" target="COF" id="88" weight="1.177358709298855" />
+      <edge source="AZO" target="ORLY" id="89" weight="1.2647341744799143" />
+      <edge source="AZO" target="GPC" id="90" weight="1.056591246959215" />
+      <edge source="BA" target="HWM" id="91" weight="0.9530143157898749" />
+      <edge source="BAC" target="WFC" id="92" weight="1.3509639114025997" />
+      <edge source="BAC" target="C" id="93" weight="1.3477546612826117" />
+      <edge source="BAC" target="FITB" id="94" weight="1.3359935807132417" />
+      <edge source="BAC" target="PRU" id="95" weight="1.2668232293754351" />
+      <edge source="BAC" target="JPM" id="96" weight="1.256776074633832" />
+      <edge source="BAC" target="GS" id="97" weight="1.2337738218467513" />
+      <edge source="BAX" target="MDT" id="98" weight="0.9836427480650589" />
+      <edge source="BBY" target="HPQ" id="99" weight="0.99994007228443" />
+      <edge source="BBY" target="TGT" id="100" weight="0.9459880352153021" />
+      <edge source="BDX" target="STE" id="101" weight="0.983403185576482" />
+      <edge source="BEN" target="IVZ" id="102" weight="1.3090311840523279" />
+      <edge source="BF-B" target="STZ" id="103" weight="1.0078391253064938" />
+      <edge source="BK" target="STT" id="104" weight="1.390465081596269" />
+      <edge source="BK" target="NTRS" id="105" weight="1.2366795778365591" />
+      <edge source="BK" target="PRU" id="106" weight="1.2333151547722943" />
+      <edge source="BKNG" target="HLT" id="107" weight="1.062836224235868" />
+      <edge source="BKR" target="HAL" id="108" weight="1.3130796685436459" />
+      <edge source="BLK" target="TROW" id="109" weight="1.3052239822779579" />
+      <edge source="BLK" target="MCO" id="110" weight="1.2510683091205732" />
+      <edge source="BLK" target="MS" id="111" weight="1.161116561240803" />
+      <edge source="BLK" target="IQV" id="112" weight="1.0624741082710707" />
+      <edge source="BMY" target="JNJ" id="113" weight="0.9515428414709111" />
+      <edge source="BR" target="PAYX" id="114" weight="1.0825797654049019" />
+      <edge source="BRK-B" target="L" id="115" weight="1.2235982125302174" />
+      <edge source="BRK-B" target="MMC" id="116" weight="1.1359984216760024" />
+      <edge source="BRK-B" target="MA" id="117" weight="1.1041462654945677" />
+      <edge source="BRK-B" target="SYY" id="118" weight="0.954266644677535" />
+      <edge source="BSX" target="SYK" id="119" weight="1.1579451057549952" />
+      <edge source="BXP" target="GEN" id="120" weight="0.919164704687244" />
+      <edge source="C" target="SYF" id="121" weight="1.169968169458945" />
+      <edge source="C" target="DAL" id="122" weight="1.04083450878155" />
+      <edge source="CAG" target="GIS" id="123" weight="1.268170153920133" />
+      <edge source="CAG" target="KHC" id="124" weight="1.1124309367427312" />
+      <edge source="CAG" target="SJM" id="125" weight="1.1038401342306061" />
+      <edge source="CAG" target="HRL" id="126" weight="0.9381234078683891" />
+      <edge source="CAH" target="COR" id="127" weight="1.162449562045543" />
+      <edge source="CARR" target="TT" id="128" weight="1.2025530460821041" />
+      <edge source="CAT" target="URI" id="129" weight="1.2064438728250844" />
+      <edge source="CAT" target="CMI" id="130" weight="1.1225889349233056" />
+      <edge source="CAT" target="DE" id="131" weight="1.110029137533156" />
+      <edge source="CAT" target="TXT" id="132" weight="1.0556908010831925" />
+      <edge source="CB" target="HIG" id="133" weight="1.2974438427508663" />
+      <edge source="CB" target="TRV" id="134" weight="1.2696524555895623" />
+      <edge source="CB" target="WRB" id="135" weight="1.175431679245428" />
+      <edge source="CB" target="EG" id="136" weight="1.08449025859508" />
+      <edge source="CBOE" target="CME" id="137" weight="0.8479759440535799" />
+      <edge source="CBRE" target="IVZ" id="138" weight="1.1811899048355787" />
+      <edge source="CBRE" target="MAS" id="139" weight="1.177243269475099" />
+      <edge source="CCI" target="VZ" id="140" weight="0.903258004937743" />
+      <edge source="CCL" target="NCLH" id="141" weight="1.3847585813567636" />
+      <edge source="CCL" target="RCL" id="142" weight="1.334348543299372" />
+      <edge source="CCL" target="DAL" id="143" weight="1.0438703834238365" />
+      <edge source="CDNS" target="SNPS" id="144" weight="1.531268169420687" />
+      <edge source="CDNS" target="MSFT" id="145" weight="1.1111317206602118" />
+      <edge source="CDNS" target="CPRT" id="146" weight="1.0652185134945293" />
+      <edge source="CDNS" target="ORCL" id="147" weight="0.981606695092893" />
+      <edge source="CDW" target="SWKS" id="148" weight="1.0679361951162725" />
+      <edge source="CEG" target="NRG" id="149" weight="0.971646868945381" />
+      <edge source="CF" target="MOS" id="150" weight="1.2178318270030344" />
+      <edge source="CFG" target="FITB" id="151" weight="1.464373659924744" />
+      <edge source="CHD" target="PG" id="152" weight="1.1305641742463466" />
+      <edge source="CHRW" target="EXPD" id="153" weight="1.0315265547061263" />
+      <edge source="CHTR" target="CMCSA" id="154" weight="1.1530222669292427" />
+      <edge source="CI" target="ELV" id="155" weight="1.0409804487728112" />
+      <edge source="CINF" target="L" id="156" weight="1.1993164672409053" />
+      <edge source="CL" target="PG" id="157" weight="1.1842149801514754" />
+      <edge source="CL" target="KO" id="158" weight="1.113094874780362" />
+      <edge source="CLX" target="PG" id="159" weight="1.0187976428928478" />
+      <edge source="CMCSA" target="SWK" id="160" weight="0.9793217215877219" />
+      <edge source="CME" target="ICE" id="161" weight="0.897835575186275" />
+      <edge source="CMG" target="MSFT" id="162" weight="0.992582148313849" />
+      <edge source="CMI" target="PCAR" id="163" weight="1.1970706265385809" />
+      <edge source="CMS" target="WEC" id="164" weight="1.5358471570142214" />
+      <edge source="CMS" target="DTE" id="165" weight="1.519167644302399" />
+      <edge source="CMS" target="PEG" id="166" weight="1.318715068521169" />
+      <edge source="CNC" target="MOH" id="167" weight="1.1971830735514248" />
+      <edge source="CNC" target="ELV" id="168" weight="1.1575404277407941" />
+      <edge source="CNP" target="LNT" id="169" weight="1.3465666851104974" />
+      <edge source="COF" target="SYF" id="170" weight="1.4169965452633617" />
+      <edge source="COO" target="MCO" id="171" weight="1.054442168093027" />
+      <edge source="COP" target="EOG" id="172" weight="1.4464658449822951" />
+      <edge source="COP" target="XOM" id="173" weight="1.3672849001351262" />
+      <edge source="COP" target="OXY" id="174" weight="1.3556725148129516" />
+      <edge source="COP" target="MPC" id="175" weight="1.146510835746873" />
+      <edge source="COR" target="MCK" id="176" weight="1.1578489147754745" />
+      <edge source="COR" target="ELV" id="177" weight="0.8881825342916121" />
+      <edge source="COST" target="WMT" id="178" weight="0.963282639611408" />
+      <edge source="CPAY" target="TROW" id="179" weight="1.0805646177335169" />
+      <edge source="CPB" target="GIS" id="180" weight="1.239777467432305" />
+      <edge source="CPRT" target="TTWO" id="181" weight="0.9250165530865211" />
+      <edge source="CPT" target="MAA" id="182" weight="1.5741236600380297" />
+      <edge source="CPT" target="UDR" id="183" weight="1.5094134084209263" />
+      <edge source="CRL" target="IQV" id="184" weight="1.2176748799119177" />
+      <edge source="CRM" target="NOW" id="185" weight="1.1416368402240995" />
+      <edge source="CSCO" target="FFIV" id="186" weight="1.0348690406219887" />
+      <edge source="CSX" target="NSC" id="187" weight="1.275782414422897" />
+      <edge source="CSX" target="ITW" id="188" weight="1.082817422723771" />
+      <edge source="CTAS" target="ROP" id="189" weight="1.0774185893140453" />
+      <edge source="CTAS" target="VRSK" id="190" weight="1.018436755037278" />
+      <edge source="CTAS" target="ROL" id="191" weight="0.9035191995048351" />
+      <edge source="CTRA" target="DVN" id="192" weight="1.2269426969979056" />
+      <edge source="CTRA" target="KMI" id="193" weight="1.1478797900370004" />
+      <edge source="CTVA" target="MOS" id="194" weight="0.9929904435590491" />
+      <edge source="CVS" target="ELV" id="195" weight="0.9571242575876311" />
+      <edge source="CVX" target="XOM" id="196" weight="1.4125538317891828" />
+      <edge source="D" target="DTE" id="197" weight="1.2834117615904954" />
+      <edge source="DAL" target="UAL" id="198" weight="1.3980513240979906" />
+      <edge source="DAL" target="LUV" id="199" weight="1.0833438587209403" />
+      <edge source="DAY" target="INTU" id="200" weight="1.1120978845076674" />
+      <edge source="DAY" target="PAYC" id="201" weight="1.0526794147629803" />
+      <edge source="DD" target="EMN" id="202" weight="1.1239173188210096" />
+      <edge source="DG" target="DLTR" id="203" weight="0.9660306068717901" />
+      <edge source="DGX" target="LH" id="204" weight="1.1076951353040134" />
+      <edge source="DHI" target="LEN" id="205" weight="1.58909056739477" />
+      <edge source="DHR" target="TMO" id="206" weight="1.3702294509379016" />
+      <edge source="DIS" target="NWSA" id="207" weight="0.9862014645447419" />
+      <edge source="DLR" target="EQIX" id="208" weight="1.2806920369919477" />
+      <edge source="DLTR" target="TGT" id="209" weight="0.839079011284892" />
+      <edge source="DOC" target="VTR" id="210" weight="1.2154663833418162" />
+      <edge source="DOV" target="PH" id="211" weight="1.270505077135323" />
+      <edge source="DOV" target="ITW" id="212" weight="1.2646203701330077" />
+      <edge source="DOV" target="PNR" id="213" weight="1.2631560584293808" />
+      <edge source="DOV" target="IEX" id="214" weight="1.2476649080966702" />
+      <edge source="DOV" target="NDSN" id="215" weight="1.1647579494881677" />
+      <edge source="DOV" target="XYL" id="216" weight="1.1350850250814102" />
+      <edge source="DOV" target="J" id="217" weight="1.0713357690773317" />
+      <edge source="DOV" target="JBHT" id="218" weight="1.0433741906474645" />
+      <edge source="DOW" target="LYB" id="219" weight="1.4920646610417934" />
+      <edge source="DOW" target="EMN" id="220" weight="1.2761811300451136" />
+      <edge source="DOW" target="FCX" id="221" weight="1.1082904504902404" />
+      <edge source="DOW" target="NUE" id="222" weight="1.0645929983547462" />
+      <edge source="DOW" target="MOS" id="223" weight="1.0161876672784806" />
+      <edge source="DPZ" target="YUM" id="224" weight="0.874629805078849" />
+      <edge source="DRI" target="MCD" id="225" weight="0.9389635261942539" />
+      <edge source="DTE" target="PPL" id="226" weight="1.4533206319647574" />
+      <edge source="DTE" target="KO" id="227" weight="1.0729381041165333" />
+      <edge source="DUK" target="LNT" id="228" weight="1.4767266646771227" />
+      <edge source="DUK" target="SO" id="229" weight="1.4222555702204627" />
+      <edge source="DUK" target="EIX" id="230" weight="1.3308722356951987" />
+      <edge source="DVA" target="EW" id="231" weight="0.850738926105657" />
+      <edge source="DVN" target="FANG" id="232" weight="1.3853760445195273" />
+      <edge source="EA" target="TTWO" id="233" weight="0.973733210912499" />
+      <edge source="EBAY" target="TROW" id="234" weight="1.0573161367642605" />
+      <edge source="ECL" target="PPG" id="235" weight="1.0788487241244002" />
+      <edge source="ED" target="WEC" id="236" weight="1.4710913770559144" />
+      <edge source="EFX" target="MCO" id="237" weight="1.1565281861131764" />
+      <edge source="EL" target="SBUX" id="238" weight="0.983219193367808" />
+      <edge source="EL" target="NKE" id="239" weight="0.924164588899903" />
+      <edge source="ELV" target="UNH" id="240" weight="1.199933690225526" />
+      <edge source="EMN" target="PPG" id="241" weight="1.2184880221835863" />
+      <edge source="EMN" target="PKG" id="242" weight="1.1155119893182501" />
+      <edge source="EMN" target="IFF" id="243" weight="0.9374573274880229" />
+      <edge source="EMR" target="PH" id="244" weight="1.1303543107009921" />
+      <edge source="EOG" target="FANG" id="245" weight="1.3890480992527716" />
+      <edge source="EOG" target="HAL" id="246" weight="1.3489876173274593" />
+      <edge source="EQIX" target="PLD" id="247" weight="1.136229794173833" />
+      <edge source="EQR" target="UDR" id="248" weight="1.5906682656386608" />
+      <edge source="EQR" target="ESS" id="249" weight="1.5471220801524583" />
+      <edge source="ES" target="PPL" id="250" weight="1.3408467682356342" />
+      <edge source="ETN" target="PH" id="251" weight="1.2447761091243585" />
+      <edge source="ETN" target="TT" id="252" weight="1.229699468223933" />
+      <edge source="ETR" target="LNT" id="253" weight="1.3924483479552323" />
+      <edge source="EVRG" target="LNT" id="254" weight="1.4298954682513902" />
+      <edge source="EW" target="WST" id="255" weight="0.960563033188337" />
+      <edge source="EXPD" target="JBHT" id="256" weight="1.056195881768526" />
+      <edge source="EXPE" target="MAR" id="257" weight="1.0679285216644048" />
+      <edge source="EXR" target="PSA" id="258" weight="1.4078991976383446" />
+      <edge source="F" target="GM" id="259" weight="1.2917915721776745" />
+      <edge source="F" target="LKQ" id="260" weight="1.0049217790197766" />
+      <edge source="FAST" target="GWW" id="261" weight="1.2817353111797511" />
+      <edge source="FCX" target="NEM" id="262" weight="0.984250701091" />
+      <edge source="FDS" target="SPGI" id="263" weight="1.0283859649427587" />
+      <edge source="FDX" target="UPS" id="264" weight="1.0089792990533757" />
+      <edge source="FE" target="PPL" id="265" weight="1.3767227757401965" />
+      <edge source="FFIV" target="TXN" id="266" weight="1.05838318908626" />
+      <edge source="FFIV" target="IT" id="267" weight="1.0526278017830477" />
+      <edge source="FI" target="MA" id="268" weight="1.080450252431032" />
+      <edge source="FI" target="GPN" id="269" weight="1.072365810983551" />
+      <edge source="FI" target="JKHY" id="270" weight="1.0218932773379494" />
+      <edge source="FIS" target="GPN" id="271" weight="1.1190239998115412" />
+      <edge source="FITB" target="HBAN" id="272" weight="1.5099230913558386" />
+      <edge source="FITB" target="RF" id="273" weight="1.4591899463502398" />
+      <edge source="FITB" target="USB" id="274" weight="1.4423054334095875" />
+      <edge source="FITB" target="TFC" id="275" weight="1.4157764956339243" />
+      <edge source="FITB" target="PNC" id="276" weight="1.4147055199364003" />
+      <edge source="FOX" target="FOXA" id="277" weight="1.8432575515710876" />
+      <edge source="FOX" target="PSKY" id="278" weight="1.022735650377364" />
+      <edge source="FOX" target="NWSA" id="279" weight="0.9709360412061281" />
+      <edge source="FRT" target="REG" id="280" weight="1.5638196549220484" />
+      <edge source="FRT" target="KIM" id="281" weight="1.4921951426068953" />
+      <edge source="FRT" target="TSN" id="282" weight="0.8697698238080911" />
+      <edge source="FTNT" target="INTU" id="283" weight="0.887474572314336" />
+      <edge source="FTV" target="IEX" id="284" weight="1.24263444578565" />
+      <edge source="FTV" target="OTIS" id="285" weight="1.2203046981488885" />
+      <edge source="GD" target="LMT" id="286" weight="1.1139770484146787" />
+      <edge source="GD" target="HII" id="287" weight="1.1013983227072632" />
+      <edge source="GD" target="RTX" id="288" weight="1.0122679775922911" />
+      <edge source="GD" target="LDOS" id="289" weight="0.976926339937616" />
+      <edge source="GILD" target="JNJ" id="290" weight="0.90723705234581" />
+      <edge source="GILD" target="INCY" id="291" weight="0.884694052072194" />
+      <edge source="GIS" target="K" id="292" weight="1.0047013428660831" />
+      <edge source="GLW" target="TEL" id="293" weight="1.0842412312630532" />
+      <edge source="GM" target="GS" id="294" weight="1.0660266727348473" />
+      <edge source="GNRC" target="POOL" id="295" weight="1.0305641905334482" />
+      <edge source="GOOG" target="GOOGL" id="296" weight="1.932238371500623" />
+      <edge source="GOOG" target="MSFT" id="297" weight="1.1527694748541535" />
+      <edge source="GPC" target="ITW" id="298" weight="0.9838496253757301" />
+      <edge source="GRMN" target="TEL" id="299" weight="1.001132421473339" />
+      <edge source="GS" target="MS" id="300" weight="1.2450938247085719" />
+      <edge source="GWW" target="ITW" id="301" weight="1.141762443837104" />
+      <edge source="HAL" target="SLB" id="302" weight="1.4297483228523342" />
+      <edge source="HAL" target="LYB" id="303" weight="1.043076243428553" />
+      <edge source="HAS" target="MHK" id="304" weight="0.955142031319905" />
+      <edge source="HBAN" target="KEY" id="305" weight="1.4549972816310404" />
+      <edge source="HCA" target="UHS" id="306" weight="1.1827428419939072" />
+      <edge source="HD" target="LOW" id="307" weight="1.494290535707906" />
+      <edge source="HD" target="MAS" id="308" weight="1.2723282955972715" />
+      <edge source="HD" target="TSCO" id="309" weight="1.0554235633920204" />
+      <edge source="HIG" target="L" id="310" weight="1.3221530594325803" />
+      <edge source="HLT" target="MAR" id="311" weight="1.4901319323983588" />
+      <edge source="HOLX" target="IDXX" id="312" weight="0.9864317238691169" />
+      <edge source="HON" target="ITW" id="313" weight="1.0828285902263202" />
+      <edge source="HPE" target="HPQ" id="314" weight="1.061474213567993" />
+      <edge source="HPQ" target="TXN" id="315" weight="1.0460372956716086" />
+      <edge source="HSIC" target="PPG" id="316" weight="0.904242605084528" />
+      <edge source="HST" target="MAR" id="317" weight="1.1558128962521943" />
+      <edge source="HST" target="SPG" id="318" weight="1.0817842899797525" />
+      <edge source="HSY" target="MDLZ" id="319" weight="1.0693479060868514" />
+      <edge source="HUM" target="UNH" id="320" weight="1.171759972881652" />
+      <edge source="HWM" target="TDG" id="321" weight="1.155280578748259" />
+      <edge source="ICE" target="MCO" id="322" weight="1.1055344092283361" />
+      <edge source="ICE" target="NDAQ" id="323" weight="1.0589143757336528" />
+      <edge source="IDXX" target="ZTS" id="324" weight="1.1123804438493157" />
+      <edge source="IDXX" target="MCO" id="325" weight="1.07040018326333" />
+      <edge source="IDXX" target="ISRG" id="326" weight="1.0279768494205785" />
+      <edge source="INTC" target="MCHP" id="327" weight="1.1106666360313797" />
+      <edge source="INTU" target="NOW" id="328" weight="1.118938310305163" />
+      <edge source="IP" target="PKG" id="329" weight="1.2274046748223466" />
+      <edge source="IPG" target="OMC" id="330" weight="1.3644829659526647" />
+      <edge source="IPG" target="SWK" id="331" weight="1.0323201069844647" />
+      <edge source="IQV" target="TMO" id="332" weight="1.1416269307946671" />
+      <edge source="IQV" target="LH" id="333" weight="1.062537082431382" />
+      <edge source="IR" target="PH" id="334" weight="1.3509051156130405" />
+      <edge source="IR" target="WAB" id="335" weight="1.2039195234972864" />
+      <edge source="IRM" target="PLD" id="336" weight="1.1403883421994352" />
+      <edge source="ISRG" target="SYK" id="337" weight="1.114713115770646" />
+      <edge source="ITW" target="PPG" id="338" weight="1.1777139015565048" />
+      <edge source="ITW" target="SNA" id="339" weight="1.1327789648050794" />
+      <edge source="ITW" target="UPS" id="340" weight="1.0131112053308677" />
+      <edge source="IVZ" target="TROW" id="341" weight="1.2838297674766983" />
+      <edge source="IVZ" target="KMX" id="342" weight="1.0626259422119912" />
+      <edge source="IVZ" target="VTRS" id="343" weight="0.9383173799248079" />
+      <edge source="IVZ" target="SW" id="344" weight="0.795017832242422" />
+      <edge source="JBHT" target="ODFL" id="345" weight="1.174021059062821" />
+      <edge source="JCI" target="PH" id="346" weight="1.130208357828142" />
+      <edge source="JNJ" target="PFE" id="347" weight="0.941336146575042" />
+      <edge source="KDP" target="KO" id="348" weight="1.0739246471523365" />
+      <edge source="KEYS" target="TER" id="349" weight="1.0642480488193287" />
+      <edge source="KHC" target="MDLZ" id="350" weight="1.108346477149533" />
+      <edge source="KIM" target="SPG" id="351" weight="1.3121487643632839" />
+      <edge source="KIM" target="WY" id="352" weight="1.2002187364845418" />
+      <edge source="KLAC" target="LRCX" id="353" weight="1.5855696758099462" />
+      <edge source="KMB" target="PG" id="354" weight="1.2258473828980871" />
+      <edge source="KMI" target="WMB" id="355" weight="1.3856995350530146" />
+      <edge source="KMI" target="OKE" id="356" weight="1.2802159866181735" />
+      <edge source="KO" target="PEP" id="357" weight="1.2169208968569878" />
+      <edge source="KO" target="PM" id="358" weight="1.0447207967840035" />
+      <edge source="KO" target="STZ" id="359" weight="0.983436437881628" />
+      <edge source="KR" target="SYY" id="360" weight="0.8489182267690689" />
+      <edge source="LEN" target="PHM" id="361" weight="1.54677989224465" />
+      <edge source="LHX" target="LMT" id="362" weight="1.114147104992531" />
+      <edge source="LIN" target="PPG" id="363" weight="1.0717520378637242" />
+      <edge source="LLY" target="VRTX" id="364" weight="0.81514347613257" />
+      <edge source="LMT" target="NOC" id="365" weight="1.274884957993581" />
+      <edge source="LNT" target="WEC" id="366" weight="1.5404679474333456" />
+      <edge source="LNT" target="NI" id="367" weight="1.4535486064642105" />
+      <edge source="LNT" target="PNW" id="368" weight="1.3632123151350266" />
+      <edge source="LNT" target="XEL" id="369" weight="1.3350222986008804" />
+      <edge source="LRCX" target="MU" id="370" weight="1.215075674123192" />
+      <edge source="LVS" target="WYNN" id="371" weight="1.352854042295824" />
+      <edge source="LW" target="ROP" id="372" weight="0.8597175016207079" />
+      <edge source="MA" target="V" id="373" weight="1.4312153032764123" />
+      <edge source="MAR" target="MGM" id="374" weight="1.0885109327623952" />
+      <edge source="MAS" target="PNR" id="375" weight="1.2875794326319472" />
+      <edge source="MAS" target="PHM" id="376" weight="1.2810239694325571" />
+      <edge source="MAS" target="MHK" id="377" weight="1.259326928756804" />
+      <edge source="MCD" target="YUM" id="378" weight="1.0793046689308041" />
+      <edge source="MCD" target="MDLZ" id="379" weight="0.9920008590133731" />
+      <edge source="MCHP" target="NXPI" id="380" weight="1.4646525600445774" />
+      <edge source="MCHP" target="TXN" id="381" weight="1.4279791847077432" />
+      <edge source="MCO" target="SPGI" id="382" weight="1.4520661288579957" />
+      <edge source="MCO" target="ROP" id="383" weight="1.097891189459049" />
+      <edge source="MCO" target="VRSN" id="384" weight="1.0511014259235623" />
+      <edge source="MDLZ" target="PEP" id="385" weight="1.1846114533636116" />
+      <edge source="MDLZ" target="MKC" id="386" weight="0.9988831414776931" />
+      <edge source="MDT" target="ZBH" id="387" weight="1.0440016427947238" />
+      <edge source="MET" target="PRU" id="388" weight="1.4669714159641425" />
+      <edge source="MGM" target="WYNN" id="389" weight="1.1674484961706293" />
+      <edge source="MHK" target="WY" id="390" weight="1.1648153159886845" />
+      <edge source="MHK" target="MMM" id="391" weight="1.0415148294731384" />
+      <edge source="MHK" target="TPR" id="392" weight="1.0149267360141567" />
+      <edge source="MLM" target="VMC" id="393" weight="1.607314045102233" />
+      <edge source="MLM" target="TT" id="394" weight="1.1431014237018382" />
+      <edge source="MMC" target="WTW" id="395" weight="1.080008557927402" />
+      <edge source="MMC" target="RSG" id="396" weight="0.9717958788169441" />
+      <edge source="MNST" target="PEP" id="397" weight="0.9940562876128209" />
+      <edge source="MO" target="PM" id="398" weight="1.0634460393450635" />
+      <edge source="MPC" target="VLO" id="399" weight="1.4696674542808361" />
+      <edge source="MPWR" target="NXPI" id="400" weight="1.3229218856224239" />
+      <edge source="MPWR" target="NVDA" id="401" weight="1.2070523422737032" />
+      <edge source="MPWR" target="TSLA" id="402" weight="0.967155256546024" />
+      <edge source="MRK" target="PG" id="403" weight="0.883955634152215" />
+      <edge source="MRNA" target="PFE" id="404" weight="0.873479120456752" />
+      <edge source="MSCI" target="SPGI" id="405" weight="1.125363534717478" />
+      <edge source="MTB" target="RF" id="406" weight="1.3262804126610113" />
+      <edge source="MTCH" target="TROW" id="407" weight="0.989453853617045" />
+      <edge source="MU" target="WDC" id="408" weight="1.2434706698917828" />
+      <edge source="NEE" target="PPL" id="409" weight="1.1860695634990297" />
+      <edge source="NFLX" target="SNPS" id="410" weight="0.9386046385050999" />
+      <edge source="NSC" target="UNP" id="411" weight="1.1586577855809868" />
+      <edge source="NTAP" target="WDC" id="412" weight="1.0187547710274734" />
+      <edge source="NVR" target="PHM" id="413" weight="1.4380478061396045" />
+      <edge source="NWS" target="NWSA" id="414" weight="1.843871558509342" />
+      <edge source="NWSA" target="TEL" id="415" weight="1.0440846213269723" />
+      <edge source="NXPI" target="ON" id="416" weight="1.3969621910140448" />
+      <edge source="NXPI" target="TER" id="417" weight="1.3657630994719523" />
+      <edge source="NXPI" target="SWKS" id="418" weight="1.291270638999837" />
+      <edge source="O" target="REG" id="419" weight="1.2169747476436898" />
+      <edge source="O" target="VICI" id="420" weight="1.2104934222092507" />
+      <edge source="PFG" target="PRU" id="421" weight="1.3812390872158484" />
+      <edge source="PH" target="URI" id="422" weight="1.240839237838651" />
+      <edge source="PH" target="ROK" id="423" weight="1.161790129374694" />
+      <edge source="PH" target="TDG" id="424" weight="1.1157733746050487" />
+      <edge source="PLD" target="PSA" id="425" weight="1.177686810870345" />
+      <edge source="PNR" target="SWK" id="426" weight="1.258823487628903" />
+      <edge source="PNR" target="POOL" id="427" weight="1.2486492258792006" />
+      <edge source="PPG" target="SHW" id="428" weight="1.175725351934103" />
+      <edge source="PPL" target="SRE" id="429" weight="1.3761448200265607" />
+      <edge source="PSKY" target="WBD" id="430" weight="1.1263343265280548" />
+      <edge source="PSX" target="VLO" id="431" weight="1.3539587357033915" />
+      <edge source="PYPL" target="TROW" id="432" weight="1.030317956166161" />
+      <edge source="QCOM" target="TER" id="433" weight="1.2817449420996907" />
+      <edge source="REGN" target="VRTX" id="434" weight="0.903232007128189" />
+      <edge source="RJF" target="SCHW" id="435" weight="1.1886782990220168" />
+      <edge source="RL" target="TPR" id="436" weight="1.199521609693508" />
+      <edge source="RL" target="ULTA" id="437" weight="0.8905591038200531" />
+      <edge source="ROST" target="TJX" id="438" weight="1.1497696126490644" />
+      <edge source="RSG" target="WM" id="439" weight="1.405989986824854" />
+      <edge source="RVTY" target="WAT" id="440" weight="1.1806909867315736" />
+      <edge source="SBUX" target="YUM" id="441" weight="0.980872848155961" />
+      <edge source="SPGI" target="TYL" id="442" weight="1.0840826885301262" />
+      <edge source="SPGI" target="TJX" id="443" weight="0.96932507798971" />
+      <edge source="STE" target="SYK" id="444" weight="1.0013070963744486" />
+      <edge source="STX" target="WDC" id="445" weight="1.23072538075212" />
+      <edge source="STZ" target="TAP" id="446" weight="1.0094278303525615" />
+      <edge source="SYK" target="ZBH" id="447" weight="1.1141655698506707" />
+      <edge source="T" target="VZ" id="448" weight="1.1980741713923562" />
+      <edge source="TECH" target="WAT" id="449" weight="1.1341805462578591" />
+      <edge source="TMUS" target="VZ" id="450" weight="0.911675204565153" />
+      <edge source="TRMB" target="TROW" id="451" weight="1.0771659241923879" />
+      <edge source="TRMB" target="ZBRA" id="452" weight="1.059423650948832" />
+      <edge source="VTR" target="WELL" id="453" weight="1.3373183343832657" />
     </edges>
   </graph>
 </gexf>
