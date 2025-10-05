@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 import distances
 import communities
@@ -69,13 +70,23 @@ def get_cooccurrence_matrix(tickers, monthly_communities):
         for t2 in tickers:
             cooccurrence[t1][t2] = 0
 
-    # Calculating frequencies
-    count = len(monthly_communities)
+    # Calculating frequencies.
+    freq = 1 / len(monthly_communities)
     for comms in monthly_communities:
         for community in comms:
             for t1 in community:
                 for t2 in community:
-                    cooccurrence[t1][t2] += 1 / count
+                    cooccurrence[t1][t2] += freq
+
+    # Inverting frquencies. Higher frequencies are good, but we want
+    # lower distances to mean better similarity. Apply a transformation
+    # similar to the one in the paper for PCC.
+    # 2 -> They are never in the same community
+    # sqrt(2) -> They are in the same community 50% of the time.
+    # 0 -> They are always in the same community.
+    for t1 in tickers:
+        for t2 in tickers:
+            cooccurrence[t1][t2] = np.sqrt(4 * (1 - cooccurrence[t1][t2]))
 
     return pd.DataFrame.from_dict(cooccurrence)
 
