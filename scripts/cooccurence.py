@@ -86,9 +86,8 @@ def get_cooccurrence_matrix(tickers, monthly_communities):
     # 0 -> They are always in the same community.
     for t1 in tickers:
         for t2 in tickers:
-            if cooccurrence[t1][t2] > 1:
-                print(f"({t1}, {t2}) -> {cooccurrence[t1][t2]}")
-            cooccurrence[t1][t2] = np.sqrt(4 * (1 - cooccurrence[t1][t2]))
+            coocc = max(1, cooccurrence[t1][t2]) # Fixing precision errors
+            cooccurrence[t1][t2] = np.sqrt(4 * (1 - coocc))
 
     return pd.DataFrame.from_dict(cooccurrence)
 
