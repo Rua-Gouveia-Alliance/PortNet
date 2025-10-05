@@ -1,8 +1,15 @@
 import yfinance as yf
 import pandas as pd
 
-df = pd.read_csv("../data/sp500_survivors.csv")
+df = pd.read_csv("../data/datasets/sp500_survivors.csv")
 tickers = df["Symbol"].to_list()
 
 data = yf.download(tickers, period="3y", group_by="ticker")
-data.to_excel("../data/sp500_prices.xlsx")
+
+split_index = len(data) - 252 # approximately 252 trading days in a year
+
+data_train = data[:split_index]
+data_test = data[split_index:]
+
+data_train.to_excel("../data/datasets/sp500_prices_train.xlsx")
+data_test.to_excel("../data/datasets/sp500_prices_test.xlsx")
