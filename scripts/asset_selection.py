@@ -1,3 +1,4 @@
+import glob
 import numpy as np
 import pandas as pd
 import networkx as nx
@@ -9,8 +10,6 @@ PCA_N_COMPONENTS = 1 # focus on the first principal component for ranking, as it
 
 TRAINING_PRICES_FILE = "../data/datasets/sp500_prices_train.xlsx"
 TICKERS_FILE = "../data/datasets/sp500_survivors.csv"
-GRAPH_FILE = "../data/graphs/pcc_lv_co_louvain/pcc_lv_co_louvain_graph.gexf"
-
 
 def calculate_pca_scores(tickers):
     prices_full = pd.read_excel(TRAINING_PRICES_FILE, header=[0, 1], index_col=0)
@@ -105,37 +104,36 @@ def select_assets(stabilized_graph, metric_scores, total_assets=TOTAL_ASSETS):
 
     return all_strategies
 
+def generate_portfolios(graph_filename, tickers):
+    graph = nx.read_gexf(graph_filename)
+    pca_scores = calculate_pca_scores(tickers)
+    degree_scores, closeness_scores = calculate_centrality_metrics(graph)
+
+    # PCA-Based portfolios
+    pca_portfolios = select_assets(graph, pca_scores)
+    # Degree Centrality (CD) portfolios
+    cd_portfolios = select_assets(graph, degree_scores)
+    # Closeness Centrality (CC) portfolios
+    cc_portfolios = select_assets(graph, closeness_scores)
+
+    return pca_portfolios, cd_portfolios, cc_portfolios
 
 if __name__ == "__main__":
     df_tickers = pd.read_csv(TICKERS_FILE)
     tickers = df_tickers["Symbol"].to_list()
+    graph_filenames = glob.glob("../data/graphs/*/*.gexf")
 
-    stabilized_mst_comm = nx.read_gexf(GRAPH_FILE)
+    portfolios = {}
+    for filename in graph_filenames:
+        pca_portfolios, cd_portfolios, cc_portfolios = generate_portfolios(filename, tickers)
 
-    pca_scores = calculate_pca_scores(tickers)
+        name = filename[filename.rfind("/")+1:filename.rfind("_")]
+        metric_names = ["pca", "cd", "cc"]
+        portfolio_dictionaries = [pca_portfolios, cd_portfolios, cc_portfolios]
+        for i in range(len(metric_names)):
+            for range_name, assets in portfolio_dictionaries[i].items():
+                strategy_name = f"{name}_{metric_names[i]}_{range_name}"
+                portfolios[strategy_name] = assets
 
-    degree_scores, closeness_scores = calculate_centrality_metrics(stabilized_mst_comm)
-
-    # PCA-Based portfolios
-    pca_portfolios = select_assets(stabilized_mst_comm, pca_scores)
-
-    # Degree Centrality (CD) portfolios
-    cd_portfolios = select_assets(stabilized_mst_comm, degree_scores)
-
-    # Closeness Centrality (CC) portfolios
-    cc_portfolios = select_assets(stabilized_mst_comm, closeness_scores)
-
-    # print
-    metric_names = ["PCA", "CD", "CC"]
-    portfolio_dictionaries = [pca_portfolios, cd_portfolios, cc_portfolios]
-    final_portfolios = {}
-
-    print(f"Portfolios for graph {GRAPH_FILE}:\n")
-    for i in range(len(metric_names)):
-        metric_name = metric_names[i]
-        portfolios = portfolio_dictionaries[i]
-
-        for range_name, assets in portfolios.items():
-            strategy_name = f"{metric_name}_{range_name}"
-            final_portfolios[strategy_name] = assets
-            print(f"{strategy_name}: {sorted(assets)}")
+    portfolios = pd.DataFrame.from_dict(portfolios)
+    portfolios.to_excel("../data/auxiliary/sp500_portfolios.xlsx")
