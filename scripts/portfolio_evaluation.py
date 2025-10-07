@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     _, rets, sharpe = zip(*returns)
     colors = np.random.rand(len(rets), 3)
-    plt.scatter(sharpe, rets, c=colors, cmap='viridis', s=15)
+    plt.scatter(sharpe, rets, c=colors, s=15)
     plt.title("All examined portfolios")
     plt.xlabel("Sharpe Ratio")
     plt.ylabel("Returns (%)")
