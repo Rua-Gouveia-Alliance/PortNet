@@ -56,12 +56,16 @@ def get_scc_distances(tickers, returns):
     return pd.DataFrame.from_dict(scc)
 
 if __name__ == "__main__":
-    tickers = (pd.read_csv("../data/datasets/sp500_survivors.csv"))["Symbol"].to_list()
-    data = pd.read_excel("../data/datasets/sp500_prices_train.xlsx", header=[0, 1], index_col=0)
+    #tickers = (pd.read_csv("../data/datasets/sp500_survivors.csv"))["Symbol"].to_list()
+    tickers = (pd.read_csv("../data/datasets/ftse100_survivors.csv"))["Symbol"].to_list()
+    #data = pd.read_excel("../data/datasets/sp500_prices_train.xlsx", header=[0, 1], index_col=0)
+    data = pd.read_excel("../data/datasets/ftse100_prices_train.xlsx", header=[0, 1], index_col=0)
     log_returns = get_normalized_daily_log_returns(tickers, data)
 
     pcc_distances = get_pcc_distances(tickers, log_returns)
     scc_distances = get_scc_distances(tickers, log_returns)
 
-    pcc_distances.to_excel("../data/auxiliary/sp500_pcc_distances.xlsx")
-    scc_distances.to_excel("../data/auxiliary/sp500_scc_distances.xlsx")
+    #pcc_distances.to_excel("../data/auxiliary/sp500_pcc_distances.xlsx")
+    #scc_distances.to_excel("../data/auxiliary/sp500_scc_distances.xlsx")
+    pcc_distances.to_excel("../data/auxiliary/ftse100_pcc_distances.xlsx")
+    scc_distances.to_excel("../data/auxiliary/ftse100_scc_distances.xlsx")

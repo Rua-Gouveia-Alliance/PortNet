@@ -77,6 +77,16 @@ def clean_name(s: str) -> str:
             s = s[:-len(suf)]
     return " ".join(s.split())
 
+def epic_to_yahoo(epic: str) -> str:
+    s = epic.strip().upper()
+    # FTSE uses TIDM "BT.A" etc; Yahoo wants dash + ".L"
+    s = s.replace(".", "-")
+    # Avoid double suffix if user already saved Yahoo symbols earlier
+    if not s.endswith(".L"):
+        s = f"{s}.L"
+    return s
+
+
 changes["Date"] = pd.to_datetime(changes["Date"], errors="coerce", dayfirst=True)
 changes["Added"]  = changes["Added"].map(clean_name)
 changes["Deleted"] = changes["Deleted"].map(clean_name)
@@ -93,6 +103,7 @@ survivors = (
            .drop_duplicates()
            .sort_values(by=ticker_col)
            .rename(columns={ticker_col: "Symbol"})
+           .map(lambda x: epic_to_yahoo(x))
 )
 
 out_path = "../data/datasets/ftse100_survivors.csv"

@@ -8,8 +8,10 @@ from distances import get_normalized_daily_log_returns
 TOTAL_ASSETS = 25
 PCA_N_COMPONENTS = 1 # focus on the first principal component for ranking, as it captures market-wide movement
 
-TRAINING_PRICES_FILE = "../data/datasets/sp500_prices_train.xlsx"
-TICKERS_FILE = "../data/datasets/sp500_survivors.csv"
+#TRAINING_PRICES_FILE = "../data/datasets/sp500_prices_train.xlsx"
+#TICKERS_FILE = "../data/datasets/sp500_survivors.csv"
+TRAINING_PRICES_FILE = "../data/datasets/ftse100_prices_train.xlsx"
+TICKERS_FILE = "../data/datasets/ftse100_survivors.csv"
 
 def calculate_pca_scores(tickers):
     prices_full = pd.read_excel(TRAINING_PRICES_FILE, header=[0, 1], index_col=0)
@@ -136,4 +138,5 @@ if __name__ == "__main__":
                 portfolios[strategy_name] = assets
 
     portfolios = pd.DataFrame.from_dict(portfolios)
-    portfolios.to_excel("../data/auxiliary/sp500_portfolios.xlsx")
+    #portfolios.to_excel("../data/auxiliary/sp500_portfolios.xlsx")
+    portfolios.to_excel("../data/auxiliary/ftse100_portfolios.xlsx")

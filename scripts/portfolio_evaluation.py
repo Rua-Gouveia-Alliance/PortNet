@@ -2,8 +2,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-TEST_PRICES_FILE = "../data/datasets/sp500_prices_test.xlsx"
-PORTFOLIOS_FILE = "../data/auxiliary/sp500_portfolios.xlsx"
+#TEST_PRICES_FILE = "../data/datasets/sp500_prices_test.xlsx"
+#PORTFOLIOS_FILE = "../data/auxiliary/sp500_portfolios.xlsx"
+TEST_PRICES_FILE = "../data/datasets/ftse100_prices_test.xlsx"
+PORTFOLIOS_FILE = "../data/auxiliary/ftse100_portfolios.xlsx"
 
 def get_annualized_log_return_vol(portfolio, prices):
     daily_returns = []
