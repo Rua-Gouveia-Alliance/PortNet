@@ -48,4 +48,4 @@ def compute_index_portfolio_evaluation(index_id):
 
 if __name__ == "__main__":
     compute_index_portfolio_evaluation("sp500")
-    compute_index_portfolio_evaluation("ftse")
+    compute_index_portfolio_evaluation("ftse100")
