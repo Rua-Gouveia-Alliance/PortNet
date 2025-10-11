@@ -123,7 +123,8 @@ def generate_portfolios(graph_filename, tickers):
 if __name__ == "__main__":
     df_tickers = pd.read_csv(TICKERS_FILE)
     tickers = df_tickers["Symbol"].to_list()
-    graph_filenames = glob.glob("../data/graphs/*/*.gexf")
+    #graph_filenames = glob.glob("../data/graphs/*/sp500_*.gexf")
+    graph_filenames = glob.glob("../data/graphs/*/ftse100_*.gexf")
 
     portfolios = {}
     for filename in graph_filenames:
