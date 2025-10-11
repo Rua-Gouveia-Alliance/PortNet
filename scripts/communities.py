@@ -1,6 +1,5 @@
 import pandas as pd
 import networkx as nx
-import itertools
 
 def get_mst(tickers, distances):
     """
