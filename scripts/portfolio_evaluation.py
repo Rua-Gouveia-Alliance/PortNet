@@ -2,11 +2,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-#TEST_PRICES_FILE = "../data/datasets/sp500_prices_test.xlsx"
-#PORTFOLIOS_FILE = "../data/auxiliary/sp500_portfolios.xlsx"
-TEST_PRICES_FILE = "../data/datasets/ftse100_prices_test.xlsx"
-PORTFOLIOS_FILE = "../data/auxiliary/ftse100_portfolios.xlsx"
-
 def get_annualized_log_return_vol(portfolio, prices):
     daily_returns = []
     for asset in list(portfolio):
@@ -28,9 +23,9 @@ def get_sharpe_ratio(portfolio, prices, returns):
     vol = get_annualized_log_return_vol(portfolio, prices)
     return (returns - risk_free_rate) / vol
 
-if __name__ == "__main__":
-    prices = pd.read_excel(TEST_PRICES_FILE, header=[0, 1], index_col=0)
-    portfolios = pd.read_excel(PORTFOLIOS_FILE, header=0, index_col=0)
+def compute_index_portfolio_evaluation(index_id):
+    prices = pd.read_excel(f"../data/datasets/{index_id}_prices_test.xlsx", header=[0, 1], index_col=0)
+    portfolios = pd.read_excel(f"../data/auxiliary/{index_id}_portfolios.xlsx", header=0, index_col=0)
     returns = []
 
     for portfolio in list(portfolios):
@@ -50,3 +45,7 @@ if __name__ == "__main__":
     plt.ylabel("Returns (%)")
     plt.grid(True)
     plt.show()
+
+if __name__ == "__main__":
+    compute_index_portfolio_evaluation("sp500")
+    compute_index_portfolio_evaluation("ftse")

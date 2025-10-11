@@ -8,13 +8,8 @@ from distances import get_normalized_daily_log_returns
 TOTAL_ASSETS = 25
 PCA_N_COMPONENTS = 1 # focus on the first principal component for ranking, as it captures market-wide movement
 
-#TRAINING_PRICES_FILE = "../data/datasets/sp500_prices_train.xlsx"
-#TICKERS_FILE = "../data/datasets/sp500_survivors.csv"
-TRAINING_PRICES_FILE = "../data/datasets/ftse100_prices_train.xlsx"
-TICKERS_FILE = "../data/datasets/ftse100_survivors.csv"
-
-def calculate_pca_scores(tickers):
-    prices_full = pd.read_excel(TRAINING_PRICES_FILE, header=[0, 1], index_col=0)
+def calculate_pca_scores(tickers, index_id):
+    prices_full = pd.read_excelf("../data/datasets/{index_id}_prices_train.xlsx", header=[0, 1], index_col=0)
 
     log_returns_dict = get_normalized_daily_log_returns(tickers, prices_full)
     normalized_returns_df = pd.DataFrame(log_returns_dict).dropna(axis=0, how='any')
@@ -106,9 +101,9 @@ def select_assets(stabilized_graph, metric_scores, total_assets=TOTAL_ASSETS):
 
     return all_strategies
 
-def generate_portfolios(graph_filename, tickers):
+def generate_portfolios(graph_filename, tickers, index_id):
     graph = nx.read_gexf(graph_filename)
-    pca_scores = calculate_pca_scores(tickers)
+    pca_scores = calculate_pca_scores(tickers, index_id)
     degree_scores, closeness_scores = calculate_centrality_metrics(graph)
 
     # PCA-Based portfolios
@@ -120,15 +115,13 @@ def generate_portfolios(graph_filename, tickers):
 
     return pca_portfolios, cd_portfolios, cc_portfolios
 
-if __name__ == "__main__":
-    df_tickers = pd.read_csv(TICKERS_FILE)
-    tickers = df_tickers["Symbol"].to_list()
-    #graph_filenames = glob.glob("../data/graphs/*/sp500_*.gexf")
-    graph_filenames = glob.glob("../data/graphs/*/ftse100_*.gexf")
+def compute_index_portfolios(index_id):
+    tickers = pd.read_csv(f"../data/datasets/{index_id}_survivors.csv")["Symbol"].to_list()
+    graph_filenames = glob.glob(f"../data/graphs/*/{index_id}_*.gexf")
 
     portfolios = {}
     for filename in graph_filenames:
-        pca_portfolios, cd_portfolios, cc_portfolios = generate_portfolios(filename, tickers)
+        pca_portfolios, cd_portfolios, cc_portfolios = generate_portfolios(filename, tickers, index_id)
 
         name = filename[filename.rfind("/")+1:filename.rfind("_")]
         metric_names = ["pca", "cd", "cc"]
@@ -139,5 +132,9 @@ if __name__ == "__main__":
                 portfolios[strategy_name] = assets
 
     portfolios = pd.DataFrame.from_dict(portfolios)
-    #portfolios.to_excel("../data/auxiliary/sp500_portfolios.xlsx")
-    portfolios.to_excel("../data/auxiliary/ftse100_portfolios.xlsx")
+    portfolios.to_excel(f"../data/auxiliary/{index_id}_portfolios.xlsx")
+
+
+if __name__ == "__main__":
+    compute_index_portfolios("sp500")
+    compute_index_portfolios("ftse100")
