@@ -30,13 +30,19 @@ def get_mst(tickers, distances):
     return mst
 
 def get_louvain(mst):
-    """ Given an MST, computes its partitioning according to the Louvain algorithm """
+    """ Given an MST, computes its partitioning according to the Louvain method """
     return nx.community.louvain_communities(mst)
 
-def get_girvan_newman(mst, size):
-    """ Given an MST, computes a partition of size `size` using the Girvan-Newman algorithm """
-    *_, girvan_newman = itertools.takewhile(lambda c: len(c) <= size, nx.community.girvan_newman(mst))
-    return girvan_newman
+def get_girvan_newman(mst):
+    """ Given an MST, computes its partitioning according to the Girvan-Newman algorithm """
+    communities = list(nx.community.girvan_newman(mst))
+    best = [communities[0], nx.community.modularity(mst, communities[0])]
+
+    for community in communities:
+        modularity = nx.community.modularity(mst, community)
+        if modularity > best[1]:
+            best = [community, modularity]
+    return best[0]
 
 def get_communities_graph(mst, communities):
     """
@@ -60,23 +66,16 @@ def print_communities(communities):
     for community in communities:
         print(len(community))
 
-if __name__ == "__main__":
-    #tickers = (pd.read_csv("../data/datasets/sp500_survivors.csv"))["Symbol"].to_list()
-    tickers = (pd.read_csv("../data/datasets/ftse100_survivors.csv"))["Symbol"].to_list()
+def compute_index_communities(index_id):
+    tickers = (pd.read_csv(f"../data/datasets/{index_id}_survivors.csv"))["Symbol"].to_list()
 
-    #pcc_distances = pd.read_excel("../data/auxiliary/sp500_pcc_distances.xlsx", header=0, index_col=0)
-    #pcc_lv_co = pd.read_excel("../data/auxiliary/sp500_pcc_louvain_cooccurrence.xlsx", header=0, index_col=0)
-    #pcc_gn_co = pd.read_excel("../data/auxiliary/sp500_pcc_girvan_newman_cooccurrence.xlsx", header=0, index_col=0)
-    pcc_distances = pd.read_excel("../data/auxiliary/ftse100_pcc_distances.xlsx", header=0, index_col=0)
-    pcc_lv_co = pd.read_excel("../data/auxiliary/ftse100_pcc_louvain_cooccurrence.xlsx", header=0, index_col=0)
-    pcc_gn_co = pd.read_excel("../data/auxiliary/ftse100_pcc_girvan_newman_cooccurrence.xlsx", header=0, index_col=0)
+    pcc_distances = pd.read_excel(f"../data/auxiliary/{index_id}_pcc_distances.xlsx", header=0, index_col=0)
+    pcc_lv_co = pd.read_excel(f"../data/auxiliary/{index_id}_pcc_louvain_cooccurrence.xlsx", header=0, index_col=0)
+    pcc_gn_co = pd.read_excel(f"../data/auxiliary/{index_id}_pcc_girvan_newman_cooccurrence.xlsx", header=0, index_col=0)
 
-    #scc_distances = pd.read_excel("../data/auxiliary/sp500_scc_distances.xlsx", header=0, index_col=0)
-    #scc_lv_co = pd.read_excel("../data/auxiliary/sp500_scc_louvain_cooccurrence.xlsx", header=0, index_col=0)
-    #scc_gn_co = pd.read_excel("../data/auxiliary/sp500_scc_girvan_newman_cooccurrence.xlsx", header=0, index_col=0)
-    scc_distances = pd.read_excel("../data/auxiliary/ftse100_scc_distances.xlsx", header=0, index_col=0)
-    scc_lv_co = pd.read_excel("../data/auxiliary/ftse100_scc_louvain_cooccurrence.xlsx", header=0, index_col=0)
-    scc_gn_co = pd.read_excel("../data/auxiliary/ftse100_scc_girvan_newman_cooccurrence.xlsx", header=0, index_col=0)
+    scc_distances = pd.read_excel(f"../data/auxiliary/{index_id}_scc_distances.xlsx", header=0, index_col=0)
+    scc_lv_co = pd.read_excel(f"../data/auxiliary/{index_id}_scc_louvain_cooccurrence.xlsx", header=0, index_col=0)
+    scc_gn_co = pd.read_excel(f"../data/auxiliary/{index_id}_scc_girvan_newman_cooccurrence.xlsx", header=0, index_col=0)
 
     pcc_mst = get_mst(tickers, pcc_distances)
     pcc_lv_co_mst = get_mst(tickers, pcc_lv_co)
@@ -87,73 +86,65 @@ if __name__ == "__main__":
     scc_gn_co_mst = get_mst(tickers, scc_gn_co)
 
     # Computing the standard PCC graph partitioned using Louvain
-    #pcc_louvain = get_louvain(pcc_mst)
-    #pcc_louvain_G = get_communities_graph(pcc_mst, pcc_louvain)
-    #nx.write_gexf(pcc_louvain_G, "../data/graphs/pcc_louvain/sp500_pcc_louvain_graph.gexf")
-    #nx.write_gexf(pcc_louvain_G, "../data/graphs/pcc_louvain/ftse100_pcc_louvain_graph.gexf")
+    pcc_louvain = get_louvain(pcc_mst)
+    pcc_louvain_G = get_communities_graph(pcc_mst, pcc_louvain)
+    nx.write_gexf(pcc_louvain_G, f"../data/graphs/pcc_louvain/{index_id}_pcc_louvain_graph.gexf")
 
     # Computing the standard PCC graph partitioned using Girvan-Newman
-    #pcc_girvan_newman = get_girvan_newman(pcc_mst, len(pcc_louvain))
-    #pcc_girvan_newman_G = get_communities_graph(pcc_mst, pcc_girvan_newman)
-    #nx.write_gexf(pcc_girvan_newman_G, "../data/graphs/pcc_girvan_newman/sp500_pcc_girvan_newman_graph.gexf")
-    #nx.write_gexf(pcc_girvan_newman_G, "../data/graphs/pcc_girvan_newman/ftse100_pcc_girvan_newman_graph.gexf")
+    pcc_girvan_newman = get_girvan_newman(pcc_mst)
+    pcc_girvan_newman_G = get_communities_graph(pcc_mst, pcc_girvan_newman)
+    nx.write_gexf(pcc_girvan_newman_G, f"../data/graphs/pcc_girvan_newman/{index_id}_pcc_girvan_newman_graph.gexf")
 
     # Computing the Louvain co-occurrence PCC graph partitioned using Louvain
     pcc_lv_co_louvain = get_louvain(pcc_lv_co_mst)
     pcc_lv_co_louvain_G = get_communities_graph(pcc_lv_co_mst, pcc_lv_co_louvain)
-    #nx.write_gexf(pcc_lv_co_louvain_G, "../data/graphs/pcc_lv_co_louvain/sp500_pcc_lv_co_louvain_graph.gexf")
-    nx.write_gexf(pcc_lv_co_louvain_G, "../data/graphs/pcc_lv_co_louvain/ftse100_pcc_lv_co_louvain_graph.gexf")
+    nx.write_gexf(pcc_lv_co_louvain_G, f"../data/graphs/pcc_lv_co_louvain/{index_id}_pcc_lv_co_louvain_graph.gexf")
 
     # Computing the Louvain co-occurrence PCC graph partitioned using Girvan-Newman
-    pcc_lv_co_girvan_newman = get_girvan_newman(pcc_lv_co_mst, len(pcc_lv_co_louvain))
+    pcc_lv_co_girvan_newman = get_girvan_newman(pcc_lv_co_mst)
     pcc_lv_co_girvan_newman_G = get_communities_graph(pcc_lv_co_mst, pcc_lv_co_girvan_newman)
-    #nx.write_gexf(pcc_lv_co_girvan_newman_G, "../data/graphs/pcc_lv_co_girvan_newman/sp500_pcc_lv_co_girvan_newman_graph.gexf")
-    nx.write_gexf(pcc_lv_co_girvan_newman_G, "../data/graphs/pcc_lv_co_girvan_newman/ftse100_pcc_lv_co_girvan_newman_graph.gexf")
+    nx.write_gexf(pcc_lv_co_girvan_newman_G, f"../data/graphs/pcc_lv_co_girvan_newman/{index_id}_pcc_lv_co_girvan_newman_graph.gexf")
 
     # Computing the Girvan-Newman co-occurrence PCC graph partitioned using Louvain
     pcc_gn_co_louvain = get_louvain(pcc_gn_co_mst)
     pcc_gn_co_louvain_G = get_communities_graph(pcc_gn_co_mst, pcc_gn_co_louvain)
-    #nx.write_gexf(pcc_gn_co_louvain_G, "../data/graphs/pcc_gn_co_louvain/sp500_pcc_gn_co_louvain_graph.gexf")
-    nx.write_gexf(pcc_gn_co_louvain_G, "../data/graphs/pcc_gn_co_louvain/ftse100_pcc_gn_co_louvain_graph.gexf")
+    nx.write_gexf(pcc_gn_co_louvain_G, f"../data/graphs/pcc_gn_co_louvain/{index_id}_pcc_gn_co_louvain_graph.gexf")
 
     # Computing the Girvan-Newman co-occurrence PCC graph partitioned using Girvan-Newman
-    pcc_gn_co_girvan_newman = get_girvan_newman(pcc_gn_co_mst, len(pcc_gn_co_louvain))
+    pcc_gn_co_girvan_newman = get_girvan_newman(pcc_gn_co_mst)
     pcc_gn_co_girvan_newman_G = get_communities_graph(pcc_gn_co_mst, pcc_gn_co_girvan_newman)
-    #nx.write_gexf(pcc_gn_co_girvan_newman_G, "../data/graphs/pcc_gn_co_girvan_newman/sp500_pcc_gn_co_girvan_newman_graph.gexf")
-    nx.write_gexf(pcc_gn_co_girvan_newman_G, "../data/graphs/pcc_gn_co_girvan_newman/ftse100_pcc_gn_co_girvan_newman_graph.gexf")
+    nx.write_gexf(pcc_gn_co_girvan_newman_G, f"../data/graphs/pcc_gn_co_girvan_newman/{index_id}_pcc_gn_co_girvan_newman_graph.gexf")
 
     # Computing the standard SCC graph partitioned using Louvain
-    #scc_louvain = get_louvain(scc_mst)
-    #scc_louvain_G = get_communities_graph(scc_mst, scc_louvain)
-    #nx.write_gexf(scc_louvain_G, "../data/graphs/scc_louvain/sp500_scc_louvain_graph.gexf")
-    #nx.write_gexf(scc_louvain_G, "../data/graphs/scc_louvain/ftse100_scc_louvain_graph.gexf")
+    scc_louvain = get_louvain(scc_mst)
+    scc_louvain_G = get_communities_graph(scc_mst, scc_louvain)
+    nx.write_gexf(scc_louvain_G, f"../data/graphs/scc_louvain/{index_id}_scc_louvain_graph.gexf")
 
     # Computing the standard SCC graph partitioned using Girvan-Newman
-    #scc_girvan_newman = get_girvan_newman(scc_mst, len(scc_louvain))
-    #scc_girvan_newman_G = get_communities_graph(scc_mst, scc_girvan_newman)
-    #nx.write_gexf(scc_girvan_newman_G, "../data/graphs/scc_girvan_newman/sp500_scc_girvan_newman_graph.gexf")
-    #nx.write_gexf(scc_girvan_newman_G, "../data/graphs/scc_girvan_newman/ftse100_scc_girvan_newman_graph.gexf")
+    scc_girvan_newman = get_girvan_newman(scc_mst)
+    scc_girvan_newman_G = get_communities_graph(scc_mst, scc_girvan_newman)
+    nx.write_gexf(scc_girvan_newman_G, f"../data/graphs/scc_girvan_newman/{index_id}_scc_girvan_newman_graph.gexf")
 
     # Computing the Louvain co-occurrence SCC graph partitioned using Louvain
     scc_lv_co_louvain = get_louvain(scc_lv_co_mst)
     scc_lv_co_louvain_G = get_communities_graph(scc_lv_co_mst, scc_lv_co_louvain)
-    #nx.write_gexf(scc_lv_co_louvain_G, "../data/graphs/scc_lv_co_louvain/sp500_scc_lv_co_louvain_graph.gexf")
-    nx.write_gexf(scc_lv_co_louvain_G, "../data/graphs/scc_lv_co_louvain/ftse100_scc_lv_co_louvain_graph.gexf")
+    nx.write_gexf(scc_lv_co_louvain_G, f"../data/graphs/scc_lv_co_louvain/{index_id}_scc_lv_co_louvain_graph.gexf")
 
     # Computing the Louvain co-occurrence SCC graph partitioned using Girvan-Newman
-    scc_lv_co_girvan_newman = get_girvan_newman(scc_lv_co_mst, len(scc_lv_co_louvain))
+    scc_lv_co_girvan_newman = get_girvan_newman(scc_lv_co_mst)
     scc_lv_co_girvan_newman_G = get_communities_graph(scc_lv_co_mst, scc_lv_co_girvan_newman)
-    #nx.write_gexf(scc_lv_co_girvan_newman_G, "../data/graphs/scc_lv_co_girvan_newman/sp500_scc_lv_co_girvan_newman_graph.gexf")
-    nx.write_gexf(scc_lv_co_girvan_newman_G, "../data/graphs/scc_lv_co_girvan_newman/ftse100_scc_lv_co_girvan_newman_graph.gexf")
+    nx.write_gexf(scc_lv_co_girvan_newman_G, f"../data/graphs/scc_lv_co_girvan_newman/{index_id}_scc_lv_co_girvan_newman_graph.gexf")
 
     # Computing the Girvan-Newman co-occurrence SCC graph partitioned using Louvain
     scc_gn_co_louvain = get_louvain(scc_gn_co_mst)
-    scc_gn_co_louvain_G = get_communities_graph(scc_gn_co_mst, pcc_gn_co_louvain)
-    #nx.write_gexf(scc_gn_co_louvain_G, "../data/graphs/scc_gn_co_louvain/sp500_scc_gn_co_louvain_graph.gexf")
-    nx.write_gexf(scc_gn_co_louvain_G, "../data/graphs/scc_gn_co_louvain/ftse100_scc_gn_co_louvain_graph.gexf")
+    scc_gn_co_louvain_G = get_communities_graph(scc_gn_co_mst, scc_gn_co_louvain)
+    nx.write_gexf(scc_gn_co_louvain_G, f"../data/graphs/scc_gn_co_louvain/{index_id}_scc_gn_co_louvain_graph.gexf")
 
     # Computing the Girvan-Newman co-occurrence SCC graph partitioned using Girvan-Newman
-    scc_gn_co_girvan_newman = get_girvan_newman(scc_gn_co_mst, len(scc_gn_co_louvain))
+    scc_gn_co_girvan_newman = get_girvan_newman(scc_gn_co_mst)
     scc_gn_co_girvan_newman_G = get_communities_graph(scc_gn_co_mst, scc_gn_co_girvan_newman)
-    #nx.write_gexf(scc_gn_co_girvan_newman_G, "../data/graphs/scc_gn_co_girvan_newman/sp500_scc_gn_co_girvan_newman_graph.gexf")
-    nx.write_gexf(scc_gn_co_girvan_newman_G, "../data/graphs/scc_gn_co_girvan_newman/ftse100_scc_gn_co_girvan_newman_graph.gexf")
+    nx.write_gexf(scc_gn_co_girvan_newman_G, f"../data/graphs/scc_gn_co_girvan_newman/{index_id}_scc_gn_co_girvan_newman_graph.gexf")
+
+if __name__ == "__main__":
+    compute_index_communities("sp500")
+    compute_index_communities("ftse100")
