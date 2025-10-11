@@ -33,19 +33,42 @@ def compute_index_portfolio_evaluation(index_id):
         sharpe_ratio = get_sharpe_ratio(portfolios[portfolio], prices, p_returns)
         returns.append((portfolio, p_returns, sharpe_ratio))
 
-    returns.sort(key=lambda e : e[1])
-    for portfolio in returns:
-        print(f"{portfolio[0]}: {portfolio[1]}, {portfolio[2]}")
-
-    _, rets, sharpe = zip(*returns)
-    colors = np.random.rand(len(rets), 3)
-    plt.scatter(sharpe, rets, c=colors, s=15)
-    plt.title("All examined portfolios")
-    plt.xlabel("Sharpe Ratio")
-    plt.ylabel("Returns (%)")
-    plt.grid(True)
-    plt.show()
+    return returns
 
 if __name__ == "__main__":
-    compute_index_portfolio_evaluation("sp500")
-    compute_index_portfolio_evaluation("ftse100")
+    sp500_results = compute_index_portfolio_evaluation("sp500")
+    ftse100_results = compute_index_portfolio_evaluation("ftse100")
+    total_results = sp500_results + ftse100_results
+
+    fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 4))
+
+    _, sp500_returns, sp500_sharpe = zip(*sp500_results)
+    sp500_colors = np.random.rand(len(sp500_returns), 3)
+
+    ax1.scatter(sp500_sharpe, sp500_returns, c=sp500_colors, s=15)
+    ax1.set_title("S&P 500 portfolios")
+    ax1.set_xlabel("Sharpe Ratio")
+    ax1.set_ylabel("Returns (%)")
+
+    _, ftse100_returns, ftse100_sharpe = zip(*ftse100_results)
+    ftse100_colors = np.random.rand(len(ftse100_returns), 3)
+
+    ax2.scatter(ftse100_sharpe, ftse100_returns, c=ftse100_colors, s=15)
+    ax2.set_title("FTSE 100 portfolios")
+    ax2.set_xlabel("Sharpe Ratio")
+    ax2.set_ylabel("Returns (%)")
+
+    _, total_returns, total_sharpe = zip(*total_results)
+    colors = list(sp500_colors) + list(ftse100_colors)
+
+    ax3.scatter(total_sharpe, total_returns, c=colors, s=15)
+    ax3.set_title("All examined portfolios")
+    ax3.set_xlabel("Sharpe Ratio")
+    ax3.set_ylabel("Returns (%)")
+
+    plt.tight_layout()
+    plt.show()
+
+    total_results.sort(key=lambda e : e[1])
+    for portfolio in total_results:
+        print(f"{portfolio[0]}: {portfolio[1]}, {portfolio[2]}")
