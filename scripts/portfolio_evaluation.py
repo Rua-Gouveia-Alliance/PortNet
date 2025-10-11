@@ -69,6 +69,25 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.show()
 
+    differences = []
+    for portfolio in sp500_results:
+        ftse100_portfolio = [p for p in ftse100_results if p[0] == f"ftse100_{portfolio[0]}"][0]
+        differences.append([portfolio[0], abs(portfolio[1] - ftse100_portfolio[1])])
+
+    labels, diffs = zip(*differences)
+    plt.figure(figsize=(20, 6))
+    plt.bar(labels, diffs, color="skyblue")
+    plt.xlabel("Strategy")
+    plt.ylabel("Absolute return difference")
+    plt.xticks(rotation=90)
+    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    plt.tight_layout()
+    plt.show()
+
+    differences.sort(key=lambda e : e[1])
+    for portfolio in differences:
+        print(f"{portfolio[0]}: {portfolio[1]}")
+
     total_results.sort(key=lambda e : e[1])
     for portfolio in total_results:
         print(f"{portfolio[0]}: {portfolio[1]}, {portfolio[2]}")
