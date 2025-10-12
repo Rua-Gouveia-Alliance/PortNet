@@ -9,7 +9,7 @@ TOTAL_ASSETS = 25
 PCA_N_COMPONENTS = 1 # focus on the first principal component for ranking, as it captures market-wide movement
 
 def calculate_pca_scores(tickers, index_id):
-    prices_full = pd.read_excelf("../data/datasets/{index_id}_prices_train.xlsx", header=[0, 1], index_col=0)
+    prices_full = pd.read_excel(f"../data/datasets/{index_id}_prices_train.xlsx", header=[0, 1], index_col=0)
 
     log_returns_dict = get_normalized_daily_log_returns(tickers, prices_full)
     normalized_returns_df = pd.DataFrame(log_returns_dict).dropna(axis=0, how='any')
@@ -85,6 +85,8 @@ def select_assets(stabilized_graph, metric_scores, total_assets=TOTAL_ASSETS):
 
     for comm_id, asset_list in scored_communities.items():
         k = allocation[comm_id] # Number of assets to select from this community
+        if k <= 0:
+            continue
         N_comm = len(asset_list)
 
         # min selection (lowest k scores)

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2025-10-11">
+  <meta lastmodifieddate="2025-10-12">
     <creator>NetworkX 3.5</creator>
   </meta>
   <graph defaultedgetype="undirected" mode="static" name="">
@@ -30,7 +30,7 @@
       </node>
       <node id="AHT.L" label="AHT.L">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="ANTO.L" label="ANTO.L">
@@ -60,7 +60,7 @@
       </node>
       <node id="BAB.L" label="BAB.L">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="BARC.L" label="BARC.L">
@@ -70,7 +70,7 @@
       </node>
       <node id="BATS.L" label="BATS.L">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="BKG.L" label="BKG.L">
@@ -85,7 +85,7 @@
       </node>
       <node id="BT-A.L" label="BT-A.L">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="BTRW.L" label="BTRW.L">
@@ -95,17 +95,17 @@
       </node>
       <node id="CCEP.L" label="CCEP.L">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="CCH.L" label="CCH.L">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="CNA.L" label="CNA.L">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="CPG.L" label="CPG.L">
@@ -115,12 +115,12 @@
       </node>
       <node id="DCC.L" label="DCC.L">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="ENT.L" label="ENT.L">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="EXPN.L" label="EXPN.L">
@@ -150,22 +150,22 @@
       </node>
       <node id="HSBA.L" label="HSBA.L">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="HWDN.L" label="HWDN.L">
         <attvalues>
-          <attvalue for="0" value="4" />
+          <attvalue for="0" value="0" />
         </attvalues>
       </node>
       <node id="ICG.L" label="ICG.L">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="4" />
         </attvalues>
       </node>
       <node id="IHG.L" label="IHG.L">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="IMI.L" label="IMI.L">
@@ -180,17 +180,17 @@
       </node>
       <node id="ITRK.L" label="ITRK.L">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="JD.L" label="JD.L">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="KGF.L" label="KGF.L">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="LAND.L" label="LAND.L">
@@ -200,7 +200,7 @@
       </node>
       <node id="LGEN.L" label="LGEN.L">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="LLOY.L" label="LLOY.L">
@@ -220,7 +220,7 @@
       </node>
       <node id="MNDI.L" label="MNDI.L">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="MNG.L" label="MNG.L">
@@ -235,7 +235,7 @@
       </node>
       <node id="NG.L" label="NG.L">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="NWG.L" label="NWG.L">
@@ -245,7 +245,7 @@
       </node>
       <node id="NXT.L" label="NXT.L">
         <attvalues>
-          <attvalue for="0" value="3" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
       <node id="PHNX.L" label="PHNX.L">
@@ -255,7 +255,7 @@
       </node>
       <node id="PRU.L" label="PRU.L">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="PSN.L" label="PSN.L">
@@ -270,7 +270,7 @@
       </node>
       <node id="REL.L" label="REL.L">
         <attvalues>
-          <attvalue for="0" value="6" />
+          <attvalue for="0" value="8" />
         </attvalues>
       </node>
       <node id="RIO.L" label="RIO.L">
@@ -280,7 +280,7 @@
       </node>
       <node id="RKT.L" label="RKT.L">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="RMV.L" label="RMV.L">
@@ -295,12 +295,12 @@
       </node>
       <node id="RTO.L" label="RTO.L">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="3" />
         </attvalues>
       </node>
       <node id="SBRY.L" label="SBRY.L">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="SDR.L" label="SDR.L">
@@ -315,7 +315,7 @@
       </node>
       <node id="SGRO.L" label="SGRO.L">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="SHEL.L" label="SHEL.L">
@@ -335,37 +335,37 @@
       </node>
       <node id="SSE.L" label="SSE.L">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="STAN.L" label="STAN.L">
         <attvalues>
-          <attvalue for="0" value="1" />
+          <attvalue for="0" value="7" />
         </attvalues>
       </node>
       <node id="SVT.L" label="SVT.L">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="TSCO.L" label="TSCO.L">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="ULVR.L" label="ULVR.L">
         <attvalues>
-          <attvalue for="0" value="5" />
+          <attvalue for="0" value="6" />
         </attvalues>
       </node>
       <node id="UU.L" label="UU.L">
         <attvalues>
-          <attvalue for="0" value="0" />
+          <attvalue for="0" value="10" />
         </attvalues>
       </node>
       <node id="VOD.L" label="VOD.L">
         <attvalues>
-          <attvalue for="0" value="2" />
+          <attvalue for="0" value="9" />
         </attvalues>
       </node>
       <node id="WPP.L" label="WPP.L">
@@ -375,7 +375,7 @@
       </node>
       <node id="WTB.L" label="WTB.L">
         <attvalues>
-          <attvalue for="0" value="7" />
+          <attvalue for="0" value="2" />
         </attvalues>
       </node>
     </nodes>
@@ -386,69 +386,69 @@
       <edge source="AAL.L" target="FRES.L" id="3" weight="0.735088935932648" />
       <edge source="ABF.L" target="MKS.L" id="4" weight="0.557779489814404" />
       <edge source="ABF.L" target="NXT.L" id="5" weight="0.3999999999999999" />
-      <edge source="ADM.L" target="AV.L" id="6" weight="0.30294372515228596" />
-      <edge source="AHT.L" target="LGEN.L" id="7" weight="0.30294372515228596" />
-      <edge source="AHT.L" target="RTO.L" id="8" weight="0.30294372515228596" />
-      <edge source="AUTO.L" target="RMV.L" id="9" weight="0.735088935932648" />
-      <edge source="AUTO.L" target="MRO.L" id="10" weight="0.35075774975293594" />
-      <edge source="AUTO.L" target="HWDN.L" id="11" weight="0.30294372515228596" />
-      <edge source="AUTO.L" target="SGE.L" id="12" weight="0.30294372515228596" />
-      <edge source="AV.L" target="PHNX.L" id="13" weight="0.735088935932648" />
-      <edge source="AV.L" target="LGEN.L" id="14" weight="0.6143593539448979" />
-      <edge source="AV.L" target="MNG.L" id="15" weight="0.5033370452904229" />
-      <edge source="AZN.L" target="GSK.L" id="16" weight="0.557779489814404" />
-      <edge source="AZN.L" target="LSEG.L" id="17" weight="0.3999999999999999" />
-      <edge source="AZN.L" target="RKT.L" id="18" weight="0.3999999999999999" />
-      <edge source="BA.L" target="CPG.L" id="19" weight="0.35075774975293594" />
-      <edge source="BA.L" target="PSON.L" id="20" weight="0.35075774975293594" />
-      <edge source="BAB.L" target="ICG.L" id="21" weight="0.30294372515228596" />
-      <edge source="BARC.L" target="NWG.L" id="22" weight="1.020204102886729" />
-      <edge source="BARC.L" target="LLOY.L" id="23" weight="0.735088935932648" />
-      <edge source="BARC.L" target="STAN.L" id="24" weight="0.557779489814404" />
-      <edge source="BARC.L" target="PRU.L" id="25" weight="0.35075774975293594" />
-      <edge source="BATS.L" target="RKT.L" id="26" weight="0.45080666151703297" />
-      <edge source="BKG.L" target="BTRW.L" id="27" weight="1.020204102886729" />
-      <edge source="BNZL.L" target="EXPN.L" id="28" weight="0.45080666151703297" />
-      <edge source="BNZL.L" target="SMIN.L" id="29" weight="0.45080666151703297" />
-      <edge source="BT-A.L" target="VOD.L" id="30" weight="0.45080666151703297" />
-      <edge source="BT-A.L" target="SSE.L" id="31" weight="0.35075774975293594" />
-      <edge source="BT-A.L" target="TSCO.L" id="32" weight="0.35075774975293594" />
-      <edge source="BTRW.L" target="PSN.L" id="33" weight="1.020204102886729" />
-      <edge source="BTRW.L" target="HWDN.L" id="34" weight="0.35075774975293594" />
-      <edge source="CCEP.L" target="CCH.L" id="35" weight="0.45080666151703297" />
-      <edge source="CCEP.L" target="RKT.L" id="36" weight="0.45080666151703297" />
-      <edge source="CNA.L" target="SSE.L" id="37" weight="0.35075774975293594" />
-      <edge source="CPG.L" target="ULVR.L" id="38" weight="0.3999999999999999" />
-      <edge source="CPG.L" target="REL.L" id="39" weight="0.35075774975293594" />
-      <edge source="DCC.L" target="NXT.L" id="40" weight="0.3999999999999999" />
-      <edge source="DCC.L" target="PHNX.L" id="41" weight="0.35075774975293594" />
-      <edge source="ENT.L" target="ITRK.L" id="42" weight="0.30294372515228596" />
-      <edge source="EXPN.L" target="HLMA.L" id="43" weight="0.6733500838578399" />
-      <edge source="EXPN.L" target="REL.L" id="44" weight="0.45080666151703297" />
-      <edge source="EXPN.L" target="MRO.L" id="45" weight="0.35075774975293594" />
-      <edge source="GSK.L" target="HLN.L" id="46" weight="0.3999999999999999" />
-      <edge source="HLMA.L" target="SPX.L" id="47" weight="0.735088935932648" />
-      <edge source="HSBA.L" target="STAN.L" id="48" weight="0.8" />
-      <edge source="HSBA.L" target="SHEL.L" id="49" weight="0.45080666151703297" />
-      <edge source="HWDN.L" target="INF.L" id="50" weight="0.35075774975293594" />
-      <edge source="ICG.L" target="PRU.L" id="51" weight="0.3999999999999999" />
-      <edge source="ICG.L" target="IHG.L" id="52" weight="0.35075774975293594" />
-      <edge source="IHG.L" target="WTB.L" id="53" weight="0.35075774975293594" />
-      <edge source="IMI.L" target="SMIN.L" id="54" weight="0.3999999999999999" />
-      <edge source="INF.L" target="WPP.L" id="55" weight="0.45080666151703297" />
-      <edge source="ITRK.L" target="REL.L" id="56" weight="0.3999999999999999" />
-      <edge source="JD.L" target="NXT.L" id="57" weight="0.45080666151703297" />
-      <edge source="JD.L" target="KGF.L" id="58" weight="0.35075774975293594" />
-      <edge source="KGF.L" target="MNDI.L" id="59" weight="0.45080666151703297" />
-      <edge source="KGF.L" target="SDR.L" id="60" weight="0.35075774975293594" />
-      <edge source="LAND.L" target="SGRO.L" id="61" weight="0.8" />
-      <edge source="LAND.L" target="PSN.L" id="62" weight="0.3999999999999999" />
-      <edge source="LGEN.L" target="STAN.L" id="63" weight="0.35075774975293594" />
+      <edge source="ABF.L" target="IHG.L" id="6" weight="0.30294372515228596" />
+      <edge source="ADM.L" target="AV.L" id="7" weight="0.30294372515228596" />
+      <edge source="ADM.L" target="SDR.L" id="8" weight="0.30294372515228596" />
+      <edge source="AHT.L" target="PHNX.L" id="9" weight="0.30294372515228596" />
+      <edge source="AHT.L" target="RTO.L" id="10" weight="0.30294372515228596" />
+      <edge source="AUTO.L" target="RMV.L" id="11" weight="0.735088935932648" />
+      <edge source="AUTO.L" target="MRO.L" id="12" weight="0.35075774975293594" />
+      <edge source="AUTO.L" target="SGE.L" id="13" weight="0.30294372515228596" />
+      <edge source="AV.L" target="PHNX.L" id="14" weight="0.735088935932648" />
+      <edge source="AV.L" target="LGEN.L" id="15" weight="0.6143593539448979" />
+      <edge source="AV.L" target="MNG.L" id="16" weight="0.5033370452904229" />
+      <edge source="AV.L" target="PRU.L" id="17" weight="0.30294372515228596" />
+      <edge source="AZN.L" target="GSK.L" id="18" weight="0.557779489814404" />
+      <edge source="AZN.L" target="LSEG.L" id="19" weight="0.45080666151703297" />
+      <edge source="AZN.L" target="RKT.L" id="20" weight="0.3999999999999999" />
+      <edge source="AZN.L" target="HLN.L" id="21" weight="0.35075774975293594" />
+      <edge source="AZN.L" target="NG.L" id="22" weight="0.30294372515228596" />
+      <edge source="BA.L" target="CPG.L" id="23" weight="0.35075774975293594" />
+      <edge source="BA.L" target="PSON.L" id="24" weight="0.35075774975293594" />
+      <edge source="BAB.L" target="ICG.L" id="25" weight="0.30294372515228596" />
+      <edge source="BAB.L" target="WPP.L" id="26" weight="0.30294372515228596" />
+      <edge source="BARC.L" target="NWG.L" id="27" weight="1.020204102886729" />
+      <edge source="BARC.L" target="LLOY.L" id="28" weight="0.735088935932648" />
+      <edge source="BARC.L" target="STAN.L" id="29" weight="0.5033370452904229" />
+      <edge source="BARC.L" target="PRU.L" id="30" weight="0.35075774975293594" />
+      <edge source="BATS.L" target="RKT.L" id="31" weight="0.45080666151703297" />
+      <edge source="BKG.L" target="BTRW.L" id="32" weight="1.020204102886729" />
+      <edge source="BKG.L" target="LAND.L" id="33" weight="0.35075774975293594" />
+      <edge source="BNZL.L" target="EXPN.L" id="34" weight="0.45080666151703297" />
+      <edge source="BNZL.L" target="SMIN.L" id="35" weight="0.45080666151703297" />
+      <edge source="BNZL.L" target="REL.L" id="36" weight="0.3999999999999999" />
+      <edge source="BT-A.L" target="VOD.L" id="37" weight="0.45080666151703297" />
+      <edge source="BT-A.L" target="TSCO.L" id="38" weight="0.35075774975293594" />
+      <edge source="BTRW.L" target="PSN.L" id="39" weight="0.9416994755741639" />
+      <edge source="BTRW.L" target="HWDN.L" id="40" weight="0.35075774975293594" />
+      <edge source="BTRW.L" target="SBRY.L" id="41" weight="0.35075774975293594" />
+      <edge source="CCEP.L" target="CCH.L" id="42" weight="0.45080666151703297" />
+      <edge source="CCEP.L" target="ULVR.L" id="43" weight="0.3999999999999999" />
+      <edge source="CNA.L" target="SSE.L" id="44" weight="0.3999999999999999" />
+      <edge source="CPG.L" target="ULVR.L" id="45" weight="0.3999999999999999" />
+      <edge source="CPG.L" target="REL.L" id="46" weight="0.35075774975293594" />
+      <edge source="DCC.L" target="NXT.L" id="47" weight="0.35075774975293594" />
+      <edge source="ENT.L" target="ITRK.L" id="48" weight="0.30294372515228596" />
+      <edge source="EXPN.L" target="HLMA.L" id="49" weight="0.557779489814404" />
+      <edge source="HLMA.L" target="SPX.L" id="50" weight="0.8" />
+      <edge source="HSBA.L" target="STAN.L" id="51" weight="0.735088935932648" />
+      <edge source="HSBA.L" target="SHEL.L" id="52" weight="0.5033370452904229" />
+      <edge source="ICG.L" target="PRU.L" id="53" weight="0.3999999999999999" />
+      <edge source="ICG.L" target="IHG.L" id="54" weight="0.35075774975293594" />
+      <edge source="IHG.L" target="WTB.L" id="55" weight="0.35075774975293594" />
+      <edge source="IMI.L" target="SMIN.L" id="56" weight="0.35075774975293594" />
+      <edge source="INF.L" target="WPP.L" id="57" weight="0.45080666151703297" />
+      <edge source="INF.L" target="RR.L" id="58" weight="0.35075774975293594" />
+      <edge source="ITRK.L" target="REL.L" id="59" weight="0.3999999999999999" />
+      <edge source="JD.L" target="NXT.L" id="60" weight="0.5033370452904229" />
+      <edge source="JD.L" target="KGF.L" id="61" weight="0.35075774975293594" />
+      <edge source="KGF.L" target="MNDI.L" id="62" weight="0.45080666151703297" />
+      <edge source="LAND.L" target="SGRO.L" id="63" weight="0.8" />
       <edge source="MKS.L" target="SBRY.L" id="64" weight="0.45080666151703297" />
       <edge source="MRO.L" target="RR.L" id="65" weight="0.35075774975293594" />
       <edge source="NG.L" target="SVT.L" id="66" weight="0.9416994755741639" />
-      <edge source="NG.L" target="SSE.L" id="67" weight="0.6733500838578399" />
-      <edge source="NG.L" target="SGRO.L" id="68" weight="0.3999999999999999" />
+      <edge source="NG.L" target="SSE.L" id="67" weight="0.735088935932648" />
+      <edge source="NG.L" target="SGRO.L" id="68" weight="0.45080666151703297" />
       <edge source="RIO.L" target="SHEL.L" id="69" weight="0.3999999999999999" />
       <edge source="RKT.L" target="ULVR.L" id="70" weight="0.6733500838578399" />
       <edge source="SBRY.L" target="TSCO.L" id="71" weight="0.8" />

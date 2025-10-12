@@ -60,7 +60,7 @@ def get_monthly_louvain(msts):
 def get_monthly_girvan_newman(msts, sizes):
     comms = []
     for mst, size in zip(msts, sizes):
-        comms.append(communities.get_girvan_newman(mst, size))
+        comms.append(communities.get_girvan_newman(mst))
     return comms
 
 def get_cooccurrence_matrix(tickers, monthly_communities):
