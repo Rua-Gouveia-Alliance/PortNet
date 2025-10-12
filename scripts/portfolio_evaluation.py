@@ -31,7 +31,7 @@ def compute_index_portfolio_evaluation(index_id):
     for portfolio in list(portfolios):
         p_returns = get_returns(portfolios[portfolio], prices)
         sharpe_ratio = get_sharpe_ratio(portfolios[portfolio], prices, p_returns)
-        returns.append((portfolio, p_returns, sharpe_ratio))
+        returns.append((portfolio, p_returns * 100, sharpe_ratio))
 
     return returns
 
@@ -71,7 +71,8 @@ if __name__ == "__main__":
 
     differences = []
     for portfolio in sp500_results:
-        ftse100_portfolio = [p for p in ftse100_results if p[0] == f"ftse100_{portfolio[0]}"][0]
+        strategy_name = portfolio[0][6:]
+        ftse100_portfolio = [p for p in ftse100_results if p[0] == f"ftse100_{strategy_name}"][0]
         differences.append([portfolio[0], abs(portfolio[1] - ftse100_portfolio[1])])
 
     labels, diffs = zip(*differences)
