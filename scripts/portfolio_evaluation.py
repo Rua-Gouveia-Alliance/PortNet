@@ -40,10 +40,12 @@ if __name__ == "__main__":
     ftse100_results = compute_index_portfolio_evaluation("ftse100")
     total_results = sp500_results + ftse100_results
 
-    fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 4))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 3))
 
     _, sp500_returns, sp500_sharpe = zip(*sp500_results)
-    sp500_colors = np.random.rand(len(sp500_returns), 3)
+    sp500_top_performers = np.argsort(sp500_returns)[-3:]
+    sp500_colors = np.array(['blue'] * len(sp500_results))
+    sp500_colors[sp500_top_performers] = 'red'
 
     ax1.scatter(sp500_sharpe, sp500_returns, c=sp500_colors, s=15)
     ax1.set_title("S&P 500 portfolios")
@@ -51,20 +53,14 @@ if __name__ == "__main__":
     ax1.set_ylabel("Returns (%)")
 
     _, ftse100_returns, ftse100_sharpe = zip(*ftse100_results)
-    ftse100_colors = np.random.rand(len(ftse100_returns), 3)
+    ftse100_top_performers = np.argsort(ftse100_returns)[-3:]
+    ftse100_colors = np.array(['blue'] * len(ftse100_results))
+    ftse100_colors[ftse100_top_performers] = 'red'
 
     ax2.scatter(ftse100_sharpe, ftse100_returns, c=ftse100_colors, s=15)
     ax2.set_title("FTSE 100 portfolios")
     ax2.set_xlabel("Sharpe Ratio")
     ax2.set_ylabel("Returns (%)")
-
-    _, total_returns, total_sharpe = zip(*total_results)
-    colors = list(sp500_colors) + list(ftse100_colors)
-
-    ax3.scatter(total_sharpe, total_returns, c=colors, s=15)
-    ax3.set_title("All examined portfolios")
-    ax3.set_xlabel("Sharpe Ratio")
-    ax3.set_ylabel("Returns (%)")
 
     plt.tight_layout()
     plt.show()
