@@ -33,10 +33,19 @@
 %% the \doucmentclass[...]{acmart} in this template to 
 %%\documentclass[manuscript,review,anonymous]{acmart}
 %% This version is used for drafting and final submission
-\documentclass[sigconf]{acmart}
+\documentclass[acmsmall,screen,nonacm]{acmart}
 \settopmatter{printacmref=false}
 
 \usepackage{url}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, arrows.meta, positioning, fit, calc}
+\tikzset{
+    >={Stealth[length=2mm]},
+    box/.style = {draw, rounded corners, very thick, minimum width=18mm, minimum height=4mm, align=center, font=\fontfamily{Inter-TLF}\selectfont\footnotesize},
+    group/.style = {draw, rounded corners, very thick, inner sep=2mm},
+    note/.style  = {font=\fontfamily{Inter-TLF}\selectfont\scriptsize, align=center},
+}
 
 
 %% 
@@ -143,8 +152,6 @@
 %% information and builds the first part of the formatted document.
 \maketitle
 
-\section*{Abstract}
-
 \section{Introduction}
 
 Traditional approaches to portfolio construction typically combine the goals of maximizing diversification and minimizing volatility~\cite{kitanovski, markowitz1952}.
@@ -156,8 +163,6 @@ Kitanovski et al.~\cite{kitanovski} investigated several strategies for automati
 Their approach was applied and evaluated on a subset of the financial market, the American index Standard \& Poor's 500 (S\&P 500).
 Building on this work, we explore the impact of using different correlation coefficients and community detection algorithms.
 Furthermore, we extend the analysis by applying these methods to the FTSE 100 index, a British index, in addition to the S\&P 500.
-
-The following sections are organized as follows. TODO.
 
 \section{Related Work} \label{rel_work}
 
@@ -193,7 +198,7 @@ Assuming we are studying $N$ assets, this step yields an $N \times N$ distance m
 The Pearson Correlation Coefficient $PCC_{ij}$ quantifies the linear correlation between the returns of two assets $i$ and $j$.
 This value can be converted to a distance as follows:
 \begin{align}
-    D_{ij} = \sqrt{2(1 - C_{ij})}
+    D_{ij} = \sqrt{2(1 - PCC_{ij})}
 \end{align}
 A distance of $D_{ij} = 0$ indicates perfect positive correlation between assets $i$ and $j$, while a distance of $D_{ij} = 2$ indicates perfect negative correlation.
 A distance of $D_{ij} = \sqrt{2}$ corresponds to the absence of significant correlation.
@@ -211,7 +216,7 @@ where $M$ denotes the set of mutual information values between all pairs of asse
 
 The communities determined using distances computed with PCC and MI were found to be unstable, changing frequently over time.
 To address this issue, Kitanovski et al. proposed the use of co-occurrence measures based on these metrics.
-For the Co-Occurrence Pearson Correlation Coefficient, monthly PCC-based distances are first computed between assets, and market segments are then identified for each month, using one of the market segment algorithms discussed below.
+For the Co-Occurrence Pearson Correlation Coefficient, monthly PCC-based distances are first computed between assets, and market segments are then identified for each month, using one of the market segment identification algorithms discussed below.
 The Co-Occurrence Pearson Correlation Coefficient between two assets corresponds to the frequency with which they belong to the same community over time.
 Co-Occurrence Mutual Information is calculated analogously, using MI-based distances instead of PCC-based ones.
 
@@ -221,10 +226,10 @@ In our approach, we adopted a transformation similar to the one used for PCC:
 \begin{align}
     D_{ij} = \sqrt{4(1 - Co_{ij})}
 \end{align}
-where $Co_{ij}$ denotes either the CoPCC between $i$ and $j$, or the CoMI.
+where $Co_{ij}$ denotes either the Co-Occurrence Pearson Correlation Coefficient between $i$ and $j$, or the Co-Occurrence Mutual Information.
 This transformation preserves the interpretation of distances: $D_{ij} = 0$ indicates perfect positive co-occurrence, $D_{ij} = 2$ indicates perfect negative co-occurrence, and $D_{ij} = \sqrt{2}$ indicates the absence of significant co-occurrence.
 
-\subsection{Network Representation}
+\subsection{Network Representation} \label{netrepr}
 
 The distance matrix obtained in the previous step can be converted to a \emph{fully connected graph}, with edge weights corresponding to the distances between assets.
 This is the first network representation used by Kitanovski et al.
@@ -270,64 +275,193 @@ Like Louvain, Girvan-Newman interprets link weights as similarity measures, so t
 
 \subsection{Asset Selection}
 
-TODO
+The final step in the portfolio construction process involves selecting assets from the previously identified market communities.
+Following the approach of Kitanovski et al., the objective is to select 25 assets for each portfolio, drawing assets proportionally from each community to maximize diversification.
+This selection process uses three selection metrics: \emph{Principal Component Analysis} (PCA), \emph{Degree Centrality} (CD), and \emph{Closeness Centrality} (CC).
+The asset selection heuristics are obtained by combining one of the selection metrics with a value range: lowest, median, or highest score.
+
+\paragraph{Principal Component Analysis}
+
+PCA is a dimensionality reduction technique applied to the original asset correlation matrix derived from the two-year training period. The analysis identifies orthogonal components that capture the maximum variance in the data. Each asset is assigned a score based on the absolute value of its loading on the first principal component. This score reflects the asset’s exposure to the dominant market-wide risk factor.
+
+\paragraph{Degree Centrality}
+
+Degree centrality is a local network metric that measures the total strength of connections (weights) an asset has within the subgraph of its respective community.
+In the context of a distance-inverted MST network, where weights correspond to similarity scores, a higher degree centrality score indicates that the asset is more strongly correlated with its immediate neighbors within its market segment.
+
+\paragraph{Closeness Centrality}
+
+Closeness centrality is a global network metric that measures the average shortest path from an asset to all other assets in the entire network. This metric is calculated using the original distance weights, reverting the similarity transformation via $d_{ij} = 2 - w_{ij}$.
+Assets with a high closeness centrality score occupy a structurally central position in the network, allowing for rapid influence propagation or efficient information flow across the overall market structure.
 
 \section{Methods} \label{methods}
 
-Our methodology closely follows that of Kitanovski et al., described in the previous section.
+\begin{figure}[tp]
+    \centering
+    \begin{tikzpicture}[node distance=2mm]
+        \node[box, fill=red!20] (pcc) {PCC};
+        \node[box, fill=green!20, right=of pcc] (copcclv) {PCC\_LV\_Co};
+        \node[box, fill=yellow!20, right=of copcclv] (copccgn) {PCC\_GN\_Co};
+        \node[box, fill=red!20, below=of pcc] (scc) {SCC};
+        \node[box, fill=green!20, below=of copcclv] (coscclv) {SCC\_LV\_Co};
+        \node[box, fill=yellow!20, below=of copccgn] (cosccgn) {SCC\_GN\_Co};
+        \node[group, fit=(pcc)(copcclv)(copccgn)(scc)(coscclv)(cosccgn),
+              label={[note, anchor=north west, yshift=14pt]north west:Asset Relations}] (relations) {};
+        
+        \coordinate (underrelations) at ([yshift=-10mm]relations.south);
+        \node[box, fill=red!20,  anchor=north] (lv) at ($(underrelations)+(-10mm,0)$) {LV};
+        \node[box, fill=cyan!20, anchor=north] (gn) at ($(underrelations)+( 10mm,0)$) {GN};
+        \node[group, fit=(lv)(gn),
+              label={[note, anchor=north west, yshift=14pt, xshift=-30pt]north west:Community Detection}] (communities) {};
+
+        \node[box, fill=red!20, below=30mm of scc] (pca) {PCA};
+        \node[box, fill=green!20, below=30mm of coscclv] (cd) {CD};
+        \node[box, fill=yellow!20, below=30mm of cosccgn] (cc) {CC};
+        \node[group, fit=(pca)(cd)(cc),
+              label={[note, anchor=north west, yshift=14pt]north west:Asset Selection}] (assets) {};
+
+        \node[box, fill=red!20, below=13mm of pca] (min) {Min};
+        \node[box, fill=green!20, below=13mm of cd] (med) {Med};
+        \node[box, fill=yellow!20, below=13mm of cc] (max) {Max};
+        \node[group, fit=(min)(med)(max),
+              label={[note, anchor=north west, yshift=14pt]north west:Metric Ranges}] (ranges) {};
+
+        \draw[->, very thick] (relations) -- (communities);
+        \draw[->, very thick] (communities) -- (assets);
+        \draw[->, very thick] (assets) -- (ranges);
+    \end{tikzpicture}
+    \caption{Methodology Overview}
+    \label{fig:methodology}
+\end{figure}
+
+Our methodology, illustrated in Fig.~\ref{fig:methodology}, closely follows that of Kitanovski et al., described in the previous section.
 We replace MI and Co-Occurrence Mutual Information with the \emph{Spearman Rank Correlation Coefficient} (SCC), which improves upon PCC by being less sensitive to outliers, and the corresponding \emph{Co-Occurrence Spearman Rank Correlation Coefficient}.
 In addition, we replace Affinity Propagation with the Girvan–Newman algorithm.
 Given the context in which this work was conducted, we considered that exploring additional community detection algorithms would be of greater interest than experimenting with clustering algorithms.
 
+As detailed in Section~\ref{netrepr}, Kitanovski et al. used two network representations.
+Because we only use community detection algorithms to identify market segments, and such algorithms are not suitable for use on a fully connected graph, the only network representation we consider is the MST.
+
+Using two community detection algorithms also allows us to consider \emph{hybrid strategies}: one algorithm computes the monthly communities used for the co-occurrence distances, while another algorithm identifies the final market segments from those distances.
+We hypothesized that combining the characteristics of two distinct algorithms would yield more expressive strategies that better capture the intricacies of financial markets.
+
+% TODO: Meter de novo a cena da similarity network que tirei.
 In practice, this results in six metrics used to measure asset relations:
 \begin{itemize}
     \item SCC.
     \item PCC.
-    \item Co-Occurrence SCC using Louvain to identify the monthly communities (CoSCC\_LV).
-    \item Co-Occurrence SCC using Girvan-Newman to identify the monthly communities (CoSCC\_GN).
-    \item Co-Occurrence PCC using Louvain to identify the monthly communities (CoPCC\_LV).
-    \item Co-Occurrence PCC using Girvan-Newman to identify the monthly communities (CoPCC\_GN).
+    \item Co-Occurrence SCC using Louvain to identify the monthly communities (SCC\_LV\_Co).
+    \item Co-Occurrence SCC using Girvan-Newman to identify the monthly communities (SCC\_GN\_Co).
+    \item Co-Occurrence PCC using Louvain to identify the monthly communities (PCC\_LV\_Co).
+    \item Co-Occurrence PCC using Girvan-Newman to identify the monthly communities (PCC\_GN\_Co).
 \end{itemize}
 Additionally, we use two distinct community detection algorithms to identify market segments and nine different asset selection heuristics to select the best stocks within each segment.
 This yields 108 distinct investment strategies, all fully implemented in our tool, \textsc{PortNet}, using a collection of Python scripts.
 
-\section{Results} \label{results}
+\section{Results and Discussion} \label{results}
 
-%TODO: Atualizar a imagem depois
-\begin{figure*}[t]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=\textwidth]{images/returns.png}
+  \includegraphics[width=0.7\textwidth]{images/returns.png}
   \caption{Returns}
   \label{fig:returns}
-\end{figure*}
+\end{figure}
 
 The 108 portfolio-building strategies were tested across two non-overlapping subsets of the global financial markets: the S\&P 500 index and the FTSE 100 index.
+We used the last three years of data for both indexes.
+The first two years of data were used for training, and the last year was used to evaluate the performance of the various strategies.
+
+\subsection{Portfolio Performance}
+
 Fig.~\ref{fig:returns} summarizes the returns obtained when applying our method to select stocks from each index, ordered by Sharpe ratio.
+The top 3 performing portfolios for each index are highlighted in red.
 The Sharpe ratio compares a portfolio’s returns with its associated risk, indicating how much of the return can be attributed to excess volatility.
 Generally speaking, the higher the ratio the better.
+Interestingly, the top three S\&P 500 portfolios exhibit similar returns with varying Sharpe ratios.
+In contrast, the FTSE 100 portfolios show a more linear relationship between volatility and profit: strategies that minimize volatility tend to perform better.
 
-% TODO: Falar sobre qual e o melhore no S&P, FTSE e quais sao os 3 melhores globais.
+The best-performing strategy in the S\&P 500 index used PCC distances combined with the Louvain method and selected assets with minimal PCA.
+The best-performing strategy in the FTSE 100 index used SCC\_GN\_Co distances combined with the Girvan–Newman algorithm and selected assets with minimal CD.
+Figures~\ref{fig:sp500communities} and~\ref{fig:ftse100communities} show the communities identified in these strategies.
 
-% TODO: Mostrar grafo das comunidades para os 3 melhores.
-% TODO: Discutir uma beca os grafos
+\begin{figure}
+\centering
+\begin{minipage}{0.45\textwidth}
+  \centering
+  \includegraphics[width=0.45\textwidth]{images/sp500_pcc_louvain_graph.png}
+  \captionof{figure}{Identified communities for the best performing S\&P 500 strategy}
+  \label{fig:sp500communities}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}{0.45\textwidth}
+  \centering
+  \includegraphics[width=0.45\textwidth]{images/ftse100_scc_gn_co_girvan_newman.png}
+  \captionof{figure}{Identified communities for the best performing FTSE 100 strategy}
+  \label{fig:ftse100communities}
+\end{minipage}
+\end{figure}
 
-%TODO: Atualizar a imagem depois
-\begin{figure*}[b]
+Overall, the top three performing portfolios were all from the S\&P 500 index:
+\begin{enumerate}
+    \item PCC + LV + minimal PCA
+    \item PCC + GN + median CD
+    \item PCC + GN + minimal PCA
+\end{enumerate}
+This result is likely explained by the fact that, over the studied period, the S\&P 500 grew by 87.43\%, while the FTSE 100 grew by 37.45\%.
+
+The best-performing strategies for both indexes selected assets with either \emph{minimal PCA} or \emph{minimal CD} scores.
+Since the minimal PCA score reflects the lowest exposure to the market's dominant factor, and minimal CD scores reflect the weakest connection to immediate neighbors, this confirms the principle of favoring \emph{peripheral assets} to reduce portfolio volatility.
+
+\begin{figure}[t]
   \centering
   \includegraphics[width=\textwidth]{images/differences.png}
-  \caption{Returns}
-  \label{fig:returns}
-\end{figure*}
+  \caption{Performance differences of all studied strategies}
+  \label{fig:differences}
+\end{figure}
 
-% TODO: Falar sobre quais são os 3 com diferencas menores e os 3 com diferencas maiores, dizer o ranking em que estao em termos de returns para os dois indices.
-% TODO: Discutir que os 3 com diferencas menores sao, em principio, estrategias mais robustas e que dependem menos de carateristicas especificas de um mercado em particular.
+\subsection{Portfolio Robustness}
 
-\section{Discussion \& Conclusion} \label{conclusion}
+To assess robustness, Figure~\ref{fig:differences} illustrates the performance difference of each strategy between the two indexes.
+The strategies with the smallest absolute performance difference are theoretically the most robust, as their success is less dependent on the unique characteristics of a single market.
 
-% Falar das diferencas em resultados do nosso para o deles.
-% -> Fizeram no Covid que é um periodo especialmente pouco representativo, portanto faz sentido que as suas estrategias generalizem mal para outros periodos.
-% -> Estas estrategies nao conseguem capturar todas as intricasies presentes nos mercados financeiros, é dificil arranjar um metodo que generalize bem para varios mercados e periodos diferentes.
-TODO
+The three most robust strategies were:
+\begin{enumerate}
+    \item SCC\_LV\_Co + GN + maximal CD
+    \item PCC + GN + maximal CD
+    \item SCC + GN + median CD
+\end{enumerate}
+These three strategies consistently used the Girvan-Newman algorithm and favored Degree Centrality selection.
+This suggests that the non-linear clustering capability of Girvan-Newman generalizes better across markets.
+The consistent presence of CD selection indicates that choosing assets based on their local strength of correlation within their community helps maintain performance stability across different market conditions.
+Notably, the most robust portfolio uses Louvain to compute co-occurrences while using Girvan–Newman to identify market segments, partially corroborating our hypothesis in Section~\ref{methods} that hybrid strategies better model financial markets.
+However, while robust, this strategy underperformed compared to less robust ones, highlighting that further work is required to identify a method that achieves both high performance and generalizability across markets.
+
+The three least robust strategies were:
+\begin{enumerate}
+    \item PCC\_LV\_Co + LV + median CC
+    \item PCC + LV + minimal PCA
+    \item PCC + LV + median CC
+\end{enumerate}
+The high dependence on the Louvain method for community detection and the raw PCC metric in these highly differentiated portfolios is noteworthy.
+The fact that the strategies with the largest cross-market differences include both top performers in one index and poor performers in the other underscores the high-risk nature of market-specific optimization.
+For instance, the PCC + LV + minimal PCA strategy was the best performer on the S\&P 500 while severely underperforming on the FTSE 100.
+
+There is a clear contrast between our results and those reported by Kitanovski et al.
+For instance, one of their best-performing strategies, PCC\_LV\_Co + LV + minimal PCA, was among the worst-performing strategies for the S\&P 500 in our study.
+While their study identified Louvain as one of the most versatile community detection algorithms for portfolio construction, our findings suggest that, despite being used in our top-performing strategy, Louvain does not yield strategies that generalize well across markets.
+This discrepancy may be largely explained by the fact that their experiments used market data from the COVID-19 pandemic and the Russian invasion of Ukraine, two periods that are not representative of typical market conditions.
+
+\section{Conclusion} \label{conclusion}
+
+This work presented \textsc{PortNet}, a framework for network-based portfolio diversification, implemented as an extension of the methodology proposed by Kitanovski et al.
+We extended the original approach by replacing the Affinity Propagation clustering algorithm with the Girvan–Newman algorithm for community detection and by substituting Mutual Information with the Spearman Rank Correlation Coefficient.
+
+The experimental results demonstrate that the performance of network-based strategies is highly sensitive to both the specific market and the training period selected.
+Clear evidence of this sensitivity is the performance gap observed when compared with the previous study, particularly because the earlier experiments were conducted using market data during the COVID-19 pandemic and the Russian invasion of Ukraine.
+This indicates that such strategies are unable to fully capture the complex dynamics of financial markets.
+Consequently, designing a method that generalizes effectively across different market regimes and periods remains a significant challenge.
+
+Despite this, we show that using distinct community detection algorithms at different steps of the method is a possibly promising avenue for improving the robustness of automatically generated portfolios.
 
 %%
 %% The next two lines define the bibliography style to be used, and
