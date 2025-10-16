@@ -362,7 +362,7 @@ This yields 108 distinct investment strategies, all fully implemented in our too
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.7\textwidth]{images/returns.png}
+  \includegraphics[width=\textwidth]{images/returns.png}
   \caption{Returns}
   \label{fig:returns}
 \end{figure}
@@ -412,14 +412,26 @@ This result is likely explained by the fact that, over the studied period, the S
 The best-performing strategies for both indexes selected assets with either \emph{minimal PCA} or \emph{minimal CD} scores.
 Since the minimal PCA score reflects the lowest exposure to the market's dominant factor, and minimal CD scores reflect the weakest connection to immediate neighbors, this confirms the principle of favoring \emph{peripheral assets} to reduce portfolio volatility.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{images/modularity.png}
+  \caption{Portfolio performance per community modularity}
+  \label{fig:modularity}
+\end{figure}
+
+Fig.~\ref{fig:modularity} shows the performance of each studied portfolio according to the modularity of the respective community used to identify market segments.
+Once again, the top performers for each index are highlighted in red.
+There is little difference in modularity between the studied communities, but this graph suggests that performance is not highly sensitive to modularity.
+The highest-performing portfolios for both indexes are well distributed across the modularity range.
+
+\subsection{Portfolio Robustness}
+
 \begin{figure}[t]
   \centering
   \includegraphics[width=\textwidth]{images/differences.png}
   \caption{Performance differences of all studied strategies}
   \label{fig:differences}
 \end{figure}
-
-\subsection{Portfolio Robustness}
 
 To assess robustness, Figure~\ref{fig:differences} illustrates the performance difference of each strategy between the two indexes.
 The strategies with the smallest absolute performance difference are theoretically the most robust, as their success is less dependent on the unique characteristics of a single market.
