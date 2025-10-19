@@ -1,0 +1,285 @@
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[bigger]{beamer}
+
+\graphicspath{{./}} % Specifies where to look for included images
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+
+\mode<presentation>{}
+
+%----------------------------------------------------------------------------------------
+%   LAYOUT THEME
+%----------------------------------------------------------------------------------------
+
+\usetheme{Madrid}
+
+%----------------------------------------------------------------------------------------
+%   FONT THEME & FONTS
+%----------------------------------------------------------------------------------------
+
+\usefonttheme{default} % Typeset using the default sans serif font
+
+%------------------------------------------------
+
+\usepackage{palatino} % Use the Palatino font for serif text
+\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
+
+%----------------------------------------------------------------------------------------
+%   INNER THEME
+%----------------------------------------------------------------------------------------
+
+\useinnertheme{circles}
+
+%----------------------------------------------------------------------------------------
+%   OUTER THEME
+%----------------------------------------------------------------------------------------
+
+\setbeamertemplate{footline}[page number] % Replace the footer line in all slides with a simple slide count
+\setbeamertemplate{navigation symbols}{} % Remove the navigation symbols from the bottom of all slides
+
+%----------------------------------------------------------------------------------------
+%   PRESENTATION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Network-Based Diversification of Stock Portfolios}
+
+\subtitle{Network Science: Project Presentation}
+
+\author{João Gouveia, Gonçalo Rua}
+
+\institute{Instituto Superior Técnico}
+
+\date{\today}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%   TABLE OF CONTENTS SLIDE
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{Presentation Overview}
+    \tableofcontents
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%   PRESENTATION BODY SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+\subsection{Motivation and previous work}
+
+\begin{frame}{Introduction}{Motivation}
+    DeFi contracts are vulnerable to attacks:
+    \begin{itemize}
+        \item<2-> Billions have been stolen.
+        \item<3-> Exploits are mainly financial, not software-based.
+        \item<4-> Leverage complex financial interactions among contracts, whose composition is poorly understood.
+        \item<5-> Traditional bug-finding tools are not suitable to find these exploits.
+    \end{itemize}
+
+    \begin{exampleblock}{DeFi (Decentralized Finance)}
+      Financial instruments built on top of blockchains. DeFi contracts make
+      possible new financial instruments, that cannot be replicated with real
+      world assets.
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{Introduction}{Previous Work}
+    Previous work on formal verification of economic security in DeFi contracts:
+    \begin{itemize}
+        \item<2-> Focused on identifying known attacks.
+        \item<3-> Lack the generality to discover new attacks.
+    \end{itemize}
+
+    \begin{exampleblock}{Formal Verification}
+      Usage of mathematical models and proofs to prove that a system respects a
+      given property.
+    \end{exampleblock}
+\end{frame}
+
+\subsection{Contributions}
+
+\begin{frame}{Introduction}{Contributions}
+    This paper provides two main contributions:
+    \begin{itemize}
+        \item<2-> \textbf{EV} (Extractable Value): A formal definition for the economic security of composed contracts.
+        \item<3-> \textbf{CFF} (Clockwork Finance Framework): Framework that relies on EV to prove bounds on the economic security of contract compositions.
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Extractable Value}
+
+\begin{frame}{Extractable Value}{Informal Definition}
+  Given any valid sequence of blocks, what is the maximum value that can be
+  extracted by a specific participant in the system?
+\end{frame}
+
+\begin{frame}{Extractable Value}{Formal Definition}
+    \begin{exampleblock}{(Simplified) Formal Definition}
+        $\text{EV}(P,B,s) = \max_{(B_1, \ldots, B_k) \in B} \{ \sum_{a \in A_p} \text{balance}_k(a) - \text{balance}_0(a)\}$
+    \end{exampleblock}
+    \bigskip
+    \begin{itemize}
+        \item $P$: Specific participant in the system. Also referred to as player.
+        \item $B$: Set of all valid block sequences of length $k$.
+        \item $s$: Initial state, mapping of balances and data to accounts.
+        \item $A_P$: Set of accounts belonging to participant $P$.
+        \item $\text{balance}_{k}(a)$: Balance of account $a$ in state $s_k$.
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Clockwork Finance Framework}
+
+\subsection{Use Cases}
+
+\begin{frame}{Clockwork Finance Framework}{Use Cases}
+    \begin{itemize}
+        \item<1-> \textbf{DeFi contract designers}: Reason about the economic security of interactions between their contracts and other contracts.
+        \item<2-> \textbf{Bots and miners}: Find profitable strategies in real-time.
+        \item<3-> \textbf{Users}: Reason about the guarantees provided by the transactions they execute in the network, and the value at risk by exploits.
+    \end{itemize}
+\end{frame}
+
+\subsection{Proving Economic Security}
+
+\begin{frame}{Clockwork Finance Framework}{Proving Economic Security}
+    \begin{itemize}
+        \item<1-> CFF proves the economic security of a contract by proving its composability with the other contracts in the system.
+        \item<2-> Contracts are modeled.
+        \item<3-> Contract models fed to a solver.
+        \item<4-> Solver either proves the safety of the contract, or returns an example showing why it is not safe.
+    \end{itemize}
+
+    \begin{exampleblock}{Composability}
+      A contract $C_1$ is composable with $C_2$ if adding $C_2$ to the system
+      does not give an adversary a significantly higher extractable value.
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{Clockwork Finance Framework}{Proving Economic Security}
+    \begin{figure}
+        \includegraphics[width=0.53\linewidth]{architecture.png}
+        \caption{CFF's (simplified) architecture.}
+    \end{figure}
+\end{frame}
+
+\subsection{Properties}
+
+\begin{frame}{Clockwork Finance Framework}{Functional Properties}
+    \begin{itemize}
+        \item<1-> \textbf{Contract Completness}.
+        \begin{itemize}
+            \item<2-> Can model any DeFi contract with equivalent execution complexity to the native platform.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Clockwork Finance Framework}{Functional Properties}
+    \begin{itemize}
+        \item<1-> \textbf{Attack Exhaustive by Construction}.
+        \begin{itemize}
+            \item<2-> Reasons about the all possible executions.
+            \item<3-> Does not require manual coding of adversarial strategies.
+            \item<4-> Can identify any attack expressible by its definitions.
+            \item<5-> Yields false positives, not false negatives.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Clockwork Finance Framework}{Usability Properties}
+    \begin{itemize}
+        \item<1-> \textbf{Modularity}: Models for a contract can be used by any CFF execution involving that contract.
+        \item<2-> \textbf{Human Readability}: Models are typically easier to read than the corresponding contract source code.
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Review}
+
+\subsection{The Good}
+
+\begin{frame}{Review}{The Good}
+    \begin{itemize}
+        \item<1-> Introduces the notion of extractable value, and a new definition of contract composability.
+        \item<2-> Both useful going forward, when reasoning about economic security.
+    \end{itemize}
+\end{frame}
+
+\subsection{The Bad}
+
+\begin{frame}{Review}{The Bad}
+    \begin{itemize}
+        \item<1-> The authors claim that CFF is useful to DeFi contract designers.
+        \item<2-> The composability of a contract can be affected by the design flaws of other contracts.
+        \begin{itemize}
+            \item<3-> Namely by contracts added later to the system.
+        \end{itemize}
+        \item<4-> In practice, CFF does not seem to offer any useful guarantees to contract developers.
+        \item<5-> Our contract might be provably economicaly safe today.
+        \begin{itemize}
+            \item<6-> Tommorow a new contract might be added to the system that completely negates this.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\subsection{The Ugly}
+
+\begin{frame}{Review}{The Ugly}
+    \begin{itemize}
+        \item<1-> CFF comes with 14 pre-modeled contracts.
+        \item<2-> Any other contract must be manually modeled by the user.
+        \item<3-> This causes two fundamental problems.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Review}{The Ugly}
+    \textbf{Barrier of entry}.
+    \begin{itemize}
+        \item<2-> Users must learn how to model contracts before actually being able to use the tool.
+        \item<3-> Not all users will be willing to do this.
+        \item<4-> Widespread adoption becomes unlikely.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Review}{The Ugly}
+    \textbf{Rotten foundation}.
+    \begin{itemize}
+        \item<2-> Manual modelling of the contracts introduces the possibility of making a wrong model.
+        \item<3-> If the model itself is wrong, the proof is worthless.
+        \item<4-> The danger of a wrong model is heightened by the fact that the target users of this tool will likely be new to formal verification.
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Questions}
+
+\begin{frame}{Questions}
+    \begin{itemize}
+        \item Considering the issues with composability, will it ever be
+        possible to develop a framework that provides relevant guarantees to
+        contract developers?
+        \item How can we solve the problems that come with manually modelling contracts?
+    \end{itemize}
+\end{frame}
+
+\end{document} 
