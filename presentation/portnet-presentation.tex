@@ -235,7 +235,46 @@
 \subsection{Asset Selection}
 
 \begin{frame}{Automated Portfolio Construction}{Asset Selection}
-    TODO
+    To build the final portfolio:
+    \begin{itemize}
+        \item<2-> Select 25 assets proportionally from each community to maximize diversification.
+        \item<3-> Use network metrics to rank assets within each community.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Selection}
+    Selection metrics:
+    \begin{itemize}
+        \item<2-> Principal Component Analysis (PCA): asset’s exposure to dominant market-wide risk factor.
+        \item<3-> Degree Centrality (CD): total strength of an asset within its community.
+        \item<4-> Closeness Centrality (CC): average shortest path from an asset to all others in the network.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Selection}
+    Selection Metric Ranges:
+    \begin{itemize}
+        \item<2-> Min: select assets with the lowest metric scores - typically more peripheral.
+        \item<3-> Med: select assets around the median value.
+        \item<4-> Max: select assets with the highest metric scores - typically more central.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Selection}
+    In total, 9 metrics:
+    \begin{itemize}
+        \item<2-> min PCA, med PCA, max PCA
+        \item<3-> min CD, med CD, max CD
+        \item<4-> min CC, med CC, max CC
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Selection}
+    Rationale:
+    \begin{itemize}
+        \item<2-> Peripheral assets may help reduce volatility.
+        \item<3-> Central assets may capture core market movements.
+    \end{itemize}
 \end{frame}
 
 \subsection{Summary}
@@ -286,13 +325,76 @@
 \subsection{Performance}
 
 \begin{frame}{Results}{Performance}
-    TODO
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\textwidth]{images/returns.png}
+  \caption{Returns}
+  \label{fig:returns}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Results}{Performance}
+    We evaluated 108 strategies across:
+    \begin{itemize}
+        \item<2-> \textbf{S\&P 500 Index}.
+        \item<3-> \textbf{FTSE 100 Index}.
+    \end{itemize}
+    \onslide<4->{Best-performing strategies:}
+    \begin{itemize}
+        \item<5-> S\&P 500: PCC + Louvain + Min PCA.
+        \item<6-> FTSE 100: SCC\_GN\_Co + Girvan-Newman + Min CD.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Results}{Performance}
+    \begin{itemize}
+        \item<2-> The best strategies use either minimal PCA or minimal CD scores.
+        \item<3-> Minimal PCA score reflects the lowest exposure to the market’s dominant factor.
+        \item<4-> Minimal CD scores reflect the weakest connection to immediate neighbors.
+        \item<5-> This confirms the principle of favoring \textbf{peripheral assets} to reduce portfolio volatility.
+    \end{itemize}
 \end{frame}
 
 \subsection{Robustness}
 
 \begin{frame}{Results}{Robustness}
-    TODO
+    Goal: Assess how strategies perform across markets.
+    \begin{itemize}
+        \item<2-> Measured the absolute difference in performance between S\&P 500 and FTSE 100.
+        \item<3-> Smaller differences $\Rightarrow$ more robust strategies.
+    \end{itemize}
+    \onslide<4->{Top 3 most robust strategies:}
+    \begin{itemize}
+        \item<5-> SCC\_LV\_Co + GN + Max CD.
+        \item<6-> PCC + GN + Max CD.
+        \item<7-> SCC + GN + Median CD.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Results}{Robustness}
+    Insights:
+    \begin{itemize}
+        \item<2-> Robust strategies consistently used Girvan–Newman for community detection.
+        \item<3-> Degree Centrality was the most robust selection metric.
+        \item<4-> Mixing Louvain for co-occurrence and GN for segmentation appears promising.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Results}{Difference in results from the previous work}
+    \begin{itemize}
+        \item<2-> Our results differ greatly from the work of Kitanovski et al.
+        \item<3-> They identified Louvain as one of the most versatile community detection algorithms...
+        \item<4-> we found the opposite to be true.
+        \item<5-> Explained by their usage of market data from the COVID-19 pandemic and the Ukraine invasion?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Results}{Conclusions}
+    \begin{itemize}
+        \item<2-> Performance highly sensitive to both the specific market and the training period selected.
+        \item<3-> Strategies are unable to fully capture the complex dynamics of financial markets.
+        \item<4-> Designing a method that generalizes well across scenarios remains a significant challenge.
+    \end{itemize}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
