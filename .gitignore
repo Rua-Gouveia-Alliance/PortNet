@@ -22,4 +22,8 @@ scripts/__pycache__
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+*.bcf
+*.nav
+*.run.xml
+*.snm
 .auctex-auto/

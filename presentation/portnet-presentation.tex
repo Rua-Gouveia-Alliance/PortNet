@@ -4,9 +4,23 @@
 
 \documentclass[bigger]{beamer}
 
-\graphicspath{{./}} % Specifies where to look for included images
+\graphicspath{{./images}} % Specifies where to look for included images
 
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+\usepackage{bookmark}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, arrows.meta, positioning, fit, calc}
+\tikzset{
+    >={Stealth[length=2mm]},
+    box/.style = {draw, rounded corners, very thick, minimum width=18mm, minimum height=4mm, align=center, font=\fontfamily{Inter-TLF}\selectfont\scriptsize},
+    group/.style = {draw, rounded corners, very thick, inner sep=2mm},
+    note/.style  = {font=\fontfamily{Inter-TLF}\selectfont\tiny, align=center},
+}
+
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{references.bib}
+\AtBeginBibliography{\scriptsize}
 
 \mode<presentation>{}
 
@@ -83,203 +97,212 @@
 \subsection{Motivation and previous work}
 
 \begin{frame}{Introduction}{Motivation}
-    DeFi contracts are vulnerable to attacks:
+    Financial markets display complex dynamics:
     \begin{itemize}
-        \item<2-> Billions have been stolen.
-        \item<3-> Exploits are mainly financial, not software-based.
-        \item<4-> Leverage complex financial interactions among contracts, whose composition is poorly understood.
-        \item<5-> Traditional bug-finding tools are not suitable to find these exploits.
+        \item<2-> There aren't many techniques that can capture such dynamics.
+        \item<3-> Network science is a promising framework to capture these intricasies.
     \end{itemize}
+\end{frame}
 
-    \begin{exampleblock}{DeFi (Decentralized Finance)}
-      Financial instruments built on top of blockchains. DeFi contracts make
-      possible new financial instruments, that cannot be replicated with real
-      world assets.
-    \end{exampleblock}
+\begin{frame}{Introduction}{Motivation}
+    Traditional approaches to investing:
+    \begin{itemize}
+        \item<2-> Maximize diversification.
+        \item<3-> Minimize volatility.
+    \end{itemize}
+    \bigskip
+    \onslide<4->{Using network science to automatically build a portfolio:}
+    \begin{itemize}
+        \item<5-> Community detection algorithms identify distinct market segments.
+        \item<6-> Network metrics identify the most desirable assets within each segment.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Introduction}{Previous Work}
-    Previous work on formal verification of economic security in DeFi contracts:
+    Kitanovski et al.~\cite{kitanovski} automate portfolio construction using:
     \begin{itemize}
-        \item<2-> Focused on identifying known attacks.
-        \item<3-> Lack the generality to discover new attacks.
+        \item<2-> Correlation measures.
+        \item<3-> Community detection algorithms.
+        \item<4-> Network metrics.
     \end{itemize}
-
-    \begin{exampleblock}{Formal Verification}
-      Usage of mathematical models and proofs to prove that a system respects a
-      given property.
-    \end{exampleblock}
+    \onslide<5->{Their approach was then tested on the S\&P 500 index.}
 \end{frame}
 
 \subsection{Contributions}
 
 \begin{frame}{Introduction}{Contributions}
-    This paper provides two main contributions:
+    Building on this work, we:
     \begin{itemize}
-        \item<2-> \textbf{EV} (Extractable Value): A formal definition for the economic security of composed contracts.
-        \item<3-> \textbf{CFF} (Clockwork Finance Framework): Framework that relies on EV to prove bounds on the economic security of contract compositions.
+        \item<2-> Explore different correlation measures.
+        \item<3-> Explore different community detection algorithms.
+        \item<4-> Analyze our approach on a wider subset of the global financial markets.
     \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
-\section{Extractable Value}
+\section{Automated Portfolio Construction}
 
-\begin{frame}{Extractable Value}{Informal Definition}
-  Given any valid sequence of blocks, what is the maximum value that can be
-  extracted by a specific participant in the system?
+\subsection{Overview}
+
+\begin{frame}{Automated Portfolio Construction}{Overview}
+    Three steps:
+    \begin{itemize}
+        \item<2-> Compute relations between the daily returns of assets.
+        \item<3-> Identify market segments based on these relations.
+        \item<4-> Build a portfolio by selecting assets from each segment.
+    \end{itemize}
 \end{frame}
 
-\begin{frame}{Extractable Value}{Formal Definition}
-    \begin{exampleblock}{(Simplified) Formal Definition}
-        $\text{EV}(P,B,s) = \max_{(B_1, \ldots, B_k) \in B} \{ \sum_{a \in A_p} \text{balance}_k(a) - \text{balance}_0(a)\}$
-    \end{exampleblock}
+\subsection{Asset Relations}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Relations}
+    Computing asset relations:
+    \begin{itemize}
+        \item<2-> Spearman Rank Correlation Coefficient (SCC).
+        \item<3-> Pearson Correlation Coefficient (PCC).
+        \item<4-> Co-Occurrence measures.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Relations}
+    Four distinct Co-Occurrence measures:
+    \begin{itemize}
+        \item<2-> Co-Occurrence SCC using Louvain to identify the monthly communities.
+        \item<3-> Co-Occurrence SCC using Girvan-Newman to identify the monthly communities.
+        \item<4-> Co-Occurrence PCC using Louvain to identify the monthly communities.
+        \item<5-> Co-Occurrence PCC using Girvan-Newman to identify the monthly communities.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Relations}
+    Computing a Co-Occurrence measure:
+    \begin{itemize}
+        \item<2-> Compute the monthly SCC/PCC relations between assets.
+        \item<3-> Identify the market segments for each month using a community detection algorithm.
+        \item<4-> For each pair of assets, compute the frequency with which they belong to the same community.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Relations}
+    In short, we have 6 possibile measures of asset relations:
+    \begin{itemize}
+        \item SCC.
+        \item PCC.
+        \item Four Co-Occurrence measures.
+    \end{itemize}
+\end{frame}
+
+\subsection{Network Representation}
+
+\begin{frame}{Automated Portfolio Construction}{Network Representation}
+    \onslide<1->{We now have, for each pair of assets, a number reflecting how they are related.}
     \bigskip
+
+    \onslide<2->{\textbf{Goal}: Use these values to determine groups of assets that are closely related.}
+\end{frame}
+
+\begin{frame}{Automated Portfolio Construction}{Network Representation}
+    Build a fully connected graph:
     \begin{itemize}
-        \item $P$: Specific participant in the system. Also referred to as player.
-        \item $B$: Set of all valid block sequences of length $k$.
-        \item $s$: Initial state, mapping of balances and data to accounts.
-        \item $A_P$: Set of accounts belonging to participant $P$.
-        \item $\text{balance}_{k}(a)$: Balance of account $a$ in state $s_k$.
+        \item<2-> One node for each available asset.
+        \item<3-> Use the relation measures between assets as edge weigths.
     \end{itemize}
 \end{frame}
 
-%------------------------------------------------
-
-\section{Clockwork Finance Framework}
-
-\subsection{Use Cases}
-
-\begin{frame}{Clockwork Finance Framework}{Use Cases}
+\begin{frame}{Automated Portfolio Construction}{Network Representation}
+    \alert{Problem}: Most community detection algorithms are designed for sparse networks.
     \begin{itemize}
-        \item<1-> \textbf{DeFi contract designers}: Reason about the economic security of interactions between their contracts and other contracts.
-        \item<2-> \textbf{Bots and miners}: Find profitable strategies in real-time.
-        \item<3-> \textbf{Users}: Reason about the guarantees provided by the transactions they execute in the network, and the value at risk by exploits.
+        \item<2-> Our fully connected graph is not suitable for this.
+    \end{itemize}
+    \bigskip
+    \onslide<3->{\textcolor{green}{Solution}: Compute the \emph{Minimum Spanning Tree} of our graph.}
+    \begin{itemize}
+        \item<4-> Yields a graph amenable to community detection.
     \end{itemize}
 \end{frame}
 
-\subsection{Proving Economic Security}
+\subsection{Community Detection}
 
-\begin{frame}{Clockwork Finance Framework}{Proving Economic Security}
+\begin{frame}{Automated Portfolio Construction}{Community Detection}
+    Identifying market segments:
     \begin{itemize}
-        \item<1-> CFF proves the economic security of a contract by proving its composability with the other contracts in the system.
-        \item<2-> Contracts are modeled.
-        \item<3-> Contract models fed to a solver.
-        \item<4-> Solver either proves the safety of the contract, or returns an example showing why it is not safe.
+        \item<2-> Louvain Method.
+        \item<3-> Girvan-Newman Algorithm.
     \end{itemize}
-
-    \begin{exampleblock}{Composability}
-      A contract $C_1$ is composable with $C_2$ if adding $C_2$ to the system
-      does not give an adversary a significantly higher extractable value.
-    \end{exampleblock}
 \end{frame}
 
-\begin{frame}{Clockwork Finance Framework}{Proving Economic Security}
+\subsection{Asset Selection}
+
+\begin{frame}{Automated Portfolio Construction}{Asset Selection}
+    TODO
+\end{frame}
+
+\subsection{Summary}
+
+\begin{frame}{Automated Portfolio Construction}{Summary}
     \begin{figure}
-        \includegraphics[width=0.53\linewidth]{architecture.png}
-        \caption{CFF's (simplified) architecture.}
+        \centering
+        \begin{tikzpicture}[node distance=2mm]
+            \node[box, fill=red!20] (pcc) {PCC};
+            \node[box, fill=green!20, right=of pcc] (copcclv) {PCC\_LV\_Co};
+            \node[box, fill=yellow!20, right=of copcclv] (copccgn) {PCC\_GN\_Co};
+            \node[box, fill=red!20, below=of pcc] (scc) {SCC};
+            \node[box, fill=green!20, below=of copcclv] (coscclv) {SCC\_LV\_Co};
+            \node[box, fill=yellow!20, below=of copccgn] (cosccgn) {SCC\_GN\_Co};
+            \node[group, fit=(pcc)(copcclv)(copccgn)(scc)(coscclv)(cosccgn),
+                label={[note, anchor=north west, yshift=14pt]north west:Asset Relations}] (relations) {};
+
+            \coordinate (underrelations) at ([yshift=-10mm]relations.south);
+            \node[box, fill=red!20,  anchor=north] (lv) at ($(underrelations)+(-10mm,0)$) {LV};
+            \node[box, fill=cyan!20, anchor=north] (gn) at ($(underrelations)+( 10mm,0)$) {GN};
+            \node[group, fit=(lv)(gn),
+                label={[note, anchor=north west, yshift=14pt, xshift=-31pt]north west:Community Detection}] (communities) {};
+
+            \node[box, fill=red!20, below=30mm of scc] (pca) {PCA};
+            \node[box, fill=green!20, below=30mm of coscclv] (cd) {CD};
+            \node[box, fill=yellow!20, below=30mm of cosccgn] (cc) {CC};
+            \node[group, fit=(pca)(cd)(cc),
+                label={[note, anchor=north west, yshift=14pt]north west:Asset Selection}] (assets) {};
+
+            \node[box, fill=red!20, below=13mm of pca] (min) {Min};
+            \node[box, fill=green!20, below=13mm of cd] (med) {Med};
+            \node[box, fill=yellow!20, below=13mm of cc] (max) {Max};
+            \node[group, fit=(min)(med)(max),
+                label={[note, anchor=north west, yshift=14pt]north west:Metric Ranges}] (ranges) {};
+
+            \draw[->, very thick] (relations) -- (communities);
+            \draw[->, very thick] (communities) -- (assets);
+            \draw[->, very thick] (assets) -- (ranges);
+        \end{tikzpicture}
+        \caption{Methodology Overview}
     \end{figure}
 \end{frame}
 
-\subsection{Properties}
-
-\begin{frame}{Clockwork Finance Framework}{Functional Properties}
-    \begin{itemize}
-        \item<1-> \textbf{Contract Completness}.
-        \begin{itemize}
-            \item<2-> Can model any DeFi contract with equivalent execution complexity to the native platform.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Clockwork Finance Framework}{Functional Properties}
-    \begin{itemize}
-        \item<1-> \textbf{Attack Exhaustive by Construction}.
-        \begin{itemize}
-            \item<2-> Reasons about the all possible executions.
-            \item<3-> Does not require manual coding of adversarial strategies.
-            \item<4-> Can identify any attack expressible by its definitions.
-            \item<5-> Yields false positives, not false negatives.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Clockwork Finance Framework}{Usability Properties}
-    \begin{itemize}
-        \item<1-> \textbf{Modularity}: Models for a contract can be used by any CFF execution involving that contract.
-        \item<2-> \textbf{Human Readability}: Models are typically easier to read than the corresponding contract source code.
-    \end{itemize}
-\end{frame}
-
 %------------------------------------------------
 
-\section{Review}
+\section{Results}
 
-\subsection{The Good}
+\subsection{Performance}
 
-\begin{frame}{Review}{The Good}
-    \begin{itemize}
-        \item<1-> Introduces the notion of extractable value, and a new definition of contract composability.
-        \item<2-> Both useful going forward, when reasoning about economic security.
-    \end{itemize}
+\begin{frame}{Results}{Performance}
+    TODO
 \end{frame}
 
-\subsection{The Bad}
+\subsection{Robustness}
 
-\begin{frame}{Review}{The Bad}
-    \begin{itemize}
-        \item<1-> The authors claim that CFF is useful to DeFi contract designers.
-        \item<2-> The composability of a contract can be affected by the design flaws of other contracts.
-        \begin{itemize}
-            \item<3-> Namely by contracts added later to the system.
-        \end{itemize}
-        \item<4-> In practice, CFF does not seem to offer any useful guarantees to contract developers.
-        \item<5-> Our contract might be provably economicaly safe today.
-        \begin{itemize}
-            \item<6-> Tommorow a new contract might be added to the system that completely negates this.
-        \end{itemize}
-    \end{itemize}
+\begin{frame}{Results}{Robustness}
+    TODO
 \end{frame}
 
-\subsection{The Ugly}
+%----------------------------------------------------------------------------------------
+%   REFERENCES
+%----------------------------------------------------------------------------------------
 
-\begin{frame}{Review}{The Ugly}
-    \begin{itemize}
-        \item<1-> CFF comes with 14 pre-modeled contracts.
-        \item<2-> Any other contract must be manually modeled by the user.
-        \item<3-> This causes two fundamental problems.
-    \end{itemize}
-\end{frame}
+\section{Bibliography}
 
-\begin{frame}{Review}{The Ugly}
-    \textbf{Barrier of entry}.
-    \begin{itemize}
-        \item<2-> Users must learn how to model contracts before actually being able to use the tool.
-        \item<3-> Not all users will be willing to do this.
-        \item<4-> Widespread adoption becomes unlikely.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Review}{The Ugly}
-    \textbf{Rotten foundation}.
-    \begin{itemize}
-        \item<2-> Manual modelling of the contracts introduces the possibility of making a wrong model.
-        \item<3-> If the model itself is wrong, the proof is worthless.
-        \item<4-> The danger of a wrong model is heightened by the fact that the target users of this tool will likely be new to formal verification.
-    \end{itemize}
-\end{frame}
-
-%------------------------------------------------
-
-\section{Questions}
-
-\begin{frame}{Questions}
-    \begin{itemize}
-        \item Considering the issues with composability, will it ever be
-        possible to develop a framework that provides relevant guarantees to
-        contract developers?
-        \item How can we solve the problems that come with manually modelling contracts?
-    \end{itemize}
+\begin{frame}{Bibliography}
+    \printbibliography
 \end{frame}
 
 \end{document} 
